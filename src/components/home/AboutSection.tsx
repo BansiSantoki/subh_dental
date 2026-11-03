@@ -9,7 +9,7 @@ import { images } from '../../data/images';
 
 export function AboutSection() {
   return (
-    <section id="about" aria-labelledby="about-title" className="relative bg-[#f7f2ec] py-24 md:py-36">
+    <section id="about" aria-labelledby="about-title" className="relative bg-white py-24 md:py-36">
       <div className="mx-auto grid max-w-[1440px] gap-16 px-5 md:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-12 lg:px-12">
         <Reveal className="relative pb-16 lg:pb-0">
           <ParallaxImage

@@ -76,7 +76,7 @@ export function ClinicVideoSection() {
     <section
       ref={sectionRef}
       aria-labelledby="clinic-tour-title"
-      className="relative overflow-hidden bg-[#f7f3ee] py-20 sm:py-24"
+      className="relative overflow-hidden bg-white py-20 sm:py-24"
     >
       <div className="pointer-events-none absolute -left-24 top-12 h-64 w-64 rounded-full bg-brandBlue/[0.06] blur-3xl" aria-hidden="true" />
       <div className="pointer-events-none absolute -right-20 bottom-0 h-56 w-56 rounded-full bg-brandLime/[0.12] blur-3xl" aria-hidden="true" />

@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        ivory: '#F7F3EE',
+        ivory: '#FFFFFF',
         stone: '#EAE3D8',
         sand: '#DCC8A7',
         brandBlue: '#2E6E88',
@@ -38,8 +38,8 @@ export default {
         whatsapp: '#25D366',
       },
       fontFamily: {
-        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
-        sans: ['Manrope', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        serif: ['Arial', 'Helvetica Neue', 'sans-serif'],
+        sans: ['Arial', 'Helvetica Neue', 'sans-serif'],
       },
       transitionTimingFunction: {
         silk: 'cubic-bezier(0.23, 1, 0.32, 1)',

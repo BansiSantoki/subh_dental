@@ -26,7 +26,7 @@ export function TestimonialsSection() {
   const t = testimonials[index];
 
   return (
-    <section id="testimonials" aria-labelledby="testimonials-title" className="bg-sage/60 py-24 md:py-36">
+    <section id="testimonials" aria-labelledby="testimonials-title" className="bg-[#f5f9fb] py-20 md:py-28">
       <div className="mx-auto max-w-[1440px] px-5 md:px-8 lg:px-12">
         <SectionHeading id="testimonials-title" eyebrow="Patient stories" title="Kind Words, Meaningful Experiences." align="center" />
 
@@ -37,8 +37,8 @@ export function TestimonialsSection() {
             aria-roledescription="carousel"
             aria-label="Patient testimonials">
             
-            <div className="relative min-h-[380px] overflow-hidden rounded-[32px] bg-white px-7 py-12 shadow-[0_40px_80px_-50px_rgba(23,63,58,0.45)] sm:min-h-[340px] sm:px-14 sm:py-16">
-              <span className="pointer-events-none absolute left-6 top-0 select-none font-serif text-[180px] leading-none text-champagne/50 sm:left-10" aria-hidden="true">
+            <div className="relative min-h-[380px] overflow-hidden rounded-[28px] border border-brandBlue/10 bg-white px-7 py-12 shadow-[0_32px_70px_-48px_rgba(23,63,58,0.4)] sm:min-h-[340px] sm:px-14 sm:py-16">
+              <span className="pointer-events-none absolute left-6 top-0 select-none font-serif text-[180px] leading-none text-brandBlue/10 sm:left-10" aria-hidden="true">
                 “
               </span>
               <AnimatePresence mode="wait" custom={direction}>
@@ -88,7 +88,7 @@ export function TestimonialsSection() {
                   
                     <span
                     className={`block h-1.5 rounded-full transition-[width,background-color] duration-300 ease-silk ${
-                    i === index ? 'w-10 bg-forest' : 'w-4 bg-forest/25'}`
+                    i === index ? 'w-10 bg-brandBlue' : 'w-4 bg-brandBlue/25'}`
                     } />
                   
                   </button>
@@ -99,7 +99,7 @@ export function TestimonialsSection() {
                   type="button"
                   onClick={() => go(-1)}
                   aria-label="Previous testimonial"
-                  className="flex h-12 w-12 items-center justify-center rounded-full border border-forest/20 bg-white text-forest transition-colors duration-200 hover:bg-forest hover:text-ivory">
+                  className="flex h-12 w-12 items-center justify-center rounded-full border border-brandBlue/20 bg-white text-brandBlue transition-colors duration-200 hover:bg-brandBlue hover:text-white">
                   
                   <ArrowLeftIcon className="h-4 w-4" />
                 </button>
@@ -107,7 +107,7 @@ export function TestimonialsSection() {
                   type="button"
                   onClick={() => go(1)}
                   aria-label="Next testimonial"
-                  className="flex h-12 w-12 items-center justify-center rounded-full border border-forest/20 bg-white text-forest transition-colors duration-200 hover:bg-forest hover:text-ivory">
+                  className="flex h-12 w-12 items-center justify-center rounded-full border border-brandBlue/20 bg-white text-brandBlue transition-colors duration-200 hover:bg-brandBlue hover:text-white">
                   
                   <ArrowRightIcon className="h-4 w-4" />
                 </button>

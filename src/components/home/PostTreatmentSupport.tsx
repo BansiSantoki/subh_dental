@@ -10,12 +10,12 @@ import { siteConfig } from '../../data/siteConfig';
 
 export function PostTreatmentSupport() {
   return (
-    <section id="aftercare" aria-labelledby="aftercare-title" className="bg-ivory py-24 md:py-36">
+    <section id="aftercare" aria-labelledby="aftercare-title" className="bg-[#f5f9fb] py-20 md:py-28">
       <div className="mx-auto grid max-w-[1440px] gap-16 px-5 md:px-8 lg:grid-cols-12 lg:gap-16 lg:px-12">
         <Reveal className="relative lg:col-span-5">
           <ParallaxImage
-            src={images.doctorThree}
-            alt="A friendly dentist ready to guide you through aftercare"
+            src={images.treatmentRoom}
+            alt="A modern dental treatment room prepared for patient care"
             className="aspect-[4/5] rounded-[32px]"
             objectPosition="center 25%" />
           
@@ -35,12 +35,13 @@ export function PostTreatmentSupport() {
             intro="Good dental care includes knowing what to expect after treatment. We help you understand the next steps and when to contact your dental team." />
           
 
-          <div className="mt-12 grid gap-x-10 sm:grid-cols-2">
+          <div className="mt-12 grid gap-3 sm:grid-cols-2">
             {aftercareItems.map((item, i) =>
             <Reveal key={item.title} delay={0.05 * (i % 2)}>
-                <article className="border-t border-charcoal/15 pb-8 pt-6">
-                  <h3 className="font-serif text-[25px] font-medium leading-tight text-charcoal">{item.title}</h3>
-                  <p className="mt-2 text-[15px] leading-[1.7] text-charcoal/70">{item.text}</p>
+                <article className="h-full rounded-[20px] border border-brandBlue/10 bg-white p-5 sm:p-6">
+                  <span className="mb-4 block h-1 w-9 rounded-full bg-brandLime" aria-hidden="true" />
+                  <h3 className="font-serif text-[24px] font-medium leading-tight text-[#172a39]">{item.title}</h3>
+                  <p className="mt-2 text-[14px] leading-[1.7] text-charcoal/70">{item.text}</p>
                 </article>
               </Reveal>
             )}

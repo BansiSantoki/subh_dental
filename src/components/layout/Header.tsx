@@ -2,12 +2,10 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { MenuIcon, XIcon } from 'lucide-react';
 import { Logo } from '../shared/Logo';
-import { WhatsAppIcon } from '../shared/WhatsAppIcon';
 import { DesktopMoreMenu } from './DesktopMoreMenu';
 import { MobileNavigation } from './MobileNavigation';
 import { desktopPrimaryNav } from '../../data/siteConfig';
 import { useAppointment } from '../../contexts/AppointmentContext';
-import { whatsappUrl } from '../../utils/whatsapp';
 import { buttonClass } from '../../utils/buttonStyles';
 
 export function Header() {
@@ -71,15 +69,6 @@ export function Header() {
           </nav>
 
           <div className="flex items-center gap-2.5">
-            <a
-              href={whatsappUrl()}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Chat with us on WhatsApp (opens in a new tab)"
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-charcoal/[0.12] bg-white/60 text-[#1FA855] transition-[background-color,border-color] duration-200 hover:border-[#1FA855]/40 hover:bg-white">
-              
-              <WhatsAppIcon className="h-[19px] w-[19px]" />
-            </a>
             <button type="button" onClick={() => openAppointment()} className={buttonClass('primary', 'sm', 'hidden h-11 px-5 sm:inline-flex')}>
               Book an Appointment
             </button>

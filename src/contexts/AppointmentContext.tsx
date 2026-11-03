@@ -32,4 +32,4 @@ export function useAppointment() {
   const ctx = useContext(AppointmentContext);
   if (!ctx) throw new Error('useAppointment must be used within AppointmentProvider');
   return ctx;
-}
+} 

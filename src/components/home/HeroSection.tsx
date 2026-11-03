@@ -18,7 +18,7 @@ export function HeroSection() {
   const { openAppointment } = useAppointment();
 
   return (
-    <section aria-labelledby="hero-title" className="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,_rgba(110,149,142,0.12),_transparent_32%),linear-gradient(180deg,#f7f3ee_0%,#f3efe8_100%)] pt-[68px] md:pt-[84px]">
+    <section aria-labelledby="hero-title" className="relative overflow-hidden bg-white pt-[68px] md:pt-[84px]">
       <div className="grain pointer-events-none absolute inset-0 opacity-70" aria-hidden="true" />
       <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-[#dfe9e1]/30 to-transparent" aria-hidden="true" />
       <div className="relative mx-auto grid max-w-[1440px] items-center gap-16 px-5 pb-24 pt-10 md:px-8 lg:min-h-[calc(100svh-84px)] lg:grid-cols-12 lg:gap-6 lg:px-12 lg:pb-28 lg:pt-6">
@@ -28,9 +28,9 @@ export function HeroSection() {
             initial="hidden"
             animate="show"
             custom={0}
-            className="flex items-center gap-3 text-[11.5px] font-semibold uppercase tracking-[0.26em] text-forest">
+            className="flex items-center gap-3 text-[11.5px] font-semibold uppercase tracking-[0.22em] text-brandBlue">
             
-            <span className="h-px w-10 bg-champagne" aria-hidden="true" />
+            <span className="h-px w-10 bg-brandLime" aria-hidden="true" />
             Thoughtful Dental Care in Nashik
           </motion.p>
 
@@ -40,10 +40,10 @@ export function HeroSection() {
             initial="hidden"
             animate="show"
             custom={1}
-            className="mt-7 font-serif text-[54px] font-medium leading-[0.94] tracking-[-0.02em] text-charcoal sm:text-[76px] lg:text-[88px] xl:text-[104px]">
+            className="mt-7 max-w-[760px] font-serif text-[50px] font-medium leading-[0.98] tracking-[-0.02em] text-[#172a39] sm:text-[64px] lg:text-[68px] xl:text-[72px]">
             
             A Calmer,
-            <span className="mt-2 block text-forest">More Personal</span>
+            <span className="mt-2 block text-brandBlue">More Personal</span>
             Dental Experience.
           </motion.h1>
 
@@ -79,12 +79,12 @@ export function HeroSection() {
             initial="hidden"
             animate="show"
             custom={4}
-            className="mt-12 flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-charcoal/10 pt-6 text-[13.5px] font-medium text-charcoal/70"
+            className="mt-10 flex flex-wrap gap-2.5 border-t border-charcoal/10 pt-6 pr-14 text-[12.5px] font-semibold text-[#294354] sm:pr-0"
             aria-label="Our approach">
             
-            {trust.map((t, i) =>
-            <li key={t} className="flex items-center gap-4">
-                {i > 0 && <span className="h-1 w-1 rounded-full bg-champagne" aria-hidden="true" />}
+            {trust.map((t) =>
+            <li key={t} className="flex items-center gap-2 rounded-full border border-brandBlue/10 bg-[#f4f8fa] px-3.5 py-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-brandLime" aria-hidden="true" />
                 {t}
               </li>
             )}

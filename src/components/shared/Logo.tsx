@@ -26,7 +26,7 @@ export function Logo({ tone = 'dark', className = '' }: LogoProps) {
       <img
         src="/shubh-smile-nav-logo.png"
         alt="Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic"
-        className="h-11 sm:h-12 md:h-14 w-auto object-contain transition-transform duration-200 hover:scale-[1.02]"
+        className="h-[52px] sm:h-14 md:h-16 w-auto object-contain transition-transform duration-200 hover:scale-[1.02]"
         width={577}
         height={432}
         loading="eager"

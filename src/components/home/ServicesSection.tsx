@@ -26,7 +26,7 @@ export function ServicesSection() {
   };
 
   return (
-    <section id="services" aria-labelledby="services-title" className="bg-ivory py-24 md:py-36">
+    <section id="services" aria-labelledby="services-title" className="bg-white py-20 md:py-28">
       <div className="mx-auto max-w-[1440px] px-5 md:px-8 lg:px-12">
         <div className="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
           <SectionHeading
@@ -55,13 +55,13 @@ export function ServicesSection() {
                     onClick={() => setActive(c.id)}
                     onKeyDown={(e) => onKeyDown(e, i)}
                     className={`relative h-11 shrink-0 rounded-full px-5 text-[13.5px] font-semibold transition-colors duration-200 ${
-                    selected ? 'text-ivory' : 'text-charcoal/70 hover:text-charcoal'}`
+                    selected ? 'text-white' : 'border border-brandBlue/10 bg-[#f5f9fb] text-[#294354] hover:bg-brandBlue/5 hover:text-brandBlue'}`
                     }>
                     
                     {selected &&
                     <motion.span
                       layoutId="service-tab"
-                      className="absolute inset-0 rounded-full bg-forest"
+                      className="absolute inset-0 rounded-full bg-brandBlue"
                       transition={{ duration: 0.28, ease: [0.23, 1, 0.32, 1] }} />
 
                     }
@@ -74,7 +74,7 @@ export function ServicesSection() {
         </div>
 
         <div id={`panel-${active}`} role="tabpanel" aria-labelledby={`tab-${active}`} className="mt-14">
-          <p className="mb-8 font-serif text-[21px] italic text-charcoal/60">{activeMeta?.description}</p>
+          <p className="mb-8 max-w-2xl font-serif text-[21px] italic text-charcoal/65">{activeMeta?.description}</p>
           <AnimatePresence mode="wait">
             <motion.div
               key={active}

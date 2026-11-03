@@ -116,7 +116,7 @@ export function ContactSection({ initialTreatment, title = 'Let’s Take the Fir
         </div>
 
         <Reveal delay={0.12} className="lg:col-span-7">
-          <div className="rounded-[32px] bg-ivory p-6 sm:p-10 lg:p-12">
+          <div className="rounded-[28px] border border-brandBlue/10 bg-[#f5f9fb] p-6 shadow-[0_24px_64px_-52px_rgba(23,63,58,0.5)] sm:p-10 lg:p-12">
             <h3 className="font-serif text-[32px] font-medium leading-tight text-charcoal">Request a consultation</h3>
             <p className="mb-9 mt-2 text-[15px] leading-relaxed text-charcoal/65">
               Fields marked as optional can be left blank. We’ll prepare your inquiry for WhatsApp so you can send it
@@ -138,7 +138,7 @@ function ContactRow({ icon, label, children }: {icon: React.ReactNode;label: str
       </span>
       <div>
         <p className="text-[12px] font-semibold uppercase tracking-[0.16em] text-muted">{label}</p>
-        <p className="mt-1 text-[15.5px] leading-relaxed text-charcoal">{children}</p>
+        <div className="mt-1 text-[15.5px] leading-relaxed text-charcoal">{children}</div>
       </div>
     </li>);
 
