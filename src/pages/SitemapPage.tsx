@@ -9,7 +9,7 @@ export function SitemapPage() {
   const groups = getSitemapGroups();
   return (
     <>
-      <SEOHead title={`Sitemap | ${siteConfig.name}`} description="An overview of every page on the Aurelia Dental Studio website." path="/sitemap" />
+      <SEOHead title={`Sitemap | ${siteConfig.name}`} description={`An overview of every page on the ${siteConfig.name} website.`} path="/sitemap" />
       <PageHero crumbs={[{ label: 'Home', href: '/' }, { label: 'Sitemap' }]} title="Sitemap" />
       <section className="bg-white py-20 md:py-28">
         <div className="mx-auto grid max-w-[1440px] gap-12 px-5 sm:grid-cols-2 md:px-8 lg:grid-cols-4 lg:px-12">

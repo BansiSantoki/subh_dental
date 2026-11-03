@@ -20,10 +20,20 @@ export function dentistSchema(): JsonLd {
     name: siteConfig.name,
     slogan: siteConfig.tagline,
     url: base,
-    image: images.reception,
-    telephone: siteConfig.phoneE164,
+    image: absoluteUrl(images.reception),
+    telephone: siteConfig.phoneNumbers.map((phone) => phone.e164),
     email: siteConfig.email,
-    areaServed: { '@type': 'City', name: siteConfig.city }
+    sameAs: [siteConfig.instagramUrl],
+    hasMap: siteConfig.googleMapsUrl,
+    areaServed: { '@type': 'City', name: siteConfig.city },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: siteConfig.phoneNumbers.map((phone) => phone.e164),
+      contactType: 'customer service',
+      email: siteConfig.email,
+      areaServed: siteConfig.city,
+      availableLanguage: ['English', 'Hindi', 'Marathi']
+    }
   };
   if (siteConfig.addressVerified) {
     schema.address = {
@@ -31,7 +41,8 @@ export function dentistSchema(): JsonLd {
       streetAddress: siteConfig.address,
       addressLocality: siteConfig.city,
       addressRegion: siteConfig.region,
-      addressCountry: siteConfig.countryCode
+      addressCountry: siteConfig.countryCode,
+      postalCode: '422009'
     };
   }
   return schema;

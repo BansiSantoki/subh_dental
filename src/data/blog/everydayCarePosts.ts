@@ -7,11 +7,11 @@ export const howOftenVisit: BlogPost = {
   category: 'Prevention',
   excerpt: 'The six-month rule is a useful starting point — but the right rhythm for your visits depends on you.',
   metaDescription:
-  'How often should you see a dentist? A simple, practical guide to check-up intervals from Aurelia Dental Studio, Nashik.',
+  'How often should you see a dentist? A simple, practical guide to check-up intervals from Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic, Nashik.',
   featuredImage: images.consultation,
   featuredImageAlt: 'Dentist discussing a check-up with a patient',
-  publishedLabel: '[Publication date]',
-  author: '[Reviewing dentist name]',
+  publishedLabel: 'Reviewed by Dr. Naik',
+  author: 'Dr. Naik',
   relatedService: 'general-dentistry',
   content: [
   {
@@ -73,8 +73,8 @@ export const professionalCleaning: BlogPost = {
   metaDescription: 'What happens during a professional teeth cleaning, how it helps and how often you may need one.',
   featuredImage: images.dentalTools,
   featuredImageAlt: 'Sterilized dental instruments on sage linen',
-  publishedLabel: '[Publication date]',
-  author: '[Reviewing dentist name]',
+  publishedLabel: 'Reviewed by Dr. Naik',
+  author: 'Dr. Naik',
   relatedService: 'teeth-cleaning',
   content: [
   {
@@ -107,7 +107,7 @@ export const professionalCleaning: BlogPost = {
   {
     type: 'quote',
     text: 'A professional clean is a reset for your gums — and a good moment to fine-tune your brushing.',
-    cite: '[Dentist name, placeholder]'
+    cite: 'Dr. Naik'
   },
   { type: 'heading', id: 'after-cleaning', text: 'After your cleaning' },
   {
@@ -129,8 +129,8 @@ export const everydayHabits: BlogPost = {
   metaDescription: 'Simple daily habits that support healthy teeth and gums, from brushing technique to snacking.',
   featuredImage: images.smileCloseup,
   featuredImageAlt: 'Close-up of a natural, healthy smile',
-  publishedLabel: '[Publication date]',
-  author: '[Reviewing dentist name]',
+  publishedLabel: 'Reviewed by Dr. Naik',
+  author: 'Dr. Naik',
   relatedService: 'teeth-cleaning',
   content: [
   {
@@ -188,8 +188,8 @@ export const childrensCare: BlogPost = {
   metaDescription: 'Practical dental care tips for parents: brushing, snacks, first visits and building positive habits.',
   featuredImage: images.kids,
   featuredImageAlt: 'Child smiling in a dental chair beside a kind dentist',
-  publishedLabel: '[Publication date]',
-  author: '[Reviewing dentist name]',
+  publishedLabel: 'Reviewed by Dr. Naik',
+  author: 'Dr. Naik',
   relatedService: 'pediatric-dentistry',
   content: [
   {

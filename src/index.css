@@ -13,7 +13,10 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  background-color: #faf8f3;
+  background:
+    radial-gradient(circle at top left, rgba(120, 142, 129, 0.12), transparent 26%),
+    radial-gradient(circle at bottom right, rgba(214, 195, 163, 0.18), transparent 30%),
+    #f7f3ee;
   color: #252b29;
   font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -1,5 +1,4 @@
 import React from 'react';
-import { DoctorCard } from './DoctorCard';
 import { ParallaxImage } from '../shared/ParallaxImage';
 import { Reveal } from '../shared/Reveal';
 import { SectionHeading } from '../shared/SectionHeading';
@@ -11,7 +10,6 @@ import { buttonClass } from '../../utils/buttonStyles';
 export function TeamSection() {
   const { openAppointment } = useAppointment();
   const featured = doctors.find((d) => d.featured) ?? doctors[0];
-  const others = doctors.filter((d) => d.id !== featured.id);
 
   return (
     <section id="team" aria-labelledby="team-title" className="bg-white py-24 md:py-36">
@@ -55,20 +53,13 @@ export function TeamSection() {
               <button type="button" onClick={() => openAppointment('a general consultation')} className={buttonClass('primary', 'lg')}>
                 Book a Consultation
               </button>
-              <WhatsAppLink variant="whatsappOutline" size="lg" message="Hello, I would like to book a consultation with your lead dentist at Aurelia Dental Studio in Nashik.">
+              <WhatsAppLink variant="whatsappOutline" size="lg" message="Hello, I would like to book a consultation with your lead dentist at Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic in Nashik.">
                 Ask on WhatsApp
               </WhatsAppLink>
             </div>
           </Reveal>
         </div>
 
-        <div className="mt-24 grid gap-14 border-t border-charcoal/10 pt-16 lg:grid-cols-2 lg:gap-16">
-          {others.map((d, i) =>
-          <Reveal key={d.id} delay={0.06 * i}>
-              <DoctorCard doctor={d} />
-            </Reveal>
-          )}
-        </div>
       </div>
     </section>);
 

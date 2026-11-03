@@ -10,10 +10,11 @@ import { getServicesByCategory } from '../utils/content';
 import { useAppointment } from '../contexts/AppointmentContext';
 import { buttonClass } from '../utils/buttonStyles';
 import { breadcrumbSchema, webPageSchema } from '../utils/structuredData';
+import { siteConfig } from '../data/siteConfig';
 
-const title = 'Dental Treatments in Nashik | Aurelia Dental Studio';
+const title = `Dental Treatments in Nashik | ${siteConfig.name}`;
 const description =
-'Explore general, cosmetic and restorative dental treatments at Aurelia Dental Studio in Nashik — each explained clearly, with honest answers to common questions.';
+`Explore general, cosmetic and restorative dental treatments at ${siteConfig.name} in Nashik — each explained clearly, with honest answers to common questions.`;
 
 export function Services() {
   const { openAppointment } = useAppointment();

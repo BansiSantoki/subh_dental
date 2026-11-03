@@ -47,7 +47,7 @@ export function Header() {
           scrolled ? 'h-[68px]' : 'h-[68px] md:h-[84px]'}`
           }>
           
-          <Link to="/" aria-label="Aurelia Dental Studio — home" className="shrink-0">
+          <Link to="/" aria-label="Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic — home" className="shrink-0">
             <Logo />
           </Link>
 

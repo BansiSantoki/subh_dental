@@ -12,6 +12,7 @@ import { NotFound } from './NotFound';
 import { getPostBySlug, getRelatedPosts, getServiceBySlug, getTableOfContents, readingTimeMinutes } from '../utils/content';
 import { treatmentMessage } from '../utils/whatsapp';
 import { blogPostingSchema, breadcrumbSchema } from '../utils/structuredData';
+import { siteConfig } from '../data/siteConfig';
 
 export function BlogArticle() {
   const { slug } = useParams();
@@ -27,7 +28,7 @@ export function BlogArticle() {
   return (
     <>
       <SEOHead
-        title={`${post.title} | Aurelia Dental Studio Blog`}
+        title={`${post.title} | ${siteConfig.name} Blog`}
         description={post.metaDescription}
         path={path}
         image={post.featuredImage}

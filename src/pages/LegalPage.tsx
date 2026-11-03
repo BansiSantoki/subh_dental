@@ -9,7 +9,7 @@ const content: Record<LegalKind, {title: string;path: string;intro: string;secti
   privacy: {
     title: 'Privacy Policy',
     path: '/privacy-policy',
-    intro: '[Placeholder — replace with a privacy policy reviewed by a qualified legal professional before launch.]',
+    intro: 'This website is managed by Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic in Nashik. We respect the privacy of patients and visitors and use information only to support patient care, communication, and appointment coordination.',
     sections: [
     {
       heading: 'Information you share with us',
@@ -17,11 +17,11 @@ const content: Record<LegalKind, {title: string;path: string;intro: string;secti
     },
     {
       heading: 'How we use your information',
-      text: '[Describe how the clinic uses contact details — for example, to respond to inquiries and arrange appointments.]'
+      text: 'We use the information you provide to respond to your dental questions, confirm appointment availability, coordinate treatment discussions, and offer relevant post-treatment guidance when needed.'
     },
     {
       heading: 'Third-party services',
-      text: 'Messages sent through WhatsApp are subject to WhatsApp’s own privacy policy. [List any analytics or other third-party services used.]'
+      text: 'Messages sent through WhatsApp are subject to WhatsApp’s own privacy policy. We may also provide links to Google Maps and Instagram for location and clinic updates. These services are used only to support communication and patient convenience.'
     },
     { heading: 'Contact', text: `For privacy questions, contact ${siteConfig.email}.` }]
 
@@ -29,7 +29,7 @@ const content: Record<LegalKind, {title: string;path: string;intro: string;secti
   terms: {
     title: 'Terms of Use',
     path: '/terms-of-use',
-    intro: '[Placeholder — replace with terms of use reviewed by a qualified legal professional before launch.]',
+    intro: 'These terms govern your use of the Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic website and the information available through it. By using the website, you agree to use the content responsibly and understand that it is shared for general informational purposes.',
     sections: [
     {
       heading: 'Educational information',
@@ -37,9 +37,9 @@ const content: Record<LegalKind, {title: string;path: string;intro: string;secti
     },
     {
       heading: 'Inquiries and appointments',
-      text: 'Submitting an inquiry does not confirm an appointment. The clinic will reply with available options.'
+      text: 'Submitting an inquiry does not confirm an appointment. The clinic will reply with available options and may guide you on the next consultation steps.'
     },
-    { heading: 'Changes', text: '[Describe how and when these terms may be updated.]' }]
+    { heading: 'Changes', text: 'We may update these terms from time to time to reflect changes in clinic communication, website content, or service information. Updated terms will appear on this page.' }]
 
   }
 };

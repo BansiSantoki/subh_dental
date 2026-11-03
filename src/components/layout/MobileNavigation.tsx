@@ -66,12 +66,16 @@ export function MobileNavigation({ open, onClose, onBook }: MobileNavigationProp
               <WhatsAppLink size="lg" className="w-full">
                 Chat on WhatsApp
               </WhatsAppLink>
-              <a
-              href={`tel:${siteConfig.phoneE164}`}
-              className="mt-2 inline-flex items-center justify-center gap-2 text-[14px] font-medium text-charcoal/70">
-              
-                <PhoneIcon className="h-4 w-4" aria-hidden="true" /> {siteConfig.phoneDisplay}
-              </a>
+              {siteConfig.phoneNumbers.map((phone) => (
+                <a
+                  key={phone.e164}
+                  href={`tel:${phone.e164}`}
+                  className="mt-2 inline-flex items-center justify-center gap-2 text-[14px] font-medium text-charcoal/70"
+                >
+                  <PhoneIcon className="h-4 w-4" aria-hidden="true" />
+                  {phone.display}
+                </a>
+              ))}
             </div>
           </nav>
         </motion.div>

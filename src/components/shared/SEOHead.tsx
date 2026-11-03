@@ -15,6 +15,7 @@ interface SEOHeadProps {
 
 export function SEOHead({ title, description, path, image = images.reception, type = 'website', jsonLd = [], noindex = false }: SEOHeadProps) {
   const jsonString = JSON.stringify(jsonLd);
+  const socialImage = image.startsWith('/') ? absoluteUrl(image) : image;
 
   useEffect(() => {
     const url = absoluteUrl(path);
@@ -27,13 +28,13 @@ export function SEOHead({ title, description, path, image = images.reception, ty
     setMeta('property', 'og:description', description);
     setMeta('property', 'og:url', url);
     setMeta('property', 'og:type', type);
-    setMeta('property', 'og:image', image);
+    setMeta('property', 'og:image', socialImage);
     setMeta('property', 'og:site_name', siteConfig.name);
     setMeta('property', 'og:locale', 'en_IN');
     setMeta('name', 'twitter:card', 'summary_large_image');
     setMeta('name', 'twitter:title', title);
     setMeta('name', 'twitter:description', description);
-    setMeta('name', 'twitter:image', image);
+    setMeta('name', 'twitter:image', socialImage);
 
     let script = document.getElementById('page-jsonld') as HTMLScriptElement | null;
     if (!script) {
@@ -43,7 +44,7 @@ export function SEOHead({ title, description, path, image = images.reception, ty
       document.head.appendChild(script);
     }
     script.textContent = jsonString;
-  }, [title, description, path, image, type, noindex, jsonString]);
+  }, [title, description, path, image, socialImage, type, noindex, jsonString]);
 
   return null;
 }

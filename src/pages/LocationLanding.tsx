@@ -11,6 +11,7 @@ import { useAppointment } from '../contexts/AppointmentContext';
 import { getServicesBySlugs } from '../utils/content';
 import { buttonClass } from '../utils/buttonStyles';
 import { breadcrumbSchema, dentistSchema, faqSchema, webPageSchema } from '../utils/structuredData';
+import { siteConfig } from '../data/siteConfig';
 import type { LocationPage } from '../types/content';
 
 const kindLabel: Record<LocationPage['kind'], string> = {
@@ -23,7 +24,7 @@ export function LocationLanding({ location }: {location: LocationPage;}) {
   const { openAppointment } = useAppointment();
   const path = `/${location.slug}`;
   const treatments = getServicesBySlugs(location.treatments);
-  const waMessage = `Hello, I would like to know more about dental care at Aurelia Dental Studio in Nashik. I am contacting you from ${location.areaName}.`;
+  const waMessage = `Hello, I would like to know more about dental care at ${siteConfig.name} in Nashik. I am contacting you from ${location.areaName}.`;
 
   return (
     <>

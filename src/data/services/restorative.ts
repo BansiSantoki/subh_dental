@@ -8,9 +8,9 @@ export const crownsAndBridges: Service = {
   short: 'Restorative options designed for damaged teeth or to replace missing teeth.',
   image: images.treatmentRoom,
   imageAlt: 'Serene, modern dental treatment room with warm wood and sage tones',
-  seoTitle: 'Dental Crowns & Bridges in Nashik | Aurelia Dental Studio',
+  seoTitle: 'Dental Crowns & Bridges in Nashik | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
   metaDescription:
-  'Learn about dental crowns and bridges for damaged or missing teeth — how they work and what to expect — at Aurelia Dental Studio, Nashik.',
+  'Learn about dental crowns and bridges for damaged or missing teeth — how they work and what to expect — at Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic, Nashik.',
   h1: 'Dental Crowns and Bridges in Nashik',
   intro: [
   'A crown is a custom-made cap that covers a tooth that has been weakened by decay, a large filling, a crack or root canal treatment. A bridge replaces one or more missing teeth by anchoring to the teeth on either side of the gap.',
@@ -62,9 +62,9 @@ export const dentalImplants: Service = {
   short: 'Information about implant-based tooth replacement and the careful assessment it requires.',
   image: images.implantModel,
   imageAlt: 'Dental implant model with a titanium post and porcelain crown',
-  seoTitle: 'Dental Implants in Nashik | Assessment & Planning | Aurelia',
+  seoTitle: 'Dental Implants in Nashik | Assessment & Planning | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
   metaDescription:
-  'Explore dental implants in Nashik — how they work, who may be suitable, and the assessment and planning process at Aurelia Dental Studio.',
+  'Explore dental implants in Nashik — how they work, who may be suitable, and the assessment and planning process at Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic.',
   h1: 'Dental Implants in Nashik',
   intro: [
   'A dental implant is a small titanium post placed in the jawbone, where it acts like the root of a tooth. Once healed, it can support a crown, a bridge or a denture.',
@@ -117,9 +117,9 @@ export const dentures: Service = {
   short: 'Comfortable, carefully fitted options for replacing missing teeth.',
   image: images.denturesSenior,
   imageAlt: 'Smiling woman with silver hair seated in a bright, calm room',
-  seoTitle: 'Dentures & Tooth Replacement in Nashik | Aurelia Dental Studio',
+  seoTitle: 'Dentures & Tooth Replacement in Nashik | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
   metaDescription:
-  'Complete and partial dentures and other tooth replacement options in Nashik, fitted with care at Aurelia Dental Studio.',
+  'Complete and partial dentures and other tooth replacement options in Nashik, fitted with care at Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic.',
   h1: 'Dentures and Tooth Replacement in Nashik',
   intro: [
   'Missing teeth can affect how you eat, speak and feel when you smile. Dentures are removable replacements — complete dentures replace all teeth in a jaw, while partial dentures fill gaps between remaining teeth.',
@@ -170,9 +170,9 @@ export const clearAligners: Service = {
   short: 'Options for addressing tooth alignment and bite concerns, including clear aligners.',
   image: images.aligners,
   imageAlt: 'Clear dental aligners resting on a smooth sage stone',
-  seoTitle: 'Clear Aligners & Orthodontics in Nashik | Aurelia Dental Studio',
+  seoTitle: 'Clear Aligners & Orthodontics in Nashik | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
   metaDescription:
-  'Explore orthodontic options in Nashik, including clear aligners and braces for alignment and bite concerns. Aurelia Dental Studio.',
+  'Explore orthodontic options in Nashik, including clear aligners and braces for alignment and bite concerns. Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic.',
   h1: 'Orthodontics and Clear Aligners in Nashik',
   intro: [
   'Orthodontic treatment gradually moves teeth into better alignment. Options include traditional braces and clear aligners — a series of removable, transparent trays that are changed at regular intervals.',

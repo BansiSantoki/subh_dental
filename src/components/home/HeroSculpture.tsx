@@ -47,7 +47,7 @@ export function HeroSculpture() {
       ref={ref}
       onPointerMove={handleMove}
       onPointerLeave={handleLeave}
-      className="relative mx-auto w-full max-w-[400px] sm:max-w-[480px] lg:ml-auto lg:mr-0 lg:max-w-[560px]"
+      className="relative mx-auto w-full max-w-[580px] sm:max-w-[620px] lg:ml-auto lg:mr-0 lg:max-w-[760px]"
       style={{ perspective: 1400 }}>
       
       {/* Smile arc — brand motif */}
@@ -77,7 +77,7 @@ export function HeroSculpture() {
           
         <motion.div
             style={{ rotateX, rotateY, transformStyle: 'preserve-3d' }}
-            className="relative aspect-[4/5] overflow-hidden rounded-[32px] bg-[#EFECE5] shadow-[0_60px_100px_-50px_rgba(23,63,58,0.55),0_20px_40px_-30px_rgba(37,43,41,0.35)]">
+            className="relative aspect-[4/5] overflow-hidden rounded-[32px] bg-[#EFECE5] shadow-[0_60px_100px_-50px_rgba(23,63,58,0.55),0_20px_40px_-30px_rgba(37,43,41,0.35)] lg:translate-x-[10%] lg:scale-[1.08]">
             
           <motion.img
               src={images.heroTooth}
@@ -96,7 +96,7 @@ export function HeroSculpture() {
 
       {/* Floating interior detail */}
       <motion.div
-        className="absolute -bottom-8 -left-4 w-[34%] sm:-left-10 lg:-left-16"
+        className="absolute -bottom-8 -left-4 w-[30%] sm:-left-10 lg:-left-14"
         style={{ y: reduce ? 0 : yFloat, x: interactive ? floatX : 0 }}
         initial={{ opacity: 0, scale: 0.96 }}
         animate={{ opacity: 1, scale: 1 }}

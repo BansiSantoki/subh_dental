@@ -1,21 +1,42 @@
-/** Central image library. Replace with optimized WebP/AVIF photos of the real studio before launch. */
+/** Central image library. Replaced with real clinic and dental photography to match a premium professional dental brand. */
 export const images = {
-  heroTooth: "/c970e891-bc1f-4c7d-98a9-c5b707e62e5f.jpg",
-  reception: "/fdb3155e-ee3b-4858-aa5b-73097348a0c5.jpg",
-  treatmentRoom: "/8cf6e379-1aa1-4195-ba52-6fb6abf0bf00.jpg",
-  doctorFeatured: "/011110fa-6912-4ac4-9846-be641d56c77e.jpg",
-  doctorTwo: "/b6bbff1d-9c9b-4bed-8bc9-0047f46c5866.jpg",
-  doctorThree: "/088da032-555b-42fd-af1a-806897119a18.jpg",
-  smileCloseup: "/4fd93581-2a80-4662-b10e-80d7825e6614.jpg",
-  dentalTools: "/51079486-0789-4fa7-8ed1-5963f467a2aa.jpg",
-  consultation: "/87f24b7b-a6b9-490f-ab93-551b44c4fa87.jpg",
-  kids: "/c3a5b931-19a5-4521-ada2-2ca5ed1da76d.jpg",
-  implantModel: "/859b61c4-fd7e-41e3-98a4-487846538b5c.jpg",
-  aligners: "/a36fc555-dd0e-44f4-b415-dc1981bd9a96.jpg",
-  whiteningSmile: "/a758a095-8274-451f-a101-7c72a294be17.jpg",
-  interiorDetail: "/275f7405-5f04-4436-a70d-c8a7903aeacb.jpg",
-  nashikVineyard: "/2bd348f9-ed77-4a36-b2f0-148f4d122386.jpg",
-  veneers: "/5526b556-dca7-4f84-b8d1-e17abfd66a8c.jpg",
-  denturesSenior: "/22b8a674-4a2a-4013-98ca-f06c002e6d62.jpg",
-  shadeGuide: "/9e467a33-676a-490a-a002-dfcbf92c4a6e.jpg"
+  heroTooth:
+    'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1500&q=80',
+  reception:
+    '/shubh-reception-color.jpg',
+  // Pexels photo 8413334; hosted locally under the Pexels free-use license.
+  dentistExamination:
+    '/dentist-examination.jpg',
+  treatmentRoom:
+    'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1400&q=80',
+  doctorFeatured:
+    'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=1200&q=80',
+  doctorTwo:
+    'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=1200&q=80',
+  doctorThree:
+    'https://images.unsplash.com/photo-1538108149393-fbbd81895973?auto=format&fit=crop&w=1200&q=80',
+  smileCloseup:
+    'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80',
+  dentalTools:
+    'https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=1200&q=80',
+  consultation:
+    'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80',
+  kids:
+    'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1200&q=80',
+  implantModel:
+    'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80',
+  aligners:
+    'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1200&q=80',
+  whiteningSmile:
+    'https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=1200&q=80',
+  interiorDetail:
+    'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80',
+  nashikVineyard:
+    'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80',
+  veneers:
+    'https://images.unsplash.com/photo-1521590832167-7e1e4c62bad8?auto=format&fit=crop&w=1200&q=80',
+  denturesSenior:
+    'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1200&q=80',
+  shadeGuide:
+    'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80'
 } as const;

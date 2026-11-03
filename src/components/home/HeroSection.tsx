@@ -18,8 +18,9 @@ export function HeroSection() {
   const { openAppointment } = useAppointment();
 
   return (
-    <section aria-labelledby="hero-title" className="relative overflow-hidden bg-ivory pt-[68px] md:pt-[84px]">
-      <div className="grain pointer-events-none absolute inset-0" aria-hidden="true" />
+    <section aria-labelledby="hero-title" className="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,_rgba(110,149,142,0.12),_transparent_32%),linear-gradient(180deg,#f7f3ee_0%,#f3efe8_100%)] pt-[68px] md:pt-[84px]">
+      <div className="grain pointer-events-none absolute inset-0 opacity-70" aria-hidden="true" />
+      <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-[#dfe9e1]/30 to-transparent" aria-hidden="true" />
       <div className="relative mx-auto grid max-w-[1440px] items-center gap-16 px-5 pb-24 pt-10 md:px-8 lg:min-h-[calc(100svh-84px)] lg:grid-cols-12 lg:gap-6 lg:px-12 lg:pb-28 lg:pt-6">
         <div className="relative z-10 lg:col-span-7 xl:col-span-6">
           <motion.p
@@ -41,7 +42,9 @@ export function HeroSection() {
             custom={1}
             className="mt-7 font-serif text-[54px] font-medium leading-[0.94] tracking-[-0.02em] text-charcoal sm:text-[76px] lg:text-[88px] xl:text-[104px]">
             
-            Your Smile Deserves <em className="font-normal italic text-forest">Exceptional</em> Care.
+            A Calmer,
+            <span className="mt-2 block text-forest">More Personal</span>
+            Dental Experience.
           </motion.h1>
 
           <motion.p
@@ -66,7 +69,7 @@ export function HeroSection() {
               Book Your Consultation
               <ArrowRightIcon className="h-4 w-4 transition-transform duration-200 ease-silk group-hover/btn:translate-x-0.5" aria-hidden="true" />
             </button>
-            <Link to="/#services" className={buttonClass('secondary', 'lg')}>
+            <Link to="/services" className={buttonClass('secondary', 'lg')}>
               Explore Our Treatments
             </Link>
           </motion.div>

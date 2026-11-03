@@ -1,38 +1,16 @@
 import { images } from './images';
 import type { Doctor } from '../types/content';
 
-/**
- * Doctor profiles — EDITABLE PLACEHOLDERS.
- * Replace with verified names, qualifications and biographies.
- * To add a doctor, append another object to this array.
- */
 export const doctors: Doctor[] = [
-{
-  id: 'lead-dentist',
-  name: 'Dr. [Doctor Name]',
-  qualification: '[BDS / MDS / Relevant Qualification]',
-  specialty: '[Dental Specialty]',
-  bio: '[Professional Biography] — Add a short, verified introduction here: the dentist’s training, the areas of dentistry they focus on, and what they value most when caring for patients.',
-  portrait: images.doctorFeatured,
-  portraitAlt: 'Portrait of the lead dentist at Aurelia Dental Studio (placeholder)',
-  featured: true,
-  focusAreas: ['[Focus area]', '[Focus area]', '[Focus area]']
-},
-{
-  id: 'associate-dentist-1',
-  name: 'Dr. [Doctor Name]',
-  qualification: '[BDS / MDS / Relevant Qualification]',
-  specialty: '[Dental Specialty]',
-  bio: '[Professional Biography] — A brief, verified introduction to this dentist.',
-  portrait: images.doctorTwo,
-  portraitAlt: 'Portrait of an associate dentist at Aurelia Dental Studio (placeholder)'
-},
-{
-  id: 'associate-dentist-2',
-  name: 'Dr. [Doctor Name]',
-  qualification: '[BDS / MDS / Relevant Qualification]',
-  specialty: '[Dental Specialty]',
-  bio: '[Professional Biography] — A brief, verified introduction to this dentist.',
-  portrait: images.doctorThree,
-  portraitAlt: 'Portrait of an associate dentist at Aurelia Dental Studio (placeholder)'
-}];
+  {
+    id: 'lead-dentist',
+    name: 'Dr. Naik',
+    qualification: 'Lead Dentist, Shubh Smile Dental Clinic',
+    specialty: 'Smile Design, Implants & Restorative Care',
+    bio: 'Dr. Naik leads the clinic with a calm, patient-first approach focused on preventive care, smile restoration, and long-term oral health for families across Nashik.',
+    portrait: images.doctorFeatured,
+    portraitAlt: "Portrait of Dr. Naik at Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic",
+    featured: true,
+    focusAreas: ['Preventive Care', 'Smile Design', 'Dental Implants']
+  }
+];

@@ -6,10 +6,23 @@ export default {
   theme: {
     extend: {
       colors: {
-        ivory: '#FAF8F3',
+        ivory: '#F7F3EE',
+        stone: '#EAE3D8',
+        sand: '#DCC8A7',
+        brandBlue: '#2E6E88',
+        brandLime: '#BFD96B',
         forest: {
           DEFAULT: '#173F3A',
           deep: '#0F2C28',
+          soft: '#2A5A53',
+        },
+        primary: {
+          DEFAULT: '#173F3A',
+          50: '#F6F8F4',
+          100: '#DCE7DF',
+          600: '#173F3A',
+          700: '#0F2C28',
+          dark: '#0F2C28',
           soft: '#2A5A53',
         },
         charcoal: '#252B29',
@@ -19,7 +32,7 @@ export default {
         },
         champagne: {
           DEFAULT: '#D6C3A3',
-          light: '#EDE3D1',
+          light: '#F1E7D8',
         },
         muted: '#646B66',
         whatsapp: '#25D366',

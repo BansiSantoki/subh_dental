@@ -1,5 +1,4 @@
 import React from 'react';
-import { siteConfig } from '../../data/siteConfig';
 
 interface LogoProps {
   tone?: 'dark' | 'light';
@@ -7,31 +6,60 @@ interface LogoProps {
 }
 
 export function Logo({ tone = 'dark', className = '' }: LogoProps) {
-  const word = tone === 'dark' ? 'text-forest' : 'text-ivory';
-  const sub = tone === 'dark' ? 'text-charcoal/60' : 'text-ivory/60';
-  return (
-    <span className={`inline-flex items-center gap-3 ${className}`}>
-      <LogoMark tone={tone} />
-      <span className="flex flex-col leading-none">
-        <span className={`font-serif text-[23px] font-medium tracking-[0.26em] ${word}`}>{siteConfig.logoWord}</span>
-        <span className={`mt-1 text-[8.5px] font-semibold tracking-[0.42em] ${sub}`}>{siteConfig.logoSub}</span>
-      </span>
-    </span>);
+  if (tone === 'light') {
+    return (
+      <div className={`inline-flex items-center rounded-2xl bg-white px-3.5 py-1.5 shadow-sm transition-transform duration-200 hover:scale-[1.02] ${className}`}>
+        <img
+          src="/shubh-smile-nav-logo.png"
+          alt="Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic"
+          className="h-10 sm:h-11 md:h-12 w-auto object-contain"
+          width={577}
+          height={432}
+          loading="eager"
+        />
+      </div>
+    );
+  }
 
+  return (
+    <span className={`inline-flex items-center ${className}`}>
+      <img
+        src="/shubh-smile-nav-logo.png"
+        alt="Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic"
+        className="h-11 sm:h-12 md:h-14 w-auto object-contain transition-transform duration-200 hover:scale-[1.02]"
+        width={577}
+        height={432}
+        loading="eager"
+      />
+    </span>
+  );
 }
 
-export function LogoMark({ tone = 'dark', size = 38 }: {tone?: 'dark' | 'light';size?: number;}) {
-  const stroke = tone === 'dark' ? '#173F3A' : '#FAF8F3';
+export function LogoMark({
+  tone = 'dark',
+  size = 40,
+  className = '',
+}: {
+  tone?: 'dark' | 'light';
+  size?: number;
+  className?: string;
+}) {
+  const isLight = tone === 'light';
   return (
-    <svg width={size} height={size} viewBox="0 0 40 40" fill="none" aria-hidden="true">
-      <circle cx="20" cy="20" r="18.5" stroke="#D6C3A3" strokeWidth="1" />
-      <path
-        d="M12.5 17.2c0-3.1 2-5.2 4.4-5.2 1.4 0 2.2.7 3.1.7.9 0 1.7-.7 3.1-.7 2.4 0 4.4 2.1 4.4 5.2"
-        stroke={stroke}
-        strokeWidth="1.4"
-        strokeLinecap="round" />
-      
-      <path d="M11 22.5c2.4 3.6 5.5 5.3 9 5.3s6.6-1.7 9-5.3" stroke={stroke} strokeWidth="1.4" strokeLinecap="round" />
-    </svg>);
-
+    <span
+      className={`inline-flex items-center justify-center ${
+        isLight ? 'rounded-xl bg-white p-1.5 shadow-sm' : ''
+      } ${className}`}
+      style={{ width: size, height: size }}
+    >
+      <img
+        src="/shubh-smile-nav-logo.png"
+        alt="Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic"
+        className="h-full w-full object-contain"
+        width={size}
+        height={size}
+        loading="eager"
+      />
+    </span>
+  );
 }

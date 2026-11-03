@@ -155,7 +155,7 @@ export function InquiryForm({ initialTreatment = '' }: {initialTreatment?: strin
             aria-describedby={err('consent')}
             className="mt-1 h-[18px] w-[18px] shrink-0 rounded border-charcoal/30 accent-forest" />
           
-          <span>I agree to be contacted by Aurelia Dental Studio regarding this inquiry.</span>
+          <span>I agree to be contacted by Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic regarding this inquiry.</span>
         </label>
         {errors.consent &&
         <p id={`${p}-consent-error`} role="alert" className="mt-1.5 pl-[30px] text-[12.5px] font-medium text-[#A23F34]">

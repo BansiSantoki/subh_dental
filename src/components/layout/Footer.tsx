@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowUpRightIcon, MailIcon, PhoneIcon } from 'lucide-react';
+import { ArrowUpRightIcon, MailIcon, MapPinIcon, PhoneIcon } from 'lucide-react';
 import { Logo } from '../shared/Logo';
 import { WhatsAppLink } from '../shared/WhatsAppLink';
 import { mainNav, siteConfig } from '../../data/siteConfig';
@@ -82,18 +82,40 @@ export function Footer() {
                 </a>
               </p>
               <p>
+                <a href={`tel:${siteConfig.secondaryPhoneE164}`} className="inline-flex items-center gap-2 hover:text-ivory">
+                  <PhoneIcon className="h-4 w-4 text-champagne" aria-hidden="true" />
+                  {siteConfig.secondaryPhoneDisplay}
+                </a>
+              </p>
+              <p>
                 <a href={`mailto:${siteConfig.email}`} className="inline-flex items-center gap-2 hover:text-ivory">
                   <MailIcon className="h-4 w-4 text-champagne" aria-hidden="true" />
                   {siteConfig.email}
                 </a>
               </p>
+              <p>
+                <a href={siteConfig.googleMapsUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-ivory">
+                  <MapPinIcon className="h-4 w-4 text-champagne" aria-hidden="true" />
+                  Get Directions
+                </a>
+              </p>
+              <p>
+                <a href={siteConfig.instagramUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-ivory">
+                  <ArrowUpRightIcon className="h-4 w-4 text-champagne" aria-hidden="true" />
+                  Instagram: {siteConfig.instagramUsername}
+                </a>
+              </p>
             </address>
-            <h3 className="mt-8 text-[11.5px] font-semibold uppercase tracking-[0.22em] text-champagne">Working hours</h3>
-            <ul className="mt-4 space-y-1 text-[14.5px] text-ivory/75">
-              {siteConfig.workingHours.map((h) =>
-              <li key={h}>{h}</li>
-              )}
-            </ul>
+            {siteConfig.workingHours.length > 0 && (
+              <>
+                <h3 className="mt-8 text-[11.5px] font-semibold uppercase tracking-[0.22em] text-champagne">Working hours</h3>
+                <ul className="mt-4 space-y-1 text-[14.5px] text-ivory/75">
+                  {siteConfig.workingHours.map((h) =>
+                  <li key={h}>{h}</li>
+                  )}
+                </ul>
+              </>
+            )}
           </div>
         </div>
 

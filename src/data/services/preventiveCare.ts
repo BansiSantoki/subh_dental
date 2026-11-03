@@ -8,9 +8,9 @@ export const generalDentistry: Service = {
   short: 'Routine dental examinations, preventive guidance, and care for common dental concerns.',
   image: images.consultation,
   imageAlt: 'Dentist calmly explaining a check-up to a patient in a bright clinic room',
-  seoTitle: 'General Dentistry & Dental Check-ups in Nashik | Aurelia Dental Studio',
+  seoTitle: 'General Dentistry & Dental Check-ups in Nashik | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
   metaDescription:
-  'Routine dental examinations, preventive guidance and care for common dental concerns at Aurelia Dental Studio in Nashik, Maharashtra.',
+  'Routine dental examinations, preventive guidance and care for common dental concerns at Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic in Nashik, Maharashtra.',
   h1: 'General Dentistry in Nashik',
   intro: [
   'General dentistry is the everyday foundation of a healthy mouth. A routine visit gives your dentist the chance to examine your teeth and gums, notice small changes early, and talk with you about habits that support long-term oral health.',
@@ -63,9 +63,9 @@ export const teethCleaning: Service = {
   short: 'Professional cleaning and personalized oral hygiene guidance for healthier gums.',
   image: images.dentalTools,
   imageAlt: 'Sterilized dental cleaning instruments arranged on a sage linen cloth',
-  seoTitle: 'Professional Teeth Cleaning in Nashik | Aurelia Dental Studio',
+  seoTitle: 'Professional Teeth Cleaning in Nashik | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
   metaDescription:
-  'Professional dental cleaning, scaling and polishing with personalized hygiene guidance at Aurelia Dental Studio, Nashik.',
+  'Professional dental cleaning, scaling and polishing with personalized hygiene guidance at Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic, Nashik.',
   h1: 'Professional Teeth Cleaning in Nashik',
   intro: [
   'Even with careful brushing, plaque can harden into tartar in places a toothbrush can’t reach. A professional cleaning removes these deposits and gives your gums a fresh start.',
@@ -118,9 +118,9 @@ export const rootCanal: Service = {
   short: 'Treatment intended to address problems affecting the dental pulp inside a tooth.',
   image: images.doctorTwo,
   imageAlt: 'Calm, friendly dentist ready to explain root canal treatment',
-  seoTitle: 'Root Canal Treatment in Nashik | Aurelia Dental Studio',
+  seoTitle: 'Root Canal Treatment in Nashik | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
   metaDescription:
-  'Understand root canal treatment — when it may be recommended, what the steps involve and how to prepare. Aurelia Dental Studio, Nashik.',
+  'Understand root canal treatment — when it may be recommended, what the steps involve and how to prepare. Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic, Nashik.',
   h1: 'Root Canal Treatment in Nashik',
   intro: [
   'Inside every tooth is a soft core called the pulp, which contains nerves and blood vessels. When the pulp becomes inflamed or infected — often due to deep decay, a crack or an injury — root canal treatment may be recommended to help save the natural tooth.',
@@ -173,9 +173,9 @@ export const pediatricDentistry: Service = {
   short: 'Gentle, age-appropriate dental care that helps children feel safe and curious.',
   image: images.kids,
   imageAlt: 'Smiling child in a dental chair while a kind dentist shows a toothbrush',
-  seoTitle: 'Children’s Dentist in Nashik | Pediatric Dentistry at Aurelia',
+  seoTitle: 'Children’s Dentist in Nashik | Pediatric Dentistry at Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
   metaDescription:
-  'Gentle, age-appropriate dental care for children in Nashik, with guidance for parents on healthy habits. Aurelia Dental Studio.',
+  'Gentle, age-appropriate dental care for children in Nashik, with guidance for parents on healthy habits. Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic.',
   h1: 'Gentle Dental Care for Children in Nashik',
   intro: [
   'A child’s early experiences at the dentist can shape how they feel about dental care for years to come. Our aim is simple: visits that feel friendly, unhurried and even a little interesting.',

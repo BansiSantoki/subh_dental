@@ -8,9 +8,9 @@ export const cosmeticDentistry: Service = {
   short: 'Treatment options for people interested in improving the appearance of their smile.',
   image: images.whiteningSmile,
   imageAlt: 'Relaxed man laughing with a natural, healthy smile',
-  seoTitle: 'Cosmetic Dentistry in Nashik | Aurelia Dental Studio',
+  seoTitle: 'Cosmetic Dentistry in Nashik | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
   metaDescription:
-  'Explore cosmetic dentistry options in Nashik — whitening, veneers, bonding and more — with honest, personalized advice at Aurelia Dental Studio.',
+  'Explore cosmetic dentistry options in Nashik — whitening, veneers, bonding and more — with honest, personalized advice at Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic.',
   h1: 'Cosmetic Dentistry in Nashik',
   intro: [
   'Cosmetic dentistry focuses on how your smile looks — its colour, shape, alignment and balance. For some people that means a subtle refresh; for others, addressing something that has bothered them for years.',
@@ -64,9 +64,9 @@ export const teethWhitening: Service = {
   short: 'Information about suitable professional whitening options, supervised by your dentist.',
   image: images.smileCloseup,
   imageAlt: 'Close-up of a natural, healthy smile in soft warm light',
-  seoTitle: 'Professional Teeth Whitening in Nashik | Aurelia Dental Studio',
+  seoTitle: 'Professional Teeth Whitening in Nashik | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
   metaDescription:
-  'Learn about professional teeth whitening options in Nashik, who may be suitable and what to expect. Aurelia Dental Studio.',
+  'Learn about professional teeth whitening options in Nashik, who may be suitable and what to expect. Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic.',
   h1: 'Professional Teeth Whitening in Nashik',
   intro: [
   'Over time, tea, coffee, certain foods and natural ageing can make teeth look darker or more yellow. Professional whitening uses dentist-supervised products to lighten the natural shade of your teeth.',
@@ -119,9 +119,9 @@ export const dentalVeneers: Service = {
   short: 'Information about veneers, suitability, and personalized treatment planning.',
   image: images.veneers,
   imageAlt: 'Thin porcelain veneer shells arranged in an arc on an ivory surface',
-  seoTitle: 'Dental Veneers in Nashik | Porcelain & Composite | Aurelia',
+  seoTitle: 'Dental Veneers in Nashik | Porcelain & Composite | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
   metaDescription:
-  'Understand dental veneers — porcelain and composite options, suitability and the planning process — at Aurelia Dental Studio, Nashik.',
+  'Understand dental veneers — porcelain and composite options, suitability and the planning process — at Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic, Nashik.',
   h1: 'Dental Veneers in Nashik',
   intro: [
   'Veneers are thin, custom-made layers bonded to the front surfaces of teeth. They can change the colour, shape or proportion of teeth that are chipped, worn, discoloured or uneven.',
@@ -174,9 +174,9 @@ export const smileMakeover: Service = {
   short: 'A personalized discussion of possible treatments for your smile goals.',
   image: images.shadeGuide,
   imageAlt: 'Dentist holding a porcelain shade guide during a smile consultation',
-  seoTitle: 'Smile Makeover Consultation in Nashik | Aurelia Dental Studio',
+  seoTitle: 'Smile Makeover Consultation in Nashik | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
   metaDescription:
-  'A personalized smile makeover consultation in Nashik to explore possible treatment combinations, timelines and costs. Aurelia Dental Studio.',
+  'A personalized smile makeover consultation in Nashik to explore possible treatment combinations, timelines and costs. Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic.',
   h1: 'Smile Makeover Consultation in Nashik',
   intro: [
   'A smile makeover isn’t a single treatment — it is a thoughtful plan that may combine several options, such as whitening, alignment, bonding, veneers or restorations, to help you move toward the smile you have in mind.',

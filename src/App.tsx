@@ -6,6 +6,12 @@ import { SiteLayout } from './components/layout/SiteLayout';
 import { Home } from './pages/Home';
 import { locations } from './data/locations';
 
+const About = lazy(() => import('./pages/About').then((m) => ({ default: m.About })));
+const TeamPage = lazy(() => import('./pages/TeamPage').then((m) => ({ default: m.TeamPage })));
+const GalleryPage = lazy(() => import('./pages/GalleryPage').then((m) => ({ default: m.GalleryPage })));
+const TestimonialsPage = lazy(() => import('./pages/TestimonialsPage').then((m) => ({ default: m.TestimonialsPage })));
+const ContactPage = lazy(() => import('./pages/ContactPage').then((m) => ({ default: m.ContactPage })));
+const BookAppointmentPage = lazy(() => import('./pages/BookAppointmentPage').then((m) => ({ default: m.BookAppointmentPage })));
 const Services = lazy(() => import('./pages/Services').then((m) => ({ default: m.Services })));
 const TreatmentPage = lazy(() => import('./pages/TreatmentPage').then((m) => ({ default: m.TreatmentPage })));
 const BlogListing = lazy(() => import('./pages/BlogListing').then((m) => ({ default: m.BlogListing })));
@@ -23,6 +29,12 @@ export function App() {
           <Routes>
             <Route element={<SiteLayout />}>
               <Route index element={<Home />} />
+              <Route path="about" element={<About />} />
+              <Route path="team" element={<TeamPage />} />
+              <Route path="gallery" element={<GalleryPage />} />
+              <Route path="testimonials" element={<TestimonialsPage />} />
+              <Route path="contact" element={<ContactPage />} />
+              <Route path="book-appointment" element={<BookAppointmentPage />} />
               <Route path="services" element={<Services />} />
               <Route path="services/:slug" element={<TreatmentPage />} />
               <Route path="blog" element={<BlogListing />} />

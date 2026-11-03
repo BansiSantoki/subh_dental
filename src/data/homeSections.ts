@@ -62,7 +62,7 @@ export const aftercareItems = [
 
 export const aftercareUrgent = {
   title: 'When to Contact Us',
-  text: 'If you experience unexpected or worsening symptoms, contact your dental clinic for appropriate guidance. Seek urgent medical attention for serious symptoms.'
+  text: 'If you notice severe swelling, persistent pain, fever, or bleeding after treatment, contact the clinic without delay. For urgent medical concerns, please seek immediate attention from a medical professional or local emergency care.'
 };
 
 export const tourismSteps = [
@@ -74,18 +74,17 @@ export const tourismSteps = [
   text: 'After your assessment, your dentist explains suitable options, timelines and costs.'
 }];
 
-
-/** Travel information — clearly marked placeholders until verified by the clinic. */
 export const travelPlaceholders = [
-{
-  title: 'Getting to Nashik',
-  text: '[Add verified travel information — nearest airport, railway station and typical travel time to the studio.]'
-},
-{
-  title: 'Nearby accommodation',
-  text: '[Add accommodation options near the studio once verified by the clinic. No hotel partnerships are implied.]'
-},
-{
-  title: 'Planning your stay',
-  text: '[Add guidance on visit length only after it has been discussed with your dentist following an assessment.]'
-}];
+  {
+    title: 'Traveling to Nashik',
+    text: 'Patients visiting from outside the city usually plan their trip around a first consultation and any follow-up treatment discussed by the dentist.'
+  },
+  {
+    title: 'Comfortable visit planning',
+    text: 'We recommend allowing enough time for your consultation, treatment discussion, and any aftercare instructions before heading back out.'
+  },
+  {
+    title: 'Planning your stay',
+    text: 'The ideal length of stay varies by treatment plan, so we encourage discussing your timeline with the clinic after an assessment.'
+  }
+];

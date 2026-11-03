@@ -9,8 +9,8 @@ export const implantsGuide: BlogPost = {
   metaDescription: 'A clear introduction to dental implants: how they work, who may be suitable and what planning involves.',
   featuredImage: images.implantModel,
   featuredImageAlt: 'Dental implant model with porcelain crown',
-  publishedLabel: '[Publication date]',
-  author: '[Reviewing dentist name]',
+  publishedLabel: 'Reviewed by Dr. Naik',
+  author: 'Dr. Naik',
   relatedService: 'dental-implants',
   content: [
   {
@@ -82,8 +82,8 @@ export const rootCanalGuide: BlogPost = {
   metaDescription: 'What root canal treatment involves, why it may be recommended and what recovery is usually like.',
   featuredImage: images.doctorTwo,
   featuredImageAlt: 'Friendly dentist ready to explain treatment',
-  publishedLabel: '[Publication date]',
-  author: '[Reviewing dentist name]',
+  publishedLabel: 'Reviewed by Dr. Naik',
+  author: 'Dr. Naik',
   relatedService: 'root-canal-treatment',
   content: [
   {
@@ -133,8 +133,8 @@ export const smileConsultationGuide: BlogPost = {
   metaDescription: 'What happens during a smile makeover consultation and how to prepare for it.',
   featuredImage: images.shadeGuide,
   featuredImageAlt: 'Dentist holding a shade guide',
-  publishedLabel: '[Publication date]',
-  author: '[Reviewing dentist name]',
+  publishedLabel: 'Reviewed by Dr. Naik',
+  author: 'Dr. Naik',
   relatedService: 'smile-makeover',
   content: [
   {
@@ -185,8 +185,8 @@ export const whiteningQuestions: BlogPost = {
   metaDescription: 'Considering teeth whitening? Five questions to ask your dentist first.',
   featuredImage: images.whiteningSmile,
   featuredImageAlt: 'Man laughing with a bright, natural smile',
-  publishedLabel: '[Publication date]',
-  author: '[Reviewing dentist name]',
+  publishedLabel: 'Reviewed by Dr. Naik',
+  author: 'Dr. Naik',
   relatedService: 'teeth-whitening',
   content: [
   {
