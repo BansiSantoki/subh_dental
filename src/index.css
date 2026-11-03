@@ -18,6 +18,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
+#root,
+#root * {
+  font-family: Arial, Helvetica, sans-serif;
+}
 [id] {
   scroll-margin-top: 96px;
 }
