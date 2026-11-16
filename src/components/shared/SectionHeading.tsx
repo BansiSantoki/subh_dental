@@ -28,26 +28,30 @@ export function SectionHeading({
   return (
     <Reveal className={`${center ? 'mx-auto text-center' : ''} max-w-3xl ${className}`}>
       {eyebrow && (
-        <p
-          className={`mb-4 flex items-center gap-2.5 text-xs font-bold uppercase tracking-[0.2em] ${eyebrowColor} ${
-            center ? 'justify-center' : ''
-          }`}
-        >
-          <span className="h-0.5 w-6 rounded-full bg-[#087FAE]" aria-hidden="true" />
-          <span>{eyebrow}</span>
-        </p>
+        <div className={`mb-3.5 flex items-center gap-2 ${center ? 'justify-center' : ''}`}>
+          <span
+            className={`inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold tracking-wide ${
+              tone === 'dark'
+                ? 'bg-[#DCEFF8] text-[#087FAE]'
+                : 'bg-white/15 text-[#7EC4E5]'
+            }`}
+          >
+            <span className="h-1.5 w-1.5 rounded-full bg-current" aria-hidden="true" />
+            <span>{eyebrow}</span>
+          </span>
+        </div>
       )}
 
       <h2
         id={id}
-        className={`font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-0.015em] ${titleColor}`}
+        className={`font-serif text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-bold leading-tight tracking-[-0.015em] ${titleColor}`}
       >
         {title}
       </h2>
 
       {intro && (
         <p
-          className={`mt-4 max-w-2xl text-sm sm:text-base leading-relaxed ${introColor} ${
+          className={`mt-3.5 max-w-2xl text-base sm:text-lg leading-relaxed ${introColor} ${
             center ? 'mx-auto' : ''
           }`}
         >

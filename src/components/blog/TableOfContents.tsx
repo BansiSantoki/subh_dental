@@ -55,8 +55,9 @@ export function TableOfContents({ items }: TableOfContentsProps) {
         <div className="mt-3.5 pt-3 border-t border-[#E2EAF0]">{list}</div>
       </details>
       <nav aria-label="Table of contents" className="sticky top-28 hidden lg:block">
-        <p className="mb-3 text-xs font-bold uppercase tracking-wider text-[#087FAE]">
-          In this article
+        <p className="mb-3 text-xs font-semibold text-[#087FAE] flex items-center gap-1.5">
+          <span className="h-1.5 w-1.5 rounded-full bg-[#087FAE]" />
+          <span>In this article</span>
         </p>
         {list}
       </nav>

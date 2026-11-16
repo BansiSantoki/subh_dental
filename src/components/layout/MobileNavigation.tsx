@@ -39,7 +39,7 @@ export function MobileNavigation({ open, onClose, onBook }: MobileNavigationProp
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.22, ease: [0.23, 1, 0.32, 1] }}
-          className="fixed inset-x-0 bottom-0 top-20 z-30 overflow-y-auto bg-white border-t border-[#E2EAF0] shadow-2xl lg:hidden"
+          className="fixed inset-x-0 bottom-0 top-20 sm:top-[88px] z-30 overflow-y-auto bg-white border-t border-[#E2EAF0] shadow-2xl lg:hidden"
         >
           <nav
             aria-label="Mobile Navigation"
@@ -84,8 +84,9 @@ export function MobileNavigation({ open, onClose, onBook }: MobileNavigationProp
 
             {/* Contact Callouts */}
             <div className="mt-6 rounded-2xl bg-[#F2F8FC] p-4 border border-[#E2EAF0]">
-              <p className="text-xs font-bold uppercase tracking-wider text-[#087FAE]">
-                Direct Clinic Help Desk
+              <p className="text-xs font-semibold text-[#087FAE] flex items-center gap-1.5">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#087FAE]" />
+                <span>Direct Clinic Help Desk</span>
               </p>
               <div className="mt-2 space-y-2">
                 {siteConfig.phoneNumbers.map((phone) => (

@@ -64,10 +64,10 @@ export default {
         muted: '#64748B',
       },
       fontFamily: {
-        serif: ['"Playfair Display"', 'Georgia', 'serif'],
-        sans: ['"Inter"', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif'],
-        heading: ['"Playfair Display"', 'Georgia', 'serif'],
-        body: ['"Inter"', 'sans-serif'],
+        serif: ['"Lora"', '"Playfair Display"', 'Georgia', 'serif'],
+        sans: ['"DM Sans"', '"Inter"', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif'],
+        heading: ['"Lora"', '"Playfair Display"', 'Georgia', 'serif'],
+        body: ['"DM Sans"', '"Inter"', 'sans-serif'],
       },
       transitionTimingFunction: {
         silk: 'cubic-bezier(0.23, 1, 0.32, 1)',

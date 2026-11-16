@@ -65,7 +65,7 @@ export function BookAppointmentPage() {
               <Calendar className="h-3.5 w-3.5" />
               Online Appointment Scheduling
             </span>
-            <h1 className="mt-4 font-serif text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#123B59]">
+            <h1 className="mt-4 font-serif text-3xl sm:text-4xl lg:text-[44px] font-bold tracking-tight text-[#123B59] leading-tight">
               Schedule your visit with <span className="text-[#087FAE]">complete ease.</span>
             </h1>
             <p className="mt-4 text-base sm:text-lg leading-relaxed text-[#34465A]">

@@ -31,7 +31,7 @@ export function TeamPage() {
               <Award className="h-3.5 w-3.5" />
               Specialist Clinical Team
             </span>
-            <h1 className="mt-4 font-serif text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#123B59]">
+            <h1 className="mt-4 font-serif text-3xl sm:text-4xl lg:text-[44px] font-bold tracking-tight text-[#123B59] leading-tight">
               Experienced dental care dedicated to your <span className="text-[#087FAE]">healthy smile.</span>
             </h1>
             <p className="mt-4 text-base sm:text-lg leading-relaxed text-[#34465A]">
@@ -58,10 +58,10 @@ export function TeamPage() {
             </div>
 
             <div className="flex flex-col justify-center">
-              <span className="text-xs font-bold uppercase tracking-[0.18em] text-[#087FAE]">
+              <span className="text-xs font-semibold text-[#087FAE]">
                 Lead Clinical Practitioner
               </span>
-              <h2 className="mt-2 font-serif text-3xl sm:text-4xl font-bold text-[#123B59]">
+              <h2 className="mt-2 font-serif text-2xl sm:text-3xl font-bold text-[#123B59]">
                 {leadDoctor.name}
               </h2>
               <p className="mt-1 text-sm font-semibold text-[#087FAE]">{leadDoctor.qualification}</p>
@@ -69,7 +69,7 @@ export function TeamPage() {
               <p className="mt-4 text-base leading-relaxed text-[#34465A]/85">{leadDoctor.bio}</p>
 
               <div className="mt-6">
-                <p className="text-xs font-bold uppercase tracking-wider text-[#123B59]/70 mb-2">
+                <p className="text-xs font-semibold text-[#123B59]/80 mb-2">
                   Specialized Focus Areas
                 </p>
                 <div className="flex flex-wrap gap-2">
@@ -117,7 +117,7 @@ export function TeamPage() {
           <div className="mt-16 rounded-3xl bg-white p-8 sm:p-12 border border-[#E2EAF0] shadow-sm">
             <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
               <div>
-                <span className="text-xs font-bold uppercase tracking-wider text-[#087FAE]">
+                <span className="text-xs font-semibold text-[#087FAE]">
                   Our Clinical Standards
                 </span>
                 <h3 className="mt-2 font-serif text-2xl sm:text-3xl font-bold text-[#123B59]">

@@ -62,6 +62,10 @@ export const images = {
   smileCloseup:
     'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80',
 
+  // Aesthetic smile consultation
+  cosmeticSmile:
+    'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80',
+
   // Clinical tooth shade matching guide for veneers
   shadeGuide:
     'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80',
@@ -84,6 +88,10 @@ export const images = {
 
   // Clinic interior detail
   interiorDetail: '/shubh-reception-color.jpg',
+
+  // Genuine clinic consultation photography
+  consultationReal: '/consultation-real.jpg',
+  consultationPlan: '/consultation-plan.jpg',
 
   // Clinic doctor representative clinical atmosphere (authentic reception)
   doctorFeatured: '/shubh-reception-color.jpg',

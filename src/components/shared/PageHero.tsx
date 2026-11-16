@@ -26,7 +26,7 @@ export function PageHero({
   children
 }: PageHeroProps) {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#F2F8FC] via-white to-white pt-28 pb-16 md:pt-36 md:pb-20 lg:pb-24 border-b border-[#E2EAF0]">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#F2F8FC] via-white to-white pt-28 sm:pt-32 md:pt-36 pb-16 md:pb-20 lg:pb-24 border-b border-[#E2EAF0]">
       <div className="relative mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
         <div
           className={`grid gap-10 ${
@@ -42,17 +42,17 @@ export function PageHero({
             <Breadcrumbs items={crumbs} />
 
             {eyebrow && (
-              <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-[#087FAE]/20 bg-white px-3.5 py-1 text-xs font-semibold text-[#087FAE] shadow-2xs">
+              <div className="mt-5 inline-flex items-center gap-2 rounded-full border border-[#087FAE]/20 bg-white px-3.5 py-1 text-xs font-semibold text-[#087FAE] shadow-2xs">
                 <span>{eyebrow}</span>
               </div>
             )}
 
-            <h1 className="mt-4 font-serif text-3xl sm:text-5xl lg:text-[54px] font-bold leading-[1.08] tracking-[-0.015em] text-[#123B59]">
+            <h1 className="mt-4 font-serif text-3xl sm:text-4xl lg:text-[46px] font-bold leading-[1.18] tracking-[-0.015em] text-[#123B59]">
               {title}
             </h1>
 
             {intro && (
-              <div className="mt-5 max-w-2xl text-base sm:text-lg leading-relaxed text-[#34465A]">
+              <div className="mt-4 max-w-2xl text-base sm:text-lg leading-relaxed text-[#34465A]">
                 {intro}
               </div>
             )}

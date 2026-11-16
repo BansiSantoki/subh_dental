@@ -60,10 +60,10 @@ export function HeroSection() {
               initial="hidden"
               animate="show"
               custom={0}
-              className="inline-flex items-center gap-2 rounded-full border border-[#087FAE]/20 bg-white px-4 py-1.5 shadow-sm"
+              className="inline-flex items-center gap-2 rounded-full border border-[#087FAE]/20 bg-white px-3.5 py-1.5 shadow-2xs"
             >
               <SparklesIcon className="h-4 w-4 text-[#087FAE]" aria-hidden="true" />
-              <span className="text-[12px] sm:text-[13px] font-semibold tracking-wide text-[#123B59]">
+              <span className="text-xs sm:text-[13px] font-medium text-[#123B59]">
                 Dr. Naik's Shubh Smile · Nashik, Maharashtra
               </span>
             </motion.div>
@@ -75,7 +75,7 @@ export function HeroSection() {
               initial="hidden"
               animate="show"
               custom={1}
-              className="mt-6 font-serif text-4xl font-semibold leading-[1.08] tracking-[-0.015em] text-[#123B59] sm:text-5xl md:text-6xl lg:text-[58px] xl:text-[64px]"
+              className="mt-5 font-serif text-3xl font-bold leading-[1.15] tracking-[-0.015em] text-[#123B59] sm:text-4xl md:text-5xl lg:text-[52px]"
             >
               Your Smile Deserves{' '}
               <span className="relative inline-block text-[#087FAE]">
@@ -103,7 +103,7 @@ export function HeroSection() {
               initial="hidden"
               animate="show"
               custom={2}
-              className="mt-6 max-w-xl text-base sm:text-lg leading-relaxed text-[#34465A]"
+              className="mt-5 max-w-xl text-base sm:text-lg leading-relaxed text-[#34465A]"
             >
               Experience personalised dental care, modern treatments, and a comfortable approach to
               healthier, more confident smiles. Unhurried consultations tailored around you.

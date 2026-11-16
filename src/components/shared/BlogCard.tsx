@@ -15,7 +15,7 @@ export function BlogCard({ post, variant = 'default' }: BlogCardProps) {
 
   const meta = (
     <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs text-[#34465A]/70">
-      <span className="font-semibold uppercase tracking-wider text-[#087FAE] bg-[#DCEFF8] px-2.5 py-0.5 rounded-full">
+      <span className="font-semibold text-xs text-[#087FAE] bg-[#DCEFF8] px-2.5 py-0.5 rounded-full">
         {post.category}
       </span>
       <span aria-hidden="true">·</span>

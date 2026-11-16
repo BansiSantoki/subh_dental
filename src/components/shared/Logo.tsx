@@ -8,11 +8,11 @@ interface LogoProps {
 export function Logo({ tone = 'dark', className = '' }: LogoProps) {
   if (tone === 'light') {
     return (
-      <div className={`inline-flex items-center rounded-2xl bg-white px-3.5 py-1.5 shadow-sm transition-transform duration-200 hover:scale-[1.02] ${className}`}>
+      <div className={`inline-flex items-center rounded-2xl bg-white px-4 py-2 shadow-sm transition-transform duration-200 hover:scale-[1.02] ${className}`}>
         <img
           src="/shubh-smile-nav-logo.png"
-          alt="Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic"
-          className="h-10 sm:h-11 md:h-12 w-auto object-contain"
+          alt="Dr. Naik's Shubh Smile Multispeciality Dental Clinic"
+          className="h-12 sm:h-14 md:h-16 w-auto object-contain"
           width={577}
           height={432}
           loading="eager"
@@ -25,8 +25,8 @@ export function Logo({ tone = 'dark', className = '' }: LogoProps) {
     <span className={`inline-flex items-center ${className}`}>
       <img
         src="/shubh-smile-nav-logo.png"
-        alt="Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic"
-        className="h-[52px] sm:h-14 md:h-16 w-auto object-contain transition-transform duration-200 hover:scale-[1.02]"
+        alt="Dr. Naik's Shubh Smile Multispeciality Dental Clinic"
+        className="h-14 sm:h-16 md:h-[68px] lg:h-[72px] w-auto max-w-[260px] sm:max-w-[320px] object-contain transition-transform duration-200 hover:scale-[1.02]"
         width={577}
         height={432}
         loading="eager"

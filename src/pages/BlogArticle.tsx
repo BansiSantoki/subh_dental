@@ -66,7 +66,7 @@ export function BlogArticle() {
             />
             <Reveal className="mx-auto max-w-4xl pt-8 text-center">
               <div className="flex flex-wrap items-center justify-center gap-2.5 text-xs text-[#34465A]/80">
-                <span className="font-bold uppercase tracking-wider text-[#087FAE] bg-[#DCEFF8] px-3 py-1 rounded-full">
+                <span className="font-semibold text-xs text-[#087FAE] bg-[#DCEFF8] px-3 py-1 rounded-full">
                   {post.category}
                 </span>
                 <span aria-hidden="true">·</span>
@@ -74,7 +74,7 @@ export function BlogArticle() {
                 <span aria-hidden="true">·</span>
                 <span>{post.publishedLabel}</span>
               </div>
-              <h1 className="mt-4 font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-[#123B59]">
+              <h1 className="mt-4 font-serif text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold leading-tight text-[#123B59]">
                 {post.title}
               </h1>
               <p className="mx-auto mt-4 max-w-2xl text-base sm:text-lg leading-relaxed text-[#34465A]">

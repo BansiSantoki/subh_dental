@@ -26,10 +26,11 @@ export function Footer() {
         <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
           <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
             <div className="max-w-2xl">
-              <span className="text-xs font-bold uppercase tracking-widest text-[#7EC4E5]">
-                Start Your Smile Journey Today
+              <span className="text-xs font-semibold text-[#7EC4E5] flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#7EC4E5]" />
+                <span>Start Your Smile Journey Today</span>
               </span>
-              <h2 className="mt-2 font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-white">
+              <h2 className="mt-2.5 font-serif text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-white">
                 Exceptional Dental Care,{' '}
                 <span className="text-[#7EC4E5] italic">Tailored for You.</span>
               </h2>
@@ -100,8 +101,9 @@ export function Footer() {
 
           {/* Col 2: Navigation Links (2 cols) */}
           <div className="lg:col-span-2">
-            <h3 className="text-xs font-bold uppercase tracking-wider text-[#7EC4E5]">
-              Quick Navigation
+            <h3 className="text-xs font-semibold text-[#7EC4E5] flex items-center gap-1.5">
+              <span className="h-1 w-1 rounded-full bg-[#7EC4E5]" />
+              <span>Quick Navigation</span>
             </h3>
             <ul className="mt-4 space-y-2.5 text-xs sm:text-sm text-[#DCEFF8]/80">
               {mainNav.map((item) => (
@@ -119,8 +121,9 @@ export function Footer() {
 
           {/* Col 3: Services (3 cols) */}
           <div className="lg:col-span-3">
-            <h3 className="text-xs font-bold uppercase tracking-wider text-[#7EC4E5]">
-              Dental Treatments
+            <h3 className="text-xs font-semibold text-[#7EC4E5] flex items-center gap-1.5">
+              <span className="h-1 w-1 rounded-full bg-[#7EC4E5]" />
+              <span>Dental Treatments</span>
             </h3>
             <ul className="mt-4 space-y-2 text-xs sm:text-sm text-[#DCEFF8]/80">
               {services.slice(0, 8).map((s) => (
@@ -146,8 +149,9 @@ export function Footer() {
 
           {/* Col 4: Contact Details (3 cols) */}
           <div className="lg:col-span-3">
-            <h3 className="text-xs font-bold uppercase tracking-wider text-[#7EC4E5]">
-              Clinic Contact
+            <h3 className="text-xs font-semibold text-[#7EC4E5] flex items-center gap-1.5">
+              <span className="h-1 w-1 rounded-full bg-[#7EC4E5]" />
+              <span>Clinic Contact</span>
             </h3>
             <address className="mt-4 space-y-3.5 not-italic text-xs sm:text-sm text-[#DCEFF8]/85">
               <p className="flex items-start gap-2.5">

@@ -53,7 +53,7 @@ export function ContactPage() {
               <MapPin className="h-3.5 w-3.5" />
               Visit & Inquire
             </span>
-            <h1 className="mt-4 font-serif text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#123B59]">
+            <h1 className="mt-4 font-serif text-3xl sm:text-4xl lg:text-[44px] font-bold tracking-tight text-[#123B59] leading-tight">
               We are here to help you <span className="text-[#087FAE]">smile with ease.</span>
             </h1>
             <p className="mt-4 text-base sm:text-lg leading-relaxed text-[#34465A]">

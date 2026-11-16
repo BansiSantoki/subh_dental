@@ -54,24 +54,24 @@ export function TeamSection() {
               <span>{featured.specialty}</span>
             </div>
 
-            <h3 className="mt-4 font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#123B59] leading-tight">
+            <h3 className="mt-3 font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-[#123B59] leading-tight">
               {featured.name}
             </h3>
 
-            <p className="mt-2 text-sm sm:text-base font-semibold text-[#087FAE]">
+            <p className="mt-1.5 text-sm sm:text-base font-medium text-[#087FAE]">
               {featured.qualification} · Shubh Smile Dental Clinic
             </p>
 
-            <p className="mt-6 text-base sm:text-lg leading-relaxed text-[#34465A]">
+            <p className="mt-5 text-base sm:text-lg leading-relaxed text-[#34465A]">
               {featured.bio}
             </p>
 
             {featured.focusAreas && (
-              <div className="mt-8">
-                <p className="text-xs font-bold uppercase tracking-wider text-[#123B59]/70">
+              <div className="mt-7">
+                <p className="text-xs font-semibold text-[#123B59]/80">
                   Clinical Focus Areas
                 </p>
-                <ul className="mt-3 flex flex-wrap gap-2" aria-label="Clinical Focus Areas">
+                <ul className="mt-2.5 flex flex-wrap gap-2" aria-label="Clinical Focus Areas">
                   {featured.focusAreas.map((area) => (
                     <li
                       key={area}

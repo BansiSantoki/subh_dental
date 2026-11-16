@@ -51,11 +51,11 @@ export const siteConfig = {
 };
 
 /**
- * Complete official navigation links in the exact order requested:
- * Home, Our Team, Why Choose Us, Services, Testimonials, Gallery, Blogs, Dental Tourism, Contact Us
+ * Official navigation links.
+ * Note: 'Home' is accessed directly via the clickable official logo,
+ * keeping the navigation clean, balanced, and uncluttered.
  */
 export const mainNav: NavItem[] = [
-  { label: 'Home', href: '/' },
   { label: 'Our Team', href: '/team' },
   { label: 'Why Choose Us', href: '/#why-us' },
   { label: 'Services', href: '/services' },
@@ -67,7 +67,6 @@ export const mainNav: NavItem[] = [
 ];
 
 export const desktopPrimaryNav: NavItem[] = [
-  { label: 'Home', href: '/' },
   { label: 'Our Team', href: '/team' },
   { label: 'Why Choose Us', href: '/#why-us' },
   { label: 'Services', href: '/services' },

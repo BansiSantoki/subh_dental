@@ -39,12 +39,12 @@ export function Header() {
             : 'border-b border-transparent bg-white/90 backdrop-blur-sm'
         }`}
       >
-        <div className="mx-auto flex max-w-[1440px] items-center justify-between gap-4 px-4 sm:px-6 lg:px-10 h-20 md:h-[86px]">
-          {/* Official Clinic Logo */}
+        <div className="mx-auto flex max-w-[1440px] items-center justify-between gap-3 px-4 sm:px-6 lg:px-8 xl:px-10 h-20 sm:h-[88px] lg:h-[94px]">
+          {/* Official Clinic Logo (Clickable directly to Homepage) */}
           <Link
             to="/"
             aria-label={`${siteConfig.name} - Home`}
-            className="shrink-0 transition-opacity duration-200 hover:opacity-90"
+            className="shrink-0 flex items-center transition-opacity duration-200 hover:opacity-95 py-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#087FAE] rounded-lg"
           >
             <Logo />
           </Link>
@@ -62,7 +62,7 @@ export function Header() {
                 <Link
                   key={item.label}
                   to={item.href}
-                  className={`group relative rounded-full px-3 py-1.5 text-[13px] 2xl:text-[14px] font-medium transition-colors duration-200 ${
+                  className={`group relative rounded-full px-2.5 py-1.5 xl:px-3 text-[13.5px] 2xl:text-[14.5px] font-medium transition-all duration-200 ${
                     isCurrent
                       ? 'text-[#087FAE] font-semibold bg-[#F2F8FC]'
                       : 'text-[#34465A] hover:text-[#087FAE] hover:bg-[#F2F8FC]/80'
@@ -79,23 +79,22 @@ export function Header() {
           </nav>
 
           {/* Right Action Buttons */}
-          <div className="flex items-center gap-2.5 sm:gap-3">
-            {/* Quick Call Button (Tablet & Desktop) */}
+          <div className="flex items-center gap-2.5 sm:gap-3 shrink-0">
+            {/* Quick Call Button (Desktop) */}
             <a
               href={`tel:${siteConfig.phoneE164}`}
-              className="hidden items-center gap-1.5 rounded-full border border-[#E2EAF0] bg-[#F2F8FC] px-3.5 py-2 text-xs font-semibold text-[#123B59] transition-colors duration-200 hover:border-[#087FAE] hover:text-[#087FAE] md:inline-flex"
+              className="hidden items-center gap-1.5 rounded-full border border-[#E2EAF0] bg-[#F2F8FC] px-3.5 py-2 text-xs font-semibold text-[#123B59] transition-colors duration-200 hover:border-[#087FAE] hover:text-[#087FAE] xl:inline-flex"
               aria-label={`Call ${siteConfig.phoneDisplay}`}
             >
               <PhoneIcon className="h-3.5 w-3.5 text-[#087FAE]" />
-              <span className="hidden xl:inline">{siteConfig.phoneDisplay}</span>
-              <span className="xl:hidden">Call</span>
+              <span>{siteConfig.phoneDisplay}</span>
             </a>
 
             {/* Book Appointment CTA Button */}
             <button
               type="button"
               onClick={() => openAppointment()}
-              className={buttonClass('primary', 'sm', 'hidden sm:inline-flex h-11 px-5 shadow-sm')}
+              className={buttonClass('primary', 'sm', 'hidden sm:inline-flex h-11 px-5 text-sm font-semibold shadow-sm')}
             >
               <CalendarCheckIcon className="h-4 w-4" />
               <span>Book Appointment</span>

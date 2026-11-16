@@ -35,7 +35,7 @@ export function ContactSection({
                   <div className="flex items-start gap-3">
                     <MapPinIcon className="h-5 w-5 shrink-0 text-[#087FAE] mt-0.5" />
                     <div>
-                      <p className="text-xs font-bold uppercase tracking-wider text-[#123B59]">Clinic Location</p>
+                      <p className="text-xs font-semibold text-[#087FAE]">Clinic Location</p>
                       <p className="mt-1 leading-relaxed text-[#34465A]">{siteConfig.address}</p>
                     </div>
                   </div>
@@ -46,7 +46,7 @@ export function ContactSection({
                   <div className="flex items-start gap-3">
                     <PhoneIcon className="h-5 w-5 shrink-0 text-[#087FAE] mt-0.5" />
                     <div>
-                      <p className="text-xs font-bold uppercase tracking-wider text-[#123B59]">Call Clinic Reception</p>
+                      <p className="text-xs font-semibold text-[#087FAE]">Call Clinic Reception</p>
                       <div className="mt-1 space-y-1">
                         <a href={`tel:${siteConfig.phoneE164}`} className="block font-semibold text-[#087FAE] hover:underline">
                           {siteConfig.phoneDisplay}
@@ -64,7 +64,7 @@ export function ContactSection({
                   <div className="flex items-start gap-3">
                     <MailIcon className="h-5 w-5 shrink-0 text-[#087FAE] mt-0.5" />
                     <div>
-                      <p className="text-xs font-bold uppercase tracking-wider text-[#123B59]">Email Us</p>
+                      <p className="text-xs font-semibold text-[#087FAE]">Email Us</p>
                       <a href={`mailto:${siteConfig.email}`} className="mt-1 block text-[#087FAE] hover:underline">
                         {siteConfig.email}
                       </a>
@@ -77,7 +77,7 @@ export function ContactSection({
                   <div className="flex items-start gap-3">
                     <ClockIcon className="h-5 w-5 shrink-0 text-[#087FAE] mt-0.5" />
                     <div>
-                      <p className="text-xs font-bold uppercase tracking-wider text-[#123B59]">Working Hours</p>
+                      <p className="text-xs font-semibold text-[#087FAE]">Working Hours</p>
                       <p className="mt-1 leading-relaxed text-[#34465A]">
                         Monday – Saturday: 9:30 AM – 8:30 PM<br />
                         Sunday: Prior Appointment Only
@@ -121,7 +121,7 @@ export function ContactSection({
                     <InstagramIcon className="h-5 w-5" />
                   </div>
                   <div>
-                    <p className="text-xs font-bold uppercase tracking-wider text-[#123B59]">Follow Our Updates</p>
+                    <p className="text-xs font-semibold text-[#123B59]">Follow Our Updates</p>
                     <a
                       href={siteConfig.instagramUrl}
                       target="_blank"

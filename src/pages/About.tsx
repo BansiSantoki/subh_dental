@@ -30,7 +30,7 @@ export function About() {
               <Sparkles className="h-3.5 w-3.5" />
               Our Philosophy & Story
             </span>
-            <h1 className="mt-4 font-serif text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#123B59]">
+            <h1 className="mt-4 font-serif text-3xl sm:text-4xl lg:text-[44px] font-bold tracking-tight text-[#123B59] leading-tight">
               Thoughtful, modern dental care crafted around <span className="text-[#087FAE]">your comfort.</span>
             </h1>
             <p className="mt-4 text-base sm:text-lg leading-relaxed text-[#34465A]">
@@ -49,7 +49,10 @@ export function About() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#123B59]/80 via-transparent to-transparent" />
               <div className="absolute bottom-5 left-5 right-5 text-white">
-                <p className="text-xs font-semibold uppercase tracking-wider text-[#DCEFF8]">Our Clinical Mission</p>
+                <p className="text-xs font-medium text-[#DCEFF8] flex items-center gap-1.5">
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#7EC4E5]" />
+                  <span>Our Clinical Mission</span>
+                </p>
                 <p className="mt-1 text-lg sm:text-xl font-bold font-serif">Gentle touch, evidence-based practices, and lasting smile health.</p>
               </div>
             </div>

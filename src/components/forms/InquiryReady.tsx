@@ -43,7 +43,7 @@ export function InquiryReady({ name, message, waUrl, onEdit }: InquiryReadyProps
       </p>
 
       <div className="mt-5 rounded-2xl border border-[#E2EAF0] bg-[#F2F8FC] p-4 sm:p-5">
-        <p className="text-[11px] font-bold uppercase tracking-wider text-[#087FAE]">
+        <p className="text-xs font-semibold text-[#087FAE]">
           Inquiry Message Preview
         </p>
         <p className="mt-2.5 whitespace-pre-line text-xs sm:text-sm leading-relaxed text-[#123B59] font-mono bg-white p-3.5 rounded-xl border border-[#E2EAF0]">

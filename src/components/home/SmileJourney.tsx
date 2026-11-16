@@ -29,14 +29,14 @@ export function SmileJourney() {
               </span>
               <h2
                 id="journey-title"
-                className="mt-4 font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-white"
+                className="mt-4 font-serif text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-bold leading-tight text-white"
               >
                 Your Smile Journey, Made Simple.
               </h2>
             </div>
 
             <Reveal delay={0.08} className="lg:col-span-5">
-              <p className="text-sm sm:text-base leading-relaxed text-[#DCEFF8]/90">
+              <p className="text-base sm:text-lg leading-relaxed text-[#DCEFF8]/90">
                 Every treatment is unique, but our patient-first approach remains consistent. Here is our
                 transparent, step-by-step pathway from your first inquiry to lasting smile wellness.
               </p>
@@ -62,7 +62,7 @@ export function SmileJourney() {
                     <span className="h-2 w-2 rounded-full bg-[#087FAE]" />
                   </div>
 
-                  <h3 className="mt-4 font-serif text-xl sm:text-2xl font-bold leading-snug text-white">
+                  <h3 className="mt-4 font-serif text-lg sm:text-xl font-bold leading-snug text-white">
                     {item.title}
                   </h3>
 
@@ -71,7 +71,7 @@ export function SmileJourney() {
                   </p>
                 </div>
 
-                <div className="mt-6 pt-4 border-t border-white/10 text-xs font-semibold uppercase tracking-wider text-[#7EC4E5]/90">
+                <div className="mt-6 pt-4 border-t border-white/10 text-xs font-medium text-[#7EC4E5]/90">
                   Step {index + 1} of 6
                 </div>
               </motion.div>
