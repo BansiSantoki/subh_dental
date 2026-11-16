@@ -69,10 +69,18 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: 'g9',
-    src: images.shadeGuide,
-    alt: 'Vita clinical tooth shade guide for customized aesthetic porcelain veneer matching',
-    caption: 'Precision Shade Matching Guide',
+    src: '/assets/images/root-canal-anatomy-model.jpg',
+    alt: 'Anatomical tooth cross-section showing enamel, dentin, and pulp root canals for endodontic therapy',
+    caption: 'Root Canal Anatomy Model',
     category: 'Equipment',
-    aspect: 'landscape'
+    aspect: 'portrait'
+  },
+  {
+    id: 'g10',
+    src: '/assets/images/orthodontic-braces-alignment.jpg',
+    alt: 'Clinical orthodontic before and active braces treatment showing teeth alignment and correction',
+    caption: 'Orthodontic Braces Alignment',
+    category: 'Smile Results',
+    aspect: 'square'
   }
 ];

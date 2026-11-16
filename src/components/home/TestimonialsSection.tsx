@@ -32,7 +32,7 @@ export function TestimonialsSection() {
     <section
       id="testimonials"
       aria-labelledby="testimonials-title"
-      className="relative bg-gradient-to-b from-white via-[#F4F9FC] to-white py-20 sm:py-24 lg:py-28 overflow-hidden"
+      className="relative bg-gradient-to-b from-white via-[#F4F9FC] to-white py-12 sm:py-16 md:py-18 lg:py-20 overflow-hidden"
     >
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
         <SectionHeading

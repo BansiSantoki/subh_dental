@@ -38,7 +38,7 @@ export function HeroSection() {
   return (
     <section
       aria-labelledby="hero-title"
-      className="relative overflow-hidden bg-gradient-to-b from-[#F2F8FC] via-white to-white pt-24 pb-16 md:pt-32 md:pb-24 lg:pt-36 lg:pb-28"
+      className="relative overflow-hidden bg-gradient-to-b from-[#F2F8FC] via-white to-white pt-20 pb-12 sm:pt-24 sm:pb-14 md:pt-28 md:pb-16 lg:pt-30 lg:pb-16"
     >
       {/* Subtle architectural background accents */}
       <div

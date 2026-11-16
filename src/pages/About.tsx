@@ -42,8 +42,8 @@ export function About() {
           <div className="mt-10 grid gap-8 lg:grid-cols-12 lg:items-center">
             <div className="relative overflow-hidden rounded-2xl shadow-lg border border-[#E2EAF0] lg:col-span-7 bg-white">
               <img
-                src={images.consultation}
-                alt="Dentist consulting with a patient warmly at Dr. Naik's Shubh Smile Multispeciality Dental Clinic"
+                src={images.treatmentRoom}
+                alt="Dentist performing clinical procedure in operatory chair at Dr. Naik's Shubh Smile Multispeciality Dental Clinic in Nashik"
                 className="h-[360px] w-full object-cover sm:h-[440px]"
                 loading="eager"
               />
@@ -177,27 +177,38 @@ export function About() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-3.5">
-                <img
-                  src={images.reception}
-                  alt="Reception lounge at Dr. Naik's Shubh Smile Multispeciality Dental Clinic in Nashik"
-                  className="h-44 w-full rounded-2xl object-cover shadow-xs border border-[#E2EAF0]"
-                />
-                <img
-                  src={images.clinicRoom}
-                  alt="Modern dental clinic operatory room with blue chair at Dr. Naik's Shubh Smile Dental Clinic"
-                  className="h-44 w-full rounded-2xl object-cover shadow-xs border border-[#E2EAF0]"
-                />
-                <img
-                  src={images.dentalTools}
-                  alt="Precision dental examination with sterile probe and mouth mirror"
-                  className="h-44 w-full rounded-2xl object-cover shadow-xs border border-[#E2EAF0]"
-                />
-                <img
-                  src={images.dentistAtWork}
-                  alt="Indian dentist treating patient at Dr. Naik's Shubh Smile Multispeciality Dental Clinic"
-                  className="h-44 w-full rounded-2xl object-cover shadow-xs border border-[#E2EAF0]"
-                />
+              <div className="grid grid-cols-2 gap-4">
+                <div className="rounded-2xl border border-[#E2EAF0] bg-[#F2F8FC] p-5">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-[#087FAE] shadow-2xs font-bold text-sm">
+                    01
+                  </div>
+                  <h4 className="mt-3 font-serif text-base font-bold text-[#123B59]">Digital Diagnostics</h4>
+                  <p className="mt-1 text-xs leading-relaxed text-[#34465A]/85">Ultra-low radiation RVG digital X-rays and intraoral high-def camera imaging.</p>
+                </div>
+
+                <div className="rounded-2xl border border-[#E2EAF0] bg-[#F2F8FC] p-5">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-[#087FAE] shadow-2xs font-bold text-sm">
+                    02
+                  </div>
+                  <h4 className="mt-3 font-serif text-base font-bold text-[#123B59]">Class-B Autoclave</h4>
+                  <p className="mt-1 text-xs leading-relaxed text-[#34465A]/85">Multi-vacuum medical sterilization for 100% infection-free dental instruments.</p>
+                </div>
+
+                <div className="rounded-2xl border border-[#E2EAF0] bg-[#F2F8FC] p-5">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-[#087FAE] shadow-2xs font-bold text-sm">
+                    03
+                  </div>
+                  <h4 className="mt-3 font-serif text-base font-bold text-[#123B59]">Rotary Endodontics</h4>
+                  <p className="mt-1 text-xs leading-relaxed text-[#34465A]/85">Modern computerized apex locators and rotary motors for swift, painless RCT.</p>
+                </div>
+
+                <div className="rounded-2xl border border-[#E2EAF0] bg-[#F2F8FC] p-5">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-[#087FAE] shadow-2xs font-bold text-sm">
+                    04
+                  </div>
+                  <h4 className="mt-3 font-serif text-base font-bold text-[#123B59]">Comfort Operatories</h4>
+                  <p className="mt-1 text-xs leading-relaxed text-[#34465A]/85">Ergonomic soft-cushioned chairs, soothing ambient atmosphere, and unhurried care.</p>
+                </div>
               </div>
             </div>
           </div>

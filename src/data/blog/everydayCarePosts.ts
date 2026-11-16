@@ -9,7 +9,7 @@ export const howOftenVisit: BlogPost = {
   metaDescription:
   'How often should you see a dentist? A simple, practical guide to check-up intervals from Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic, Nashik.',
   featuredImage: images.consultation,
-  featuredImageAlt: 'Dentist discussing a check-up with a patient',
+  featuredImageAlt: 'Dentist examining a patient during a check-up',
   publishedLabel: 'Reviewed by Dr. Naik',
   author: 'Dr. Naik',
   relatedService: 'general-dentistry',
@@ -186,8 +186,8 @@ export const childrensCare: BlogPost = {
   category: 'Family',
   excerpt: 'Gentle, practical ways to help children build healthy habits — and feel relaxed at the dentist.',
   metaDescription: 'Practical dental care tips for parents: brushing, snacks, first visits and building positive habits.',
-  featuredImage: images.kids,
-  featuredImageAlt: 'Child smiling in a dental chair beside a kind dentist',
+  featuredImage: images.toothModelMirror,
+  featuredImageAlt: 'Educational tooth model and mouth mirror for child-friendly dental care',
   publishedLabel: 'Reviewed by Dr. Naik',
   author: 'Dr. Naik',
   relatedService: 'pediatric-dentistry',
@@ -213,9 +213,9 @@ export const childrensCare: BlogPost = {
   },
   {
     type: 'image',
-    src: images.kids,
-    alt: 'Dentist showing a child how to hold a toothbrush',
-    caption: 'Calm, friendly visits help children feel safe.',
+    src: images.toothModelMirror,
+    alt: 'Educational tooth model and dental mirror',
+    caption: 'Friendly educational models help children learn how teeth grow and stay clean.',
     layout: 'inset'
   },
   { type: 'heading', id: 'first-visit', text: 'Preparing for the first visit' },

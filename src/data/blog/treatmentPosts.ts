@@ -80,8 +80,8 @@ export const rootCanalGuide: BlogPost = {
   category: 'Treatments',
   excerpt: 'A calm, step-by-step look at one of the most misunderstood dental treatments.',
   metaDescription: 'What root canal treatment involves, why it may be recommended and what recovery is usually like.',
-  featuredImage: images.dentalRadiograph,
-  featuredImageAlt: 'Dentist examining a digital radiograph prior to gentle root canal treatment',
+  featuredImage: images.rootCanalAnatomy,
+  featuredImageAlt: 'Anatomical tooth cross-section model showing enamel, dentin, and pulp root canals for endodontic therapy',
   publishedLabel: 'Reviewed by Dr. Naik',
   author: 'Dr. Naik',
   relatedService: 'root-canal-treatment',
@@ -108,10 +108,10 @@ export const rootCanalGuide: BlogPost = {
   },
   {
     type: 'image',
-    src: images.treatmentRoom,
-    alt: 'Calm treatment room',
-    caption: 'A comfortable environment helps make longer appointments easier.',
-    layout: 'full'
+    src: images.rootCanalAnatomy,
+    alt: 'Educational tooth model showing dental pulp and root canal system',
+    caption: 'Anatomical tooth model showing where infection occurs and how roots are treated.',
+    layout: 'inset'
   },
   { type: 'heading', id: 'recovery', text: 'Recovery' },
   {

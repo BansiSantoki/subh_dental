@@ -25,7 +25,7 @@ const icons = [
 
 export function WhyChooseUs() {
   return (
-    <section id="why-us" aria-labelledby="why-title" className="bg-[#F2F8FC] py-20 md:py-28 lg:py-32">
+    <section id="why-us" aria-labelledby="why-title" className="bg-[#F2F8FC] py-12 sm:py-16 md:py-18 lg:py-20">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="grid gap-14 lg:grid-cols-12 lg:gap-16">
           {/* Left Column: Heading, Intro, and Real Reception Photo */}
@@ -39,20 +39,26 @@ export function WhyChooseUs() {
               />
 
               <Reveal delay={0.08} className="mt-8 hidden lg:block">
-                <div className="overflow-hidden rounded-[24px] border border-[#E2EAF0] bg-white p-2 shadow-sm">
-                  <ParallaxImage
-                    src={images.reception}
-                    alt="Authentic reception and clinic lounge at Dr. Naik's Shubh Smile Dental Clinic in Nashik"
-                    className="aspect-[4/3] rounded-[18px]"
-                    objectPosition="center"
-                  />
-                  <div className="p-4">
-                    <p className="font-serif text-base font-semibold text-[#123B59]">
-                      Welcome to Shubh Smile Dental Clinic
-                    </p>
-                    <p className="mt-1 text-xs text-[#34465A]/80">
-                      Sundaram Appt, Indira Nagar, Nashik
-                    </p>
+                <div className="rounded-[24px] border border-[#E2EAF0] bg-white p-6 shadow-sm">
+                  <span className="inline-flex items-center gap-1.5 rounded-full bg-[#DCEFF8] px-3 py-1 text-xs font-semibold text-[#087FAE]">
+                    <ShieldCheckIcon className="h-3.5 w-3.5" />
+                    Verified Multispeciality Clinic
+                  </span>
+                  <h4 className="mt-3 font-serif text-lg font-bold text-[#123B59]">
+                    Shubh Smile Dental Clinic
+                  </h4>
+                  <p className="mt-1 text-xs leading-relaxed text-[#34465A]/85">
+                    Sundaram Appt, Besides Maruti Courier, Gajanan Maharaj Mandir Rd, Opp. Mahila Bank, Shastri Nagar, Indira Nagar, Nashik.
+                  </p>
+                  <div className="mt-5 grid grid-cols-2 gap-3 border-t border-[#E2EAF0] pt-4 text-center">
+                    <div className="rounded-xl bg-[#F2F8FC] p-3">
+                      <p className="font-serif text-xl font-bold text-[#087FAE]">15+</p>
+                      <p className="text-[11px] text-[#34465A]/80 font-medium mt-0.5">Years Experience</p>
+                    </div>
+                    <div className="rounded-xl bg-[#F2F8FC] p-3">
+                      <p className="font-serif text-xl font-bold text-[#087FAE]">100%</p>
+                      <p className="text-[11px] text-[#34465A]/80 font-medium mt-0.5">Sterile Autoclaved</p>
+                    </div>
                   </div>
                 </div>
               </Reveal>

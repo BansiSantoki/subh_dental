@@ -58,7 +58,7 @@ export const siteConfig = {
  */
 export const mainNav: NavItem[] = [
   { label: 'Our Team', href: '/team' },
-  { label: 'Services', href: '/services' },
+  { label: 'Treatments', href: '/services' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'Blogs', href: '/blog' },
   { label: 'Dental Tourism', href: '/dental-tourism' },
@@ -68,7 +68,7 @@ export const mainNav: NavItem[] = [
 
 export const desktopPrimaryNav: NavItem[] = [
   { label: 'Our Team', href: '/team' },
-  { label: 'Services', href: '/services' },
+  { label: 'Treatments', href: '/services' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'Blogs', href: '/blog' },
   { label: 'Dental Tourism', href: '/dental-tourism' },
@@ -79,7 +79,7 @@ export const desktopPrimaryNav: NavItem[] = [
 export const footerNav: NavItem[] = [
   { label: 'Our Team', href: '/team' },
   { label: 'Why Choose Us', href: '/why-choose-us' },
-  { label: 'Services', href: '/services' },
+  { label: 'Treatments', href: '/services' },
   { label: 'Testimonials', href: '/testimonials' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'Blogs', href: '/blog' },

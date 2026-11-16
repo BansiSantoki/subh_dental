@@ -28,17 +28,17 @@ export function ServicesSection() {
   };
 
   return (
-    <section id="services" aria-labelledby="services-title" className="bg-white py-20 md:py-28 lg:py-32">
+    <section id="services" aria-labelledby="services-title" className="bg-white py-12 sm:py-16 md:py-18 lg:py-20">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <SectionHeading
             id="services-title"
-            eyebrow="Our Dental Services"
+            eyebrow="Our Dental Treatments"
             title="Comprehensive Dental Care, Thoughtfully Delivered."
-            intro="Explore dental treatments designed around your health, comfort, and smile goals. Each service is explained transparently with no unnecessary procedures."
+            intro="Explore dental treatments designed around your health, comfort, and smile goals. Each treatment is explained transparently with no unnecessary procedures."
           />
 
-          {/* Category Tabs */}
+          {/* Treatment Category Tabs */}
           <Reveal delay={0.08} className="shrink-0">
             <div
               role="tablist"
@@ -79,8 +79,8 @@ export function ServicesSection() {
           </Reveal>
         </div>
 
-        {/* Tab Panel */}
-        <div id={`panel-${active}`} role="tabpanel" aria-labelledby={`tab-${active}`} className="mt-10 sm:mt-12">
+        {/* Treatment Panel */}
+        <div id={`panel-${active}`} role="tabpanel" aria-labelledby={`tab-${active}`} className="mt-8 sm:mt-10">
           <p className="mb-8 max-w-2xl text-sm sm:text-base text-[#34465A]/80 font-medium">
             {activeMeta?.description}
           </p>
@@ -107,8 +107,8 @@ export function ServicesSection() {
             </motion.div>
           </AnimatePresence>
 
-          {/* View All Services Link */}
-          <div className="mt-12 text-center">
+          {/* View All Treatments Link */}
+          <div className="mt-8 text-center">
             <Link to="/services" className={buttonClass('secondary', 'lg', 'shadow-sm')}>
               <span>View All 12 Dental Treatments</span>
               <ArrowRightIcon className="h-4 w-4" />

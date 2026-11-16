@@ -113,8 +113,8 @@ export const rootCanal: Service = {
   name: 'Root Canal Treatment (RCT)',
   category: 'everyday',
   short: 'Painless, modern endodontic therapy to eliminate infection and save your natural tooth.',
-  image: images.dentalRadiograph,
-  imageAlt: 'Dentist reviewing high-resolution digital radiograph showing tooth root canals on chairside display',
+  image: images.rootCanalAnatomy,
+  imageAlt: 'Anatomical dental tooth cross-section model showing enamel, dentin, and pulp root canals for endodontic therapy',
   seoTitle: 'Painless Root Canal Treatment (RCT) in Nashik | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
   metaDescription:
     'Gentle, modern root canal treatment in Nashik. Eliminate toothache, treat deep infection, and save your natural tooth with single-visit RCT options.',
@@ -164,8 +164,8 @@ export const pediatricDentistry: Service = {
   name: 'Pediatric Dental Care',
   category: 'everyday',
   short: 'Gentle, friendly dentistry for children and teens to build a lifetime of positive oral health.',
-  image: images.kids,
-  imageAlt: 'Gentle dentist consulting warmly with child patient and parent in comfortable clinic room',
+  image: images.toothModelMirror,
+  imageAlt: 'Child-friendly dental educational tooth model and dental mirror for gentle pediatric dental care',
   seoTitle: 'Pediatric Dentistry & Children Dental Care in Nashik | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
   metaDescription:
     'Child-friendly, compassionate dental care in Nashik. Preventive fluoride, sealants, cavity fillings, and gentle habits for children of all ages.',

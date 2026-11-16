@@ -25,7 +25,7 @@ const stepIcons = [
 export function SmileJourney() {
   return (
     <section id="journey" aria-labelledby="journey-title" className="px-3 sm:px-5 py-6">
-      <div className="relative mx-auto max-w-[1600px] overflow-hidden rounded-[32px] md:rounded-[48px] bg-[#123B59] py-20 md:py-28 text-white shadow-2xl">
+      <div className="relative mx-auto max-w-[1600px] overflow-hidden rounded-[32px] md:rounded-[48px] bg-[#123B59] py-12 sm:py-16 md:py-20 text-white shadow-2xl">
         {/* Subtle background glow */}
         <div
           className="pointer-events-none absolute -top-40 -left-40 h-[450px] w-[450px] rounded-full bg-[#087FAE]/30 blur-3xl"
