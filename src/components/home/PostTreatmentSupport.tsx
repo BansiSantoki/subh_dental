@@ -10,7 +10,7 @@ import { siteConfig } from '../../data/siteConfig';
 
 export function PostTreatmentSupport() {
   return (
-    <section id="aftercare" aria-labelledby="aftercare-title" className="bg-[#F2F8FC] py-20 md:py-28 lg:py-32">
+    <section id="aftercare" aria-labelledby="aftercare-title" className="bg-[#F2F8FC] py-12 sm:py-16 md:py-18 lg:py-20">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="grid gap-14 lg:grid-cols-12 lg:gap-16">
           {/* Left Column: Authentic Treatment Room & Support Badge */}

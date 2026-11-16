@@ -20,7 +20,7 @@ export function About() {
         image={images.reception}
       />
 
-      <div className="bg-[#F2F8FC] pt-28 pb-16 md:pt-36 md:pb-24">
+      <div className="bg-[#F2F8FC] pt-24 pb-12 sm:pt-28 md:pt-30 md:pb-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 lg:px-12">
           <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'About Us' }]} />
 
@@ -97,7 +97,7 @@ export function About() {
           </div>
 
           {/* Pillars of Care */}
-          <div className="mt-20">
+          <div className="mt-12 sm:mt-16">
             <div className="text-center max-w-2xl mx-auto">
               <span className="text-xs font-bold uppercase tracking-wider text-[#087FAE]">Our Core Values</span>
               <h2 className="mt-2 font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-[#123B59]">
@@ -141,7 +141,7 @@ export function About() {
           </div>
 
           {/* Clinical Facility Showcase */}
-          <div className="mt-20 rounded-3xl bg-white p-8 sm:p-12 border border-[#E2EAF0] shadow-sm">
+          <div className="mt-12 sm:mt-16 rounded-3xl bg-white p-6 sm:p-10 border border-[#E2EAF0] shadow-sm">
             <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
               <div>
                 <span className="text-xs font-bold uppercase tracking-wider text-[#087FAE]">Modern Clinical Facility</span>
@@ -214,7 +214,7 @@ export function About() {
           </div>
 
           {/* CTA Banner */}
-          <div className="mt-20 rounded-3xl bg-[#123B59] p-8 sm:p-12 text-center text-white shadow-xl">
+          <div className="mt-12 sm:mt-16 rounded-3xl bg-[#123B59] p-6 sm:p-10 text-center text-white shadow-xl">
             <h2 className="font-serif text-2xl sm:text-3xl font-bold">Ready to experience gentle dental care?</h2>
             <p className="mx-auto mt-3 max-w-xl text-sm sm:text-base text-[#DCEFF8]/90">
               Schedule your first appointment today. We look forward to meeting you and helping you maintain a healthy, beautiful smile.

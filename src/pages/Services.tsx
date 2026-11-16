@@ -61,7 +61,7 @@ export function Services() {
       />
 
       {/* Featured Clinical Treatment Overview Banner */}
-      <section className="bg-white pt-6 pb-12 sm:pt-10 sm:pb-16 border-b border-[#E2EAF0]">
+      <section className="bg-white py-6 sm:py-8 md:py-10 border-b border-[#E2EAF0]">
         <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
           <Reveal>
             <div className="overflow-hidden rounded-[28px] border border-[#E2EAF0] bg-[#F2F8FC] shadow-sm grid gap-8 lg:grid-cols-12 lg:items-center p-6 sm:p-8 lg:p-10">
@@ -105,7 +105,7 @@ export function Services() {
         <section
           key={cat.id}
           aria-labelledby={`cat-${cat.id}`}
-          className={`py-16 md:py-24 ${ci % 2 === 0 ? 'bg-white' : 'bg-[#F2F8FC]'}`}
+          className={`py-10 sm:py-12 md:py-16 ${ci % 2 === 0 ? 'bg-white' : 'bg-[#F2F8FC]'}`}
         >
           <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
             <Reveal className="mb-10 sm:mb-12 grid gap-3 lg:grid-cols-12 lg:items-end">

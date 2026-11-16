@@ -9,7 +9,6 @@ import { TeamSection } from '../components/home/TeamSection';
 import { TestimonialsSection } from '../components/home/TestimonialsSection';
 import { SmileJourney } from '../components/home/SmileJourney';
 import { BlogPreviewSection } from '../components/home/BlogPreviewSection';
-import { PostTreatmentSupport } from '../components/home/PostTreatmentSupport';
 import { AppointmentBookingSection } from '../components/home/AppointmentBookingSection';
 import { ContactSection } from '../components/shared/ContactSection';
 import { images } from '../data/images';
@@ -54,9 +53,6 @@ export function Home() {
 
       {/* G. Patient Testimonials */}
       <TestimonialsSection />
-
-      {/* H. Post-Treatment Support */}
-      <PostTreatmentSupport />
 
       {/* K. Blogs Preview */}
       <BlogPreviewSection />

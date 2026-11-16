@@ -55,7 +55,7 @@ export function BlogArticle() {
 
       <article>
         {/* Header */}
-        <header className="bg-gradient-to-b from-[#F2F8FC] via-white to-white pt-28 pb-12 md:pt-36 md:pb-16 border-b border-[#E2EAF0]">
+        <header className="bg-gradient-to-b from-[#F2F8FC] via-white to-white pt-24 pb-10 sm:pt-28 md:pt-30 md:pb-12 border-b border-[#E2EAF0]">
           <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
             <Breadcrumbs
               items={[

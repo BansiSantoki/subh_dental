@@ -39,7 +39,7 @@ export function Header() {
             : 'border-b border-transparent bg-white/90 backdrop-blur-sm'
         }`}
       >
-        <div className="mx-auto flex max-w-[1440px] items-center justify-between gap-3 px-4 sm:px-6 lg:px-8 xl:px-10 h-20 sm:h-[88px] lg:h-[94px]">
+        <div className="mx-auto flex max-w-[1440px] items-center justify-between gap-3 px-4 sm:px-6 lg:px-8 xl:px-10 h-[74px] sm:h-[80px] lg:h-[84px]">
           {/* Official Clinic Logo (Clickable directly to Homepage) */}
           <Link
             to="/"

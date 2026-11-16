@@ -26,7 +26,7 @@ export function PageHero({
   children
 }: PageHeroProps) {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#F2F8FC] via-white to-white pt-28 sm:pt-32 md:pt-36 pb-16 md:pb-20 lg:pb-24 border-b border-[#E2EAF0]">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#F2F8FC] via-white to-white pt-24 sm:pt-28 md:pt-30 pb-10 md:pb-12 lg:pb-14 border-b border-[#E2EAF0]">
       <div className="relative mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
         <div
           className={`grid gap-10 ${

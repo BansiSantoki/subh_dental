@@ -55,7 +55,7 @@ export function BookAppointmentPage() {
         path="/book-appointment"
       />
 
-      <div className="bg-[#F2F8FC] pt-28 pb-16 md:pt-36 md:pb-24">
+      <div className="bg-[#F2F8FC] pt-24 pb-12 sm:pt-28 md:pt-30 md:pb-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 lg:px-12">
           <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Book Appointment' }]} />
 
