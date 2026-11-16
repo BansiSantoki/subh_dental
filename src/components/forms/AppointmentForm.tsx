@@ -17,7 +17,7 @@ export function AppointmentForm({ initialTreatment = '' }: { initialTreatment?: 
   const p = 'appt';
   const { values, errors, status, message, waUrl, setField, handleSubmit, reset } = useInquiryForm(
     { treatment: initialTreatment },
-    { idPrefix: p }
+    { idPrefix: p, redirectOnSubmit: true }
   );
 
   if (status === 'ready') {

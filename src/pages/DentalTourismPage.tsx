@@ -89,12 +89,12 @@ export function DentalTourismPage() {
           <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Dental Tourism' }]} />
 
           {/* Page Hero Header */}
-          <div className="mt-6 max-w-3xl">
+          <div className="mt-6 w-full min-w-0 max-w-3xl">
             <span className="inline-flex items-center gap-2 rounded-full bg-white px-3.5 py-1 text-xs font-semibold text-[#087FAE] border border-[#087FAE]/20 shadow-2xs">
               <Compass className="h-3.5 w-3.5" />
               Visiting Nashik for Dental Care
             </span>
-            <h1 className="mt-4 font-serif text-3xl sm:text-4xl lg:text-[44px] font-bold tracking-tight text-[#123B59] leading-tight">
+            <h1 className="mt-4 max-w-full break-words font-serif text-3xl sm:text-4xl lg:text-[44px] font-bold tracking-tight text-[#123B59] leading-tight">
               Thoughtful dental care tailored for your <span className="text-[#087FAE]">visit to Nashik.</span>
             </h1>
             <p className="mt-4 text-base sm:text-lg leading-relaxed text-[#34465A]">
@@ -103,7 +103,7 @@ export function DentalTourismPage() {
           </div>
 
           {/* Scenic Nashik Landscape Card */}
-          <div className="mt-12 overflow-hidden rounded-3xl border border-[#E2EAF0] bg-white shadow-sm">
+          <div className="mt-8 overflow-hidden rounded-3xl border border-[#E2EAF0] bg-white shadow-sm sm:mt-12">
             <div className="relative aspect-[16/9] sm:aspect-[21/9] w-full bg-slate-100">
               <img
                 src={images.nashikVineyard}
@@ -124,8 +124,8 @@ export function DentalTourismPage() {
           </div>
 
           {/* 4-Step Consultation Process */}
-          <div className="mt-16">
-            <div className="text-center max-w-2xl mx-auto">
+          <div className="mt-12 sm:mt-16">
+            <div className="mx-auto max-w-2xl text-center">
               <span className="text-xs font-semibold text-[#087FAE] bg-[#EAF4FA] px-3 py-1 rounded-full">
                 Step-by-Step Pathway
               </span>
@@ -137,17 +137,17 @@ export function DentalTourismPage() {
               </p>
             </div>
 
-            <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-8 grid min-w-0 grid-cols-1 gap-4 sm:mt-10 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
               {travelSteps.map((s) => (
                 <article
                   key={s.step}
-                  className="flex flex-col justify-between rounded-2xl border border-[#E2EAF0] bg-white p-6 shadow-xs"
+                  className="flex min-w-0 flex-col justify-between rounded-2xl border border-[#E2EAF0] bg-white p-5 shadow-xs sm:p-6"
                 >
                   <div>
                     <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#087FAE] text-white font-serif font-bold text-sm shadow-xs">
                       {s.step}
                     </span>
-                    <h3 className="mt-4 font-serif text-lg font-bold text-[#123B59] leading-snug">
+                    <h3 className="mt-4 break-words font-serif text-lg font-bold leading-snug text-[#123B59]">
                       {s.title}
                     </h3>
                     <p className="mt-2 text-xs sm:text-sm leading-relaxed text-[#34465A]/85">
@@ -160,32 +160,32 @@ export function DentalTourismPage() {
           </div>
 
           {/* Travel & Transit Information */}
-          <div className="mt-16 rounded-3xl border border-[#E2EAF0] bg-white p-8 sm:p-12 shadow-xs">
-            <div className="grid gap-8 lg:grid-cols-12 lg:items-center">
-              <div className="lg:col-span-7">
+          <div className="mt-12 min-w-0 rounded-3xl border border-[#E2EAF0] bg-white p-4 shadow-xs sm:mt-16 sm:p-8 lg:p-12">
+            <div className="grid min-w-0 grid-cols-1 gap-6 sm:gap-8 lg:grid-cols-12 lg:items-center">
+              <div className="min-w-0 lg:col-span-7">
                 <span className="text-xs font-semibold text-[#087FAE] flex items-center gap-1.5">
                   <span className="h-1.5 w-1.5 rounded-full bg-[#087FAE]" />
                   <span>Getting to Nashik</span>
                 </span>
-                <h3 className="mt-2 font-serif text-2xl sm:text-3xl font-bold text-[#123B59]">
+                <h3 className="mt-2 max-w-full break-words font-serif text-2xl font-bold text-[#123B59] sm:text-3xl">
                   Convenient Connectivity & Clinical Accessibility
                 </h3>
                 <p className="mt-3 text-sm sm:text-base leading-relaxed text-[#34465A]/85">
                   Nashik is one of western India’s most accessible cities, well-connected to major metropolitan centers via modern expressways and regular rail networks:
                 </p>
 
-                <div className="mt-6 grid gap-4 sm:grid-cols-3">
-                  <div className="rounded-xl border border-[#E2EAF0] bg-[#F4F9FC] p-4 text-center">
+                <div className="mt-6 grid min-w-0 grid-cols-1 gap-4 sm:grid-cols-3">
+                  <div className="min-w-0 rounded-xl border border-[#E2EAF0] bg-[#F4F9FC] p-4 text-center">
                     <Car className="h-6 w-6 text-[#087FAE] mx-auto mb-2" />
                     <p className="text-xs font-bold text-[#123B59]">By Road</p>
                     <p className="mt-1 text-[11px] text-[#34465A]/80">3.5 hrs from Mumbai via Samruddhi / NH-160</p>
                   </div>
-                  <div className="rounded-xl border border-[#E2EAF0] bg-[#F4F9FC] p-4 text-center">
+                  <div className="min-w-0 rounded-xl border border-[#E2EAF0] bg-[#F4F9FC] p-4 text-center">
                     <Train className="h-6 w-6 text-[#087FAE] mx-auto mb-2" />
                     <p className="text-xs font-bold text-[#123B59]">By Rail</p>
                     <p className="mt-1 text-[11px] text-[#34465A]/80">Frequent trains to Nashik Road Railway Station</p>
                   </div>
-                  <div className="rounded-xl border border-[#E2EAF0] bg-[#F4F9FC] p-4 text-center">
+                  <div className="min-w-0 rounded-xl border border-[#E2EAF0] bg-[#F4F9FC] p-4 text-center">
                     <MapPin className="h-6 w-6 text-[#087FAE] mx-auto mb-2" />
                     <p className="text-xs font-bold text-[#123B59]">Location</p>
                     <p className="mt-1 text-[11px] text-[#34465A]/80">Indira Nagar, near Mumbai Agra highway exit</p>
@@ -198,11 +198,11 @@ export function DentalTourismPage() {
               </div>
 
               {/* Inquiry Action Card */}
-              <div className="rounded-2xl bg-[#F4F9FC] p-6 sm:p-8 border border-[#E2EAF0] text-center lg:col-span-5">
+              <div className="mx-auto w-full min-w-0 max-w-lg rounded-2xl border border-[#E2EAF0] bg-[#F4F9FC] p-4 text-center sm:p-8 lg:col-span-5">
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#087FAE] text-white mx-auto shadow-sm">
                   <MessageSquare className="h-7 w-7" />
                 </div>
-                <h4 className="mt-4 font-serif text-xl font-bold text-[#123B59]">
+                <h4 className="mt-4 break-words font-serif text-xl font-bold text-[#123B59]">
                   Start Your Travel Inquiry
                 </h4>
                 <p className="mt-2 text-xs sm:text-sm text-[#34465A]/80 leading-relaxed max-w-sm mx-auto">
@@ -235,4 +235,3 @@ export function DentalTourismPage() {
     </>
   );
 }
-

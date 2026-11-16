@@ -14,7 +14,7 @@ export function GallerySection() {
   const previewImages = galleryImages.slice(0, 4);
 
   return (
-    <section id="gallery" aria-labelledby="gallery-title" className="bg-[#F4F9FC] py-20 md:py-28">
+    <section id="gallery" aria-labelledby="gallery-title" className="bg-[#F4F9FC] py-10 sm:py-14 md:py-16">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <SectionHeading

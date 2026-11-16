@@ -63,13 +63,12 @@ export function AppointmentModal() {
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="fixed inset-0 z-[60] flex items-center justify-center p-0 sm:p-4 md:p-6 overflow-hidden"
+          className="fixed inset-0 z-[60] flex items-center justify-center overflow-hidden p-0 sm:p-4 md:p-6"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.2, ease }}
         >
-          {/* Backdrop with dark navy tint and blur */}
           <button
             type="button"
             aria-label="Close appointment form"
@@ -78,7 +77,6 @@ export function AppointmentModal() {
             tabIndex={-1}
           />
 
-          {/* Modal Container: Explicitly constrained height with zero overflow clipping */}
           <motion.div
             ref={dialogRef}
             role="dialog"
@@ -88,42 +86,39 @@ export function AppointmentModal() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 12, scale: 0.98 }}
             transition={{ duration: 0.25, ease }}
-            className="relative flex flex-col md:flex-row w-full h-[100dvh] sm:h-[min(650px,calc(100dvh-2rem))] max-h-[100dvh] sm:max-h-[min(650px,calc(100dvh-2rem))] max-w-4xl overflow-hidden rounded-none sm:rounded-[24px] md:rounded-[28px] bg-white shadow-2xl border-0 sm:border border-[#E2EAF0]"
+            className="relative flex h-[100dvh] max-h-[100dvh] w-full max-w-4xl flex-col overflow-hidden border-0 bg-white shadow-2xl sm:h-[min(650px,calc(100dvh-2rem))] sm:max-h-[min(650px,calc(100dvh-2rem))] sm:rounded-[24px] sm:border sm:border-[#E2EAF0] md:flex-row md:rounded-[28px]"
           >
-            {/* Left Side: Photo & Brand (Desktop Only) */}
-            <div className="relative hidden md:flex md:w-[38%] lg:w-[40%] shrink-0 flex-col justify-end overflow-hidden bg-[#123B59]">
+            <div className="relative hidden shrink-0 flex-col justify-end overflow-hidden bg-[#123B59] md:flex md:w-[38%] lg:w-[40%]">
               <img
                 src={images.reception}
                 alt="Reception and clinical practice of Dr. Naik's Shubh Smile Multispeciality Dental Clinic in Nashik"
                 className="absolute inset-0 h-full w-full object-cover opacity-65"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#123B59] via-[#123B59]/45 to-transparent" />
-              <div className="relative z-10 p-6 lg:p-7 text-white">
-                <span className="inline-flex items-center gap-1.5 rounded-full bg-white/20 px-3 py-1 text-xs font-semibold text-[#DCEFF8] backdrop-blur-xs mb-3 border border-white/20">
+              <div className="relative z-10 p-6 text-white lg:p-7">
+                <span className="mb-3 inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/20 px-3 py-1 text-xs font-semibold text-[#DCEFF8] backdrop-blur-xs">
                   <SparklesIcon className="h-3.5 w-3.5 text-[#7EC4E5]" />
                   {siteConfig.shortName}
                 </span>
-                <p className="font-serif text-lg lg:text-xl font-bold leading-snug">
+                <p className="font-serif text-lg font-bold leading-snug lg:text-xl">
                   Modern, comfortable dental care with a personalized patient-first approach.
                 </p>
-                <p className="mt-2.5 text-xs text-[#DCEFF8]/90 leading-relaxed">
+                <p className="mt-2.5 text-xs leading-relaxed text-[#DCEFF8]/90">
                   {siteConfig.locationLabel}
                 </p>
               </div>
             </div>
 
-            {/* Right Side: Form with Fixed Header, Scrollable Fields, and Fixed Footer */}
-            <div className="flex flex-1 flex-col min-h-0 min-w-0 bg-white h-full">
-              {/* Fixed Header */}
-              <div className="shrink-0 flex items-start justify-between gap-4 px-5 pt-4 pb-3 sm:px-7 sm:pt-5 sm:pb-3.5 border-b border-[#E2EAF0] bg-white z-10">
+            <div className="flex h-full min-h-0 min-w-0 flex-1 flex-col bg-white">
+              <div className="z-10 flex shrink-0 items-start justify-between gap-4 border-b border-[#E2EAF0] bg-white px-5 pt-4 pb-3 sm:px-7 sm:pt-5 sm:pb-3.5">
                 <div>
                   <h2
                     id="appointment-title"
-                    className="font-serif text-xl sm:text-2xl font-bold text-[#123B59] leading-tight"
+                    className="font-serif text-xl font-bold leading-tight text-[#123B59] sm:text-2xl"
                   >
                     Book an Appointment
                   </h2>
-                  <p className="mt-0.5 text-xs sm:text-sm text-[#34465A]/80">
+                  <p className="mt-0.5 text-xs text-[#34465A]/80 sm:text-sm">
                     Fill in your details below and we will prepare your WhatsApp consultation request.
                   </p>
                 </div>
@@ -131,13 +126,12 @@ export function AppointmentModal() {
                   type="button"
                   onClick={closeAppointment}
                   aria-label="Close appointment form"
-                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#E2EAF0] text-[#123B59] hover:bg-[#F2F8FC] hover:text-[#087FAE] hover:border-[#087FAE] transition-all cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-[#087FAE]"
+                  className="flex h-9 w-9 shrink-0 cursor-pointer items-center justify-center rounded-full border border-[#E2EAF0] text-[#123B59] transition-all hover:border-[#087FAE] hover:bg-[#F2F8FC] hover:text-[#087FAE] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#087FAE]"
                 >
                   <XIcon className="h-4 w-4" />
                 </button>
               </div>
 
-              {/* Form Content (Includes Scrollable Fields & Fixed Sticky Footer) */}
               <AppointmentForm initialTreatment={treatment} />
             </div>
           </motion.div>

@@ -12,7 +12,7 @@ export function BlogPreviewSection() {
   const side = rest.slice(0, 3);
 
   return (
-    <section id="blog" aria-labelledby="blog-title" className="bg-white py-20 md:py-28 lg:py-32">
+    <section id="blog" aria-labelledby="blog-title" className="bg-white py-10 sm:py-12 md:py-14 lg:py-16">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <SectionHeading

@@ -11,7 +11,7 @@ export function AppointmentBookingSection() {
   const { openAppointment } = useAppointment();
 
   return (
-    <section aria-labelledby="cta-title" className="bg-gradient-to-b from-white via-[#F2F8FC] to-[#F2F8FC] py-10 sm:py-14 md:py-16">
+    <section aria-labelledby="cta-title" className="bg-gradient-to-b from-white via-[#F2F8FC] to-[#F2F8FC] py-8 sm:py-10 md:py-12">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="overflow-hidden rounded-[32px] border border-[#087FAE]/25 bg-white shadow-[0_20px_60px_-20px_rgba(8,127,174,0.2)]">
           <div className="grid items-center lg:grid-cols-12">

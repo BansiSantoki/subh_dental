@@ -15,7 +15,7 @@ export function NotFound() {
         noindex
       />
 
-      <section className="flex min-h-[80vh] items-center bg-[#F2F8FC] px-4 pb-20 pt-36">
+      <section className="flex min-h-[75vh] items-center bg-[#F2F8FC] px-4 pb-14 pt-28">
         <div className="mx-auto max-w-xl text-center">
           <div className="flex justify-center">
             <LogoMark size={56} />

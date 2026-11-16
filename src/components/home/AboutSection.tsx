@@ -10,7 +10,7 @@ import { buttonClass } from '../../utils/buttonStyles';
 
 export function AboutSection() {
   return (
-    <section id="about" aria-labelledby="about-title" className="relative bg-white py-12 sm:py-16 md:py-18 lg:py-20">
+    <section id="about" aria-labelledby="about-title" className="relative bg-white py-10 sm:py-12 md:py-14 lg:py-16">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="grid gap-14 lg:grid-cols-12 lg:items-center lg:gap-16">
           {/* Left: One Authentic Clinical Photograph */}

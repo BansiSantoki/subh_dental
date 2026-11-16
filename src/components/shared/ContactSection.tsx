@@ -16,7 +16,7 @@ export function ContactSection({
   title = "Let's Take the First Step Toward Your Healthier Smile."
 }: ContactSectionProps) {
   return (
-    <section id="contact" aria-labelledby="contact-title" className="bg-white py-20 md:py-28 lg:py-32">
+    <section id="contact" aria-labelledby="contact-title" className="bg-white py-10 sm:py-12 md:py-14 lg:py-16">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="grid gap-14 lg:grid-cols-12 lg:gap-16">
           {/* Left Column: Contact Details, Map & Instagram */}

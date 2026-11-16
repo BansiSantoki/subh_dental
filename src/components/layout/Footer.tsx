@@ -20,7 +20,7 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative mt-12 overflow-hidden bg-[#123B59] text-white">
+    <footer className="relative overflow-hidden bg-[#123B59] text-white">
       {/* Top Banner CTA */}
       <div className="border-b border-white/10 bg-[#0E2E47]/70 py-12 md:py-16">
         <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">

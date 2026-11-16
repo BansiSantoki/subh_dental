@@ -9,6 +9,7 @@ interface Options {
   requireConsent?: boolean;
   requireMessage?: boolean;
   includeContactDetails?: boolean;
+  redirectOnSubmit?: boolean;
 }
 
 const fieldOrder: (keyof InquiryValues)[] = ['name', 'phone', 'email', 'contactMethod', 'treatment', 'date', 'message', 'consent'];
@@ -45,6 +46,10 @@ export function useInquiryForm(initial: Partial<InquiryValues>, options: Options
         { phone: values.phone, email: values.email, contactMethod: values.contactMethod } :
         { phone: values.phone })
       });
+      if (options.redirectOnSubmit) {
+        window.location.assign(whatsappUrl(text));
+        return;
+      }
       window.clearTimeout(timer.current);
       timer.current = window.setTimeout(() => {
         setMessage(text);

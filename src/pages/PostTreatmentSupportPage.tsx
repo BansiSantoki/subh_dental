@@ -113,17 +113,17 @@ export function PostTreatmentSupportPage() {
         ]}
       />
 
-      <div className="bg-[#F4F9FC] pt-24 pb-12 sm:pt-28 md:pt-30 md:pb-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8 lg:px-12">
+      <div className="min-w-0 bg-[#F4F9FC] pt-20 pb-10 sm:pt-28 sm:pb-12 md:pt-30 md:pb-16">
+        <div className="mx-auto min-w-0 max-w-7xl px-4 sm:px-6 md:px-8 lg:px-12">
           <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Post-Treatment Support' }]} />
 
           {/* Hero Header */}
-          <div className="mt-6 max-w-3xl">
+          <div className="mt-5 w-full min-w-0 max-w-3xl sm:mt-6">
             <span className="inline-flex items-center gap-2 rounded-full bg-white px-3.5 py-1 text-xs font-semibold text-[#087FAE] border border-[#087FAE]/20 shadow-2xs">
               <HeartPulse className="h-3.5 w-3.5" />
               Patient Aftercare & Recovery
             </span>
-            <h1 className="mt-4 font-serif text-3xl sm:text-4xl lg:text-[44px] font-bold tracking-tight text-[#123B59] leading-tight">
+            <h1 className="mt-4 max-w-full break-words font-serif text-3xl sm:text-4xl lg:text-[44px] font-bold tracking-tight text-[#123B59] leading-tight">
               Care that extends well beyond the <span className="text-[#087FAE]">dental chair.</span>
             </h1>
             <p className="mt-4 text-base sm:text-lg leading-relaxed text-[#34465A]">
@@ -132,10 +132,10 @@ export function PostTreatmentSupportPage() {
           </div>
 
           {/* Urgent Care Advisory Notice */}
-          <div className="mt-10 rounded-2xl border border-amber-200 bg-amber-50/80 p-5 sm:p-6">
+          <div className="mt-8 min-w-0 rounded-2xl border border-amber-200 bg-amber-50/80 p-4 sm:mt-10 sm:p-6">
             <div className="flex gap-4 items-start">
               <AlertCircle className="h-6 w-6 text-amber-700 shrink-0 mt-0.5" />
-              <div>
+              <div className="min-w-0">
                 <h2 className="font-serif text-lg font-bold text-amber-900">
                   When to Contact Our Clinic Promptly
                 </h2>
@@ -156,12 +156,12 @@ export function PostTreatmentSupportPage() {
           </div>
 
           {/* Aftercare Cards Grid */}
-          <div className="mt-14">
-            <div className="text-center max-w-2xl mx-auto">
+          <div className="mt-10 sm:mt-14">
+            <div className="mx-auto max-w-2xl text-center">
               <span className="text-xs font-semibold text-[#087FAE] bg-[#EAF4FA] px-3 py-1 rounded-full">
                 Treatment-Specific Guidance
               </span>
-              <h2 className="mt-3 font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-[#123B59]">
+              <h2 className="mt-3 break-words font-serif text-2xl font-bold text-[#123B59] sm:text-3xl lg:text-4xl">
                 General Aftercare Instructions
               </h2>
               <p className="mt-2 text-sm sm:text-base text-[#34465A]/85">
@@ -169,14 +169,14 @@ export function PostTreatmentSupportPage() {
               </p>
             </div>
 
-            <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-6 grid min-w-0 grid-cols-1 gap-4 sm:mt-8 sm:gap-6 md:grid-cols-2 lg:mt-10 lg:grid-cols-3">
               {aftercareCategories.map((cat) => (
                 <article
                   key={cat.title}
-                  className="flex flex-col justify-between rounded-2xl border border-[#E2EAF0] bg-white p-6 shadow-xs"
+                  className="flex min-w-0 flex-col justify-between rounded-2xl border border-[#E2EAF0] bg-white p-4 shadow-xs sm:p-6"
                 >
                   <div>
-                    <h3 className="font-serif text-lg font-bold text-[#123B59] leading-snug">
+                    <h3 className="break-words font-serif text-lg font-bold leading-snug text-[#123B59]">
                       {cat.title}
                     </h3>
                     <p className="mt-1.5 text-xs font-medium text-[#087FAE]">
@@ -185,9 +185,9 @@ export function PostTreatmentSupportPage() {
 
                     <ul className="mt-4 space-y-2.5 text-xs sm:text-sm text-[#34465A]/85">
                       {cat.guidance.map((tip, i) => (
-                        <li key={i} className="flex items-start gap-2">
+                        <li key={i} className="flex min-w-0 items-start gap-2">
                           <CheckCircle2 className="h-4 w-4 text-[#087FAE] shrink-0 mt-0.5" />
-                          <span>{tip}</span>
+                          <span className="min-w-0">{tip}</span>
                         </li>
                       ))}
                     </ul>
@@ -198,9 +198,9 @@ export function PostTreatmentSupportPage() {
           </div>
 
           {/* Direct Post-Treatment WhatsApp Help Desk Box */}
-          <div className="mt-16 rounded-3xl border border-[#E2EAF0] bg-white p-8 sm:p-12 shadow-xs">
-            <div className="grid gap-8 lg:grid-cols-12 lg:items-center">
-              <div className="lg:col-span-7">
+          <div className="mt-10 min-w-0 rounded-3xl border border-[#E2EAF0] bg-white p-4 shadow-xs sm:mt-16 sm:p-8 lg:p-12">
+            <div className="grid min-w-0 gap-8 lg:grid-cols-12 lg:items-center">
+              <div className="min-w-0 lg:col-span-7">
                 <span className="text-xs font-semibold text-[#087FAE] flex items-center gap-1.5">
                   <span className="h-1.5 w-1.5 rounded-full bg-[#087FAE]" />
                   <span>Direct Clinical Helpline</span>
@@ -212,13 +212,13 @@ export function PostTreatmentSupportPage() {
                   If you have had a recent procedure at Shubh Smile and want to clarify an aftercare instruction, verify normal healing symptoms, or request a quick review, message our clinic team on WhatsApp with your details.
                 </p>
 
-                <div className="mt-6 flex flex-wrap gap-4 text-xs sm:text-sm text-[#34465A]">
-                  <div className="flex items-center gap-2">
-                    <Clock className="h-4 w-4 text-[#087FAE]" />
+                <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-xs text-[#34465A] sm:mt-6 sm:text-sm">
+                  <div className="flex min-w-0 items-center gap-2">
+                    <Clock className="h-4 w-4 shrink-0 text-[#087FAE]" />
                     <span>Mon – Sat: 9:30 AM – 8:30 PM</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Phone className="h-4 w-4 text-[#087FAE]" />
+                  <div className="flex min-w-0 items-center gap-2">
+                    <Phone className="h-4 w-4 shrink-0 text-[#087FAE]" />
                     <a href={`tel:${siteConfig.phoneE164}`} className="font-semibold text-[#087FAE] hover:underline">
                       {siteConfig.phoneDisplay}
                     </a>
@@ -227,7 +227,7 @@ export function PostTreatmentSupportPage() {
               </div>
 
               {/* Inquiry Mini-Form */}
-              <div className="rounded-2xl bg-[#F4F9FC] p-6 sm:p-7 border border-[#E2EAF0] lg:col-span-5">
+              <div className="mx-auto w-full min-w-0 max-w-xl rounded-2xl border border-[#E2EAF0] bg-[#F4F9FC] p-4 sm:p-7 lg:col-span-5">
                 <h4 className="font-serif text-base font-bold text-[#123B59]">
                   Send an Aftercare Query
                 </h4>
@@ -291,4 +291,3 @@ export function PostTreatmentSupportPage() {
     </>
   );
 }
-

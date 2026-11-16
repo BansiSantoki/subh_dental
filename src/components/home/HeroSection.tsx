@@ -38,7 +38,7 @@ export function HeroSection() {
   return (
     <section
       aria-labelledby="hero-title"
-      className="relative overflow-hidden bg-gradient-to-b from-[#F2F8FC] via-white to-white pt-20 pb-12 sm:pt-24 sm:pb-14 md:pt-28 md:pb-16 lg:pt-30 lg:pb-16"
+      className="relative overflow-hidden bg-gradient-to-b from-[#F2F8FC] via-white to-white pt-[88px] pb-10 sm:pt-[96px] sm:pb-12 md:pt-[104px] md:pb-12 lg:pt-[108px] lg:pb-14"
     >
       {/* Subtle architectural background accents */}
       <div
@@ -53,7 +53,7 @@ export function HeroSection() {
       <div className="relative mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-14 xl:gap-16">
           {/* Left Column: Headline, Copy, CTAs, Badges */}
-          <div className="lg:col-span-7 xl:col-span-6">
+          <div className="order-2 md:order-1 lg:col-span-7 xl:col-span-6">
             {/* Pill Eyebrow */}
             <motion.div
               variants={item}
@@ -75,10 +75,10 @@ export function HeroSection() {
               initial="hidden"
               animate="show"
               custom={1}
-              className="mt-5 font-serif text-3xl font-bold leading-[1.15] tracking-[-0.015em] text-[#123B59] sm:text-4xl md:text-5xl lg:text-[52px]"
+              className="mt-5 max-w-full break-words font-serif text-3xl font-bold leading-[1.15] tracking-[-0.015em] text-[#123B59] sm:text-4xl md:text-5xl lg:text-[52px]"
             >
               Your Smile Deserves{' '}
-              <span className="relative inline-block text-[#087FAE]">
+              <span className="relative inline-block max-w-full text-[#087FAE]">
                 Exceptional Care.
                 <svg
                   className="absolute -bottom-2 left-0 w-full text-[#DCEFF8]"
@@ -103,7 +103,7 @@ export function HeroSection() {
               initial="hidden"
               animate="show"
               custom={2}
-              className="mt-5 max-w-xl text-base sm:text-lg leading-relaxed text-[#34465A]"
+              className="mt-5 w-full max-w-xl break-words text-base sm:text-lg leading-relaxed text-[#34465A]"
             >
               Experience personalised dental care, modern treatments, and a comfortable approach to
               healthier, more confident smiles. Unhurried consultations tailored around you.
@@ -159,7 +159,7 @@ export function HeroSection() {
           </div>
 
           {/* Right Column: Genuine Dental Photography & Overlay Highlights */}
-          <div className="relative lg:col-span-5 xl:col-span-6">
+          <div className="relative order-1 md:order-2 lg:col-span-5 xl:col-span-6">
             <motion.div
               initial={{ opacity: 0, scale: 0.96, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}

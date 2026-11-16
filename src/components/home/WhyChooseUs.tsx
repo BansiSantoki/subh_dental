@@ -25,7 +25,7 @@ const icons = [
 
 export function WhyChooseUs() {
   return (
-    <section id="why-us" aria-labelledby="why-title" className="bg-[#F2F8FC] py-12 sm:py-16 md:py-18 lg:py-20">
+    <section id="why-us" aria-labelledby="why-title" className="bg-[#F2F8FC] py-10 sm:py-12 md:py-14 lg:py-16">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="grid gap-14 lg:grid-cols-12 lg:gap-16">
           {/* Left Column: Heading, Intro, and Real Reception Photo */}

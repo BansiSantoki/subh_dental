@@ -28,7 +28,7 @@ export function ServicesSection() {
   };
 
   return (
-    <section id="services" aria-labelledby="services-title" className="bg-white py-12 sm:py-16 md:py-18 lg:py-20">
+    <section id="services" aria-labelledby="services-title" className="bg-white py-10 sm:py-12 md:py-14 lg:py-16">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <SectionHeading

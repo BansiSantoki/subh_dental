@@ -13,7 +13,7 @@ export function DentalTourismSection() {
   const { openAppointment } = useAppointment();
 
   return (
-    <section id="visiting-nashik" aria-labelledby="tourism-title" className="bg-white py-20 md:py-28 lg:py-32">
+    <section id="visiting-nashik" aria-labelledby="tourism-title" className="bg-white py-10 sm:py-14 md:py-16 lg:py-18">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
         {/* Scenic Nashik Landscape Banner */}
         <Reveal>

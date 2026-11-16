@@ -14,7 +14,7 @@ export function TeamSection() {
   const featured = doctors[0];
 
   return (
-    <section id="team" aria-labelledby="team-title" className="bg-[#F2F8FC] py-12 sm:py-16 md:py-18 lg:py-20">
+    <section id="team" aria-labelledby="team-title" className="bg-[#F2F8FC] py-10 sm:py-12 md:py-14 lg:py-16">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
         <SectionHeading
           id="team-title"
