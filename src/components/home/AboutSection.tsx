@@ -13,14 +13,13 @@ export function AboutSection() {
     <section id="about" aria-labelledby="about-title" className="relative bg-white py-20 md:py-28 lg:py-32">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="grid gap-14 lg:grid-cols-12 lg:items-center lg:gap-16">
-          {/* Left: Authentic Clinical Photography */}
+          {/* Left: One Authentic Clinical Photograph */}
           <Reveal className="relative lg:col-span-6">
             <div className="relative mx-auto max-w-lg lg:max-w-none">
-              {/* Primary Photo: Dentist examining patient */}
-              <div className="overflow-hidden rounded-[28px] border border-[#E2EAF0] bg-[#F2F8FC] shadow-[0_20px_50px_-20px_rgba(8,127,174,0.18)]">
+              <div className="overflow-hidden rounded-[28px] border border-[#E2EAF0] bg-white shadow-[0_20px_50px_-20px_rgba(8,127,174,0.18)]">
                 <ParallaxImage
                   src={images.dentistExamination}
-                  alt="Dentist performing gentle clinical dental examination with professional dental lighting"
+                  alt="Dentist performing gentle clinical dental examination with professional dental lighting at Dr. Naik's Shubh Smile Dental Clinic"
                   className="aspect-[4/3] w-full"
                   strength={15}
                   width={1200}
@@ -28,22 +27,11 @@ export function AboutSection() {
                 />
               </div>
 
-              {/* Secondary Overlapping Photo: Modern operatory room */}
-              <div className="absolute -bottom-8 -right-3 sm:-right-6 w-[52%] overflow-hidden rounded-[22px] border-4 border-white shadow-[0_20px_45px_-15px_rgba(18,59,89,0.25)]">
-                <ParallaxImage
-                  src={images.treatmentRoom}
-                  alt="Sterile modern treatment room at Dr. Naik's Shubh Smile Multispeciality Dental Clinic"
-                  className="aspect-[4/3] w-full"
-                  strength={20}
-                  width={800}
-                  height={600}
-                />
-              </div>
-
               {/* Quote Pill */}
-              <div className="absolute -top-4 -left-2 sm:-left-4 rounded-xl border border-[#087FAE]/20 bg-white/95 px-4 py-2.5 shadow-sm backdrop-blur">
-                <p className="text-xs font-semibold text-[#087FAE]">
-                  Gentle · Unhurried · Transparent
+              <div className="absolute -bottom-4 left-6 rounded-xl border border-[#087FAE]/20 bg-white px-4 py-2.5 shadow-md">
+                <p className="text-xs font-semibold text-[#087FAE] flex items-center gap-1.5">
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#087FAE]" />
+                  <span>Gentle · Unhurried · Transparent</span>
                 </p>
               </div>
             </div>

@@ -72,6 +72,15 @@ export function DentalTourismSection() {
               <p className="mt-4 text-xs leading-relaxed text-[#34465A]/70">
                 Accurate clinical timelines and options can only be confirmed after an in-person assessment.
               </p>
+
+              <div className="mt-4">
+                <a
+                  href="/dental-tourism"
+                  className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#087FAE] hover:underline"
+                >
+                  <span>Read Complete Nashik Dental Travel Guide &rarr;</span>
+                </a>
+              </div>
             </div>
           </Reveal>
 

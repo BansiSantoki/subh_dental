@@ -56,16 +56,17 @@ export function Header() {
           >
             {desktopPrimaryNav.map((item) => {
               const isBlog = item.href === '/blog' && location.pathname.startsWith('/blog');
-              const isCurrent = location.pathname === item.href || isBlog;
+              const isService = item.href === '/services' && location.pathname.startsWith('/services');
+              const isCurrent = location.pathname === item.href || isBlog || isService;
 
               return (
                 <Link
                   key={item.label}
                   to={item.href}
-                  className={`group relative rounded-full px-2.5 py-1.5 xl:px-3 text-[13.5px] 2xl:text-[14.5px] font-medium transition-all duration-200 ${
+                  className={`group relative whitespace-nowrap rounded-full px-2.5 py-1.5 xl:px-3.5 2xl:px-4 text-[13px] xl:text-[13.5px] 2xl:text-[14px] font-medium transition-all duration-200 ${
                     isCurrent
-                      ? 'text-[#087FAE] font-semibold bg-[#F2F8FC]'
-                      : 'text-[#34465A] hover:text-[#087FAE] hover:bg-[#F2F8FC]/80'
+                      ? 'text-[#087FAE] font-semibold bg-[#EAF4FA]'
+                      : 'text-[#34465A] hover:text-[#087FAE] hover:bg-[#F4F9FC]'
                   }`}
                 >
                   <span>{item.label}</span>

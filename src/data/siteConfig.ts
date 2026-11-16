@@ -51,28 +51,39 @@ export const siteConfig = {
 };
 
 /**
- * Official navigation links.
- * Note: 'Home' is accessed directly via the clickable official logo,
- * keeping the navigation clean, balanced, and uncluttered.
+ * Official navigation links for Header and Mobile Drawer.
+ * Note: 'Home' is accessed directly via the clickable official logo.
+ * 'Why Choose Us' and 'Testimonials' are prominently featured on the Home Page and Footer,
+ * keeping the primary navbar clean, balanced, and uncluttered.
  */
 export const mainNav: NavItem[] = [
   { label: 'Our Team', href: '/team' },
-  { label: 'Why Choose Us', href: '/#why-us' },
   { label: 'Services', href: '/services' },
-  { label: 'Testimonials', href: '/testimonials' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'Blogs', href: '/blog' },
-  { label: 'Dental Tourism', href: '/#visiting-nashik' },
+  { label: 'Dental Tourism', href: '/dental-tourism' },
+  { label: 'Post-Treatment Support', href: '/post-treatment-support' },
   { label: 'Contact Us', href: '/contact' }
 ];
 
 export const desktopPrimaryNav: NavItem[] = [
   { label: 'Our Team', href: '/team' },
-  { label: 'Why Choose Us', href: '/#why-us' },
+  { label: 'Services', href: '/services' },
+  { label: 'Gallery', href: '/gallery' },
+  { label: 'Blogs', href: '/blog' },
+  { label: 'Dental Tourism', href: '/dental-tourism' },
+  { label: 'Post-Treatment Support', href: '/post-treatment-support' },
+  { label: 'Contact Us', href: '/contact' }
+];
+
+export const footerNav: NavItem[] = [
+  { label: 'Our Team', href: '/team' },
+  { label: 'Why Choose Us', href: '/why-choose-us' },
   { label: 'Services', href: '/services' },
   { label: 'Testimonials', href: '/testimonials' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'Blogs', href: '/blog' },
-  { label: 'Dental Tourism', href: '/#visiting-nashik' },
+  { label: 'Dental Tourism', href: '/dental-tourism' },
+  { label: 'Post-Treatment Support', href: '/post-treatment-support' },
   { label: 'Contact Us', href: '/contact' }
 ];

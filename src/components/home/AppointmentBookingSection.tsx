@@ -27,7 +27,7 @@ export function AppointmentBookingSection() {
                 id="cta-title"
                 className="mt-5 font-serif text-3xl sm:text-4xl lg:text-[44px] font-bold text-[#123B59] leading-[1.12]"
               >
-                Ready to Take the First Step Towards a Healthier Smile?
+                Ready for a Healthier, More Confident Smile?
               </h2>
 
               <p className="mt-4 text-base sm:text-lg leading-relaxed text-[#34465A]">

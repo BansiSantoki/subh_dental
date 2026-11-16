@@ -15,10 +15,13 @@ export function getSitemapGroups(): SitemapGroup[] {
       links: [
         { label: 'Home', path: '/' },
         { label: 'Our Team', path: '/team' },
+        { label: 'Why Choose Us', path: '/why-choose-us' },
         { label: 'All Treatments', path: '/services' },
         { label: 'Gallery', path: '/gallery' },
         { label: 'Patient Testimonials', path: '/testimonials' },
         { label: 'Blog & Articles', path: '/blog' },
+        { label: 'Dental Tourism', path: '/dental-tourism' },
+        { label: 'Post-Treatment Support', path: '/post-treatment-support' },
         { label: 'Contact Us', path: '/contact' },
         { label: 'Book Appointment', path: '/book-appointment' },
         { label: 'Privacy Policy', path: '/privacy-policy' },

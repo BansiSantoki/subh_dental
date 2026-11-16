@@ -108,6 +108,17 @@ export function WhyChooseUs() {
                 </div>
               </div>
             </Reveal>
+
+            {/* Link to Dedicated Page */}
+            <Reveal delay={0.18} className="mt-8 text-center sm:text-left">
+              <a
+                href="/why-choose-us"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-[#087FAE] hover:text-[#076D96] transition-colors"
+              >
+                <span>Read our full clinical philosophy and standards</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </Reveal>
           </div>
         </div>
       </div>

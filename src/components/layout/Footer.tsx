@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import { Logo } from '../shared/Logo';
 import { WhatsAppLink } from '../shared/WhatsAppLink';
-import { mainNav, siteConfig } from '../../data/siteConfig';
+import { footerNav, siteConfig } from '../../data/siteConfig';
 import { services } from '../../data/services';
 import { useAppointment } from '../../contexts/AppointmentContext';
 import { buttonClass } from '../../utils/buttonStyles';
@@ -106,7 +106,7 @@ export function Footer() {
               <span>Quick Navigation</span>
             </h3>
             <ul className="mt-4 space-y-2.5 text-xs sm:text-sm text-[#DCEFF8]/80">
-              {mainNav.map((item) => (
+              {footerNav.map((item) => (
                 <li key={item.label}>
                   <Link
                     to={item.href}

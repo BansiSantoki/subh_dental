@@ -53,7 +53,7 @@ export function Services() {
               Book a Consultation
             </button>
             <WhatsAppLink variant="whatsappOutline" size="lg">
-              Ask on WhatsApp
+              To Know More
             </WhatsAppLink>
           </>
         }

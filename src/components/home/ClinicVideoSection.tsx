@@ -90,12 +90,12 @@ export function ClinicVideoSection() {
             </span>
             <h2
               id="clinic-tour-title"
-              className="mt-6 font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.08] text-[#123B59]"
+              className="mt-6 font-serif text-3xl sm:text-4xl lg:text-[42px] font-bold leading-tight text-[#123B59]"
             >
               Take a Look Inside <span className="text-[#087FAE]">Shubh Smile</span>
             </h2>
             <p className="mt-5 text-base sm:text-lg leading-relaxed text-[#34465A]">
-              Get an authentic glimpse of our clinic operatory, dental technology, and welcoming atmosphere designed to keep you relaxed and comfortable.
+              Discover our clinic, our team, and the care we provide to help you enjoy a healthier, more confident smile.
             </p>
 
             <div className="mt-8 flex items-center gap-3 text-sm font-semibold text-[#123B59]">

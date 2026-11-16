@@ -77,7 +77,7 @@ export function PostTreatmentSupport() {
               </aside>
             </Reveal>
 
-            {/* Direct WhatsApp Guidance Button */}
+            {/* Direct WhatsApp Guidance Button & Full Page Link */}
             <Reveal className="mt-8 flex flex-wrap items-center gap-4">
               <WhatsAppLink
                 message={siteConfig.aftercareWhatsAppMessage}
@@ -93,6 +93,12 @@ export function PostTreatmentSupport() {
               >
                 <PhoneCallIcon className="h-4 w-4 text-[#087FAE]" />
                 <span>Call Clinic Reception</span>
+              </a>
+              <a
+                href="/post-treatment-support"
+                className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#087FAE] hover:underline py-2"
+              >
+                <span>View Full Aftercare Guide &rarr;</span>
               </a>
             </Reveal>
           </div>

@@ -52,7 +52,7 @@ export function ServiceCard({ service, variant = 'grid' }: ServiceCardProps) {
               srContext={service.name}
               className="!h-8 !px-3 text-xs"
             >
-              WhatsApp Enquiry
+              To Know More
             </WhatsAppLink>
             <Link
               to={href}
@@ -111,7 +111,7 @@ export function ServiceCard({ service, variant = 'grid' }: ServiceCardProps) {
           {service.short}
         </p>
 
-        {/* Buttons: Learn More & WhatsApp Enquiry */}
+        {/* Buttons: Learn More & WhatsApp "To Know More" */}
         <div className="mt-5 flex flex-wrap items-center justify-between gap-2.5 border-t border-[#E2EAF0] pt-4">
           <Link
             to={href}
@@ -126,9 +126,9 @@ export function ServiceCard({ service, variant = 'grid' }: ServiceCardProps) {
             size="sm"
             variant="whatsappOutline"
             srContext={service.name}
-            className="!h-9 !px-3.5 text-xs"
+            className="!h-9 !px-3.5 text-xs font-semibold"
           >
-            WhatsApp Enquiry
+            To Know More
           </WhatsAppLink>
         </div>
       </div>

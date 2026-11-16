@@ -123,7 +123,7 @@ export function HeroSection() {
                 className={buttonClass('primary', 'lg', 'shadow-md')}
               >
                 <CalendarCheckIcon className="h-5 w-5" />
-                <span>Book Appointment</span>
+                <span>Book an Appointment</span>
               </button>
 
               <Link to="/services" className={buttonClass('secondary', 'lg')}>

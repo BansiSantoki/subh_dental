@@ -7,8 +7,6 @@ import { WhyChooseUs } from '../components/home/WhyChooseUs';
 import { ServicesSection } from '../components/home/ServicesSection';
 import { TeamSection } from '../components/home/TeamSection';
 import { TestimonialsSection } from '../components/home/TestimonialsSection';
-import { GallerySection } from '../components/home/GallerySection';
-import { DentalTourismSection } from '../components/home/DentalTourismSection';
 import { SmileJourney } from '../components/home/SmileJourney';
 import { BlogPreviewSection } from '../components/home/BlogPreviewSection';
 import { PostTreatmentSupport } from '../components/home/PostTreatmentSupport';
@@ -33,46 +31,40 @@ export function Home() {
         jsonLd={[dentistSchema(), websiteSchema(), webPageSchema(title, description, '/')]}
       />
 
-      {/* B. Hero Section */}
+      {/* A. Hero Section */}
       <HeroSection />
 
-      {/* Clinic Video Tour */}
-      <ClinicVideoSection />
-
-      {/* C. About the Clinic ("Dentistry That Puts You First.") */}
+      {/* B. About the Studio ("Dentistry That Puts You First.") */}
       <AboutSection />
 
-      {/* D. Why Choose Us */}
+      {/* C. Why Choose Us */}
       <WhyChooseUs />
 
-      {/* E. Dental Services */}
+      {/* D. Dental Services Preview */}
       <ServicesSection />
 
-      {/* F. Our Team Preview */}
+      {/* Clinical Team (Dr. Naik) */}
       <TeamSection />
+
+      {/* E. Your Smile Journey (6-Step Visual Journey) */}
+      <SmileJourney />
+
+      {/* F. Clinic Video Tour ("Take a Look Inside Shubh Smile") */}
+      <ClinicVideoSection />
 
       {/* G. Patient Testimonials */}
       <TestimonialsSection />
 
-      {/* H. Gallery */}
-      <GallerySection />
-
-      {/* I. Dental Tourism */}
-      <DentalTourismSection />
-
-      {/* J. Your Smile Journey (6-Step Visual Journey) */}
-      <SmileJourney />
+      {/* H. Post-Treatment Support */}
+      <PostTreatmentSupport />
 
       {/* K. Blogs Preview */}
       <BlogPreviewSection />
 
-      {/* L. Post-Treatment Support */}
-      <PostTreatmentSupport />
-
-      {/* M. Appointment CTA ("Ready to Take the First Step Towards a Healthier Smile?") */}
+      {/* L. Final Appointment CTA ("Ready for a Healthier, More Confident Smile?") */}
       <AppointmentBookingSection />
 
-      {/* Contact Section with Google Maps & Details */}
+      {/* Contact Section with Google Maps & Direct Details */}
       <ContactSection />
     </>
   );

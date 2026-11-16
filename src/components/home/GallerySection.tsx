@@ -1,98 +1,76 @@
 import React, { useCallback, useState } from 'react';
-import { ExpandIcon, CameraIcon } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ExpandIcon, ArrowRightIcon } from 'lucide-react';
 import { ImageLightbox } from './ImageLightbox';
 import { Reveal } from '../shared/Reveal';
 import { SectionHeading } from '../shared/SectionHeading';
 import { galleryImages } from '../../data/gallery';
 
-const aspectClass = {
-  portrait: 'aspect-[4/5]',
-  landscape: 'aspect-[3/2]',
-  square: 'aspect-square'
-};
-
 export function GallerySection() {
   const [active, setActive] = useState<number | null>(null);
-  const [category, setCategory] = useState<string>('All');
   const close = useCallback(() => setActive(null), []);
 
-  const categories = ['All', 'Clinic & Lounge', 'Treatment Operatory', 'Equipment', 'Consultation & Team', 'Smile Results'];
-
-  const filtered = category === 'All'
-    ? galleryImages
-    : galleryImages.filter((img) => img.category === category);
+  // Curated, small, and attractive homepage preview (fewer, better photos)
+  const previewImages = galleryImages.slice(0, 4);
 
   return (
-    <section id="gallery" aria-labelledby="gallery-title" className="bg-[#F2F8FC] py-20 md:py-28 lg:py-32">
+    <section id="gallery" aria-labelledby="gallery-title" className="bg-[#F4F9FC] py-20 md:py-28">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
-        <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+        <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <SectionHeading
             id="gallery-title"
             eyebrow="Clinic & Practice Gallery"
-            title="A Closer Look at Our Space."
-            intro="Explore our welcoming reception, spotless clinical treatment suites, and sterilized instrumentation in Nashik. Select any photograph to view larger."
+            title="A Look Inside Our Clinic."
+            intro="Explore our reception lounge, modern operatory suites, and sterilised equipment in Indira Nagar, Nashik."
           />
 
-          {/* Category Tabs */}
           <Reveal delay={0.08} className="shrink-0">
-            <div className="no-scrollbar flex gap-2 overflow-x-auto pb-1">
-              {categories.map((cat) => (
-                <button
-                  key={cat}
-                  type="button"
-                  onClick={() => setCategory(cat)}
-                  className={`rounded-full px-4 py-2 text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer ${
-                    category === cat
-                      ? 'bg-[#087FAE] text-white shadow-sm'
-                      : 'border border-[#E2EAF0] bg-white text-[#123B59] hover:border-[#087FAE] hover:text-[#087FAE]'
-                  }`}
-                >
-                  {cat}
-                </button>
-              ))}
-            </div>
+            <Link
+              to="/gallery"
+              className="inline-flex items-center gap-2 rounded-full border border-[#E2EAF0] bg-white px-5 py-2.5 text-xs sm:text-sm font-semibold text-[#123B59] hover:border-[#087FAE] hover:text-[#087FAE] transition-colors shadow-2xs"
+            >
+              <span>View Full Gallery</span>
+              <ArrowRightIcon className="h-4 w-4" />
+            </Link>
           </Reveal>
         </div>
 
-        {/* Gallery Grid */}
-        <ul className="mt-12 sm:mt-14 columns-1 gap-5 sm:columns-2 lg:columns-3 [&>li]:mb-5">
-          {filtered.map((img, i) => (
-            <li key={img.id} className="break-inside-avoid">
-              <Reveal delay={0.04 * (i % 3)}>
-                <button
-                  type="button"
-                  onClick={() => {
-                    const originalIndex = galleryImages.findIndex((g) => g.id === img.id);
-                    setActive(originalIndex >= 0 ? originalIndex : 0);
-                  }}
-                  className="group relative block w-full overflow-hidden rounded-2xl border border-[#E2EAF0] bg-white text-left shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg cursor-pointer"
-                  aria-label={`View larger photograph: ${img.caption}`}
-                >
+        {/* Small & Attractive Preview Grid */}
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {previewImages.map((img, i) => (
+            <Reveal key={img.id} delay={0.05 * i}>
+              <button
+                type="button"
+                onClick={() => setActive(i)}
+                className="group relative block w-full overflow-hidden rounded-2xl border border-[#E2EAF0] bg-white text-left shadow-xs transition-all duration-300 hover:-translate-y-1 hover:shadow-md cursor-pointer"
+                aria-label={`View larger photograph: ${img.caption}`}
+              >
+                <div className="aspect-[4/3] w-full overflow-hidden bg-slate-100">
                   <img
                     src={img.src}
                     alt={img.alt}
                     loading="lazy"
                     decoding="async"
-                    width={800}
-                    height={img.aspect === 'landscape' ? 533 : img.aspect === 'portrait' ? 1000 : 800}
-                    className={`w-full object-cover transition-transform duration-700 ease-silk group-hover:scale-105 ${aspectClass[img.aspect]}`}
+                    width={600}
+                    height={450}
+                    className="h-full w-full object-cover transition-transform duration-500 ease-silk group-hover:scale-105"
                   />
+                </div>
 
-                  {/* Caption Bar */}
-                  <div className="absolute inset-x-3 bottom-3 flex items-center justify-between rounded-xl bg-[#123B59]/85 py-2.5 pl-4 pr-2.5 text-xs sm:text-sm font-medium text-white shadow-md backdrop-blur transition-all duration-200 group-hover:bg-[#087FAE]/95">
-                    <span className="truncate pr-2">{img.caption}</span>
-                    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-white/20">
-                      <ExpandIcon className="h-3.5 w-3.5" aria-hidden="true" />
-                    </span>
-                  </div>
-                </button>
-              </Reveal>
-            </li>
+                {/* Caption Bar */}
+                <div className="p-3.5 bg-white border-t border-[#E2EAF0] flex items-center justify-between">
+                  <p className="truncate text-xs font-semibold text-[#123B59]">{img.caption}</p>
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#EAF4FA] text-[#087FAE]">
+                    <ExpandIcon className="h-3 w-3" aria-hidden="true" />
+                  </span>
+                </div>
+              </button>
+            </Reveal>
           ))}
-        </ul>
+        </div>
       </div>
 
-      <ImageLightbox images={galleryImages} index={active} onClose={close} onChange={setActive} />
+      <ImageLightbox images={previewImages} index={active} onClose={close} onChange={setActive} />
     </section>
   );
 }

@@ -13,21 +13,21 @@ interface FieldProps {
 export function Field({ id, label, optional, error, hint, className = '', children }: FieldProps) {
   return (
     <div className={className}>
-      <label htmlFor={id} className="mb-2 flex items-baseline justify-between gap-3 text-[13.5px] font-semibold text-charcoal">
+      <label htmlFor={id} className="mb-1.5 flex items-baseline justify-between gap-3 text-[13px] font-semibold text-[#123B59]">
         <span>{label}</span>
-        {optional && <span className="text-[12px] font-medium text-muted">Optional</span>}
+        {optional && <span className="text-[11.5px] font-medium text-[#34465A]/60">Optional</span>}
       </label>
       {children}
-      {hint && !error &&
-      <p id={`${id}-hint`} className="mt-1.5 text-[12.5px] text-muted">
+      {hint && !error && (
+        <p id={`${id}-hint`} className="mt-1 text-[12px] text-[#34465A]/70">
           {hint}
         </p>
-      }
-      {error &&
-      <p id={`${id}-error`} role="alert" className="mt-1.5 text-[12.5px] font-medium text-[#A23F34]">
+      )}
+      {error && (
+        <p id={`${id}-error`} role="alert" className="mt-1 text-[12px] font-medium text-[#B4483C]">
           {error}
         </p>
-      }
-    </div>);
-
+      )}
+    </div>
+  );
 }

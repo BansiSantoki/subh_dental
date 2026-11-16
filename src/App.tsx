@@ -8,6 +8,7 @@ import { locations } from './data/locations';
 
 const About = lazy(() => import('./pages/About').then((m) => ({ default: m.About })));
 const TeamPage = lazy(() => import('./pages/TeamPage').then((m) => ({ default: m.TeamPage })));
+const WhyChooseUsPage = lazy(() => import('./pages/WhyChooseUsPage').then((m) => ({ default: m.WhyChooseUsPage })));
 const GalleryPage = lazy(() => import('./pages/GalleryPage').then((m) => ({ default: m.GalleryPage })));
 const TestimonialsPage = lazy(() => import('./pages/TestimonialsPage').then((m) => ({ default: m.TestimonialsPage })));
 const ContactPage = lazy(() => import('./pages/ContactPage').then((m) => ({ default: m.ContactPage })));
@@ -16,6 +17,8 @@ const Services = lazy(() => import('./pages/Services').then((m) => ({ default: m
 const TreatmentPage = lazy(() => import('./pages/TreatmentPage').then((m) => ({ default: m.TreatmentPage })));
 const BlogListing = lazy(() => import('./pages/BlogListing').then((m) => ({ default: m.BlogListing })));
 const BlogArticle = lazy(() => import('./pages/BlogArticle').then((m) => ({ default: m.BlogArticle })));
+const DentalTourismPage = lazy(() => import('./pages/DentalTourismPage').then((m) => ({ default: m.DentalTourismPage })));
+const PostTreatmentSupportPage = lazy(() => import('./pages/PostTreatmentSupportPage').then((m) => ({ default: m.PostTreatmentSupportPage })));
 const LocationLanding = lazy(() => import('./pages/LocationLanding').then((m) => ({ default: m.LocationLanding })));
 const LegalPage = lazy(() => import('./pages/LegalPage').then((m) => ({ default: m.LegalPage })));
 const SitemapPage = lazy(() => import('./pages/SitemapPage').then((m) => ({ default: m.SitemapPage })));
@@ -31,6 +34,7 @@ export function App() {
               <Route index element={<Home />} />
               <Route path="about" element={<About />} />
               <Route path="team" element={<TeamPage />} />
+              <Route path="why-choose-us" element={<WhyChooseUsPage />} />
               <Route path="gallery" element={<GalleryPage />} />
               <Route path="testimonials" element={<TestimonialsPage />} />
               <Route path="contact" element={<ContactPage />} />
@@ -39,9 +43,11 @@ export function App() {
               <Route path="services/:slug" element={<TreatmentPage />} />
               <Route path="blog" element={<BlogListing />} />
               <Route path="blog/:slug" element={<BlogArticle />} />
-              {locations.map((l) =>
-              <Route key={l.slug} path={l.slug} element={<LocationLanding location={l} />} />
-              )}
+              <Route path="dental-tourism" element={<DentalTourismPage />} />
+              <Route path="post-treatment-support" element={<PostTreatmentSupportPage />} />
+              {locations.map((l) => (
+                <Route key={l.slug} path={l.slug} element={<LocationLanding location={l} />} />
+              ))}
               <Route path="privacy-policy" element={<LegalPage kind="privacy" />} />
               <Route path="terms-of-use" element={<LegalPage kind="terms" />} />
               <Route path="sitemap" element={<SitemapPage />} />
@@ -50,6 +56,6 @@ export function App() {
           </Routes>
         </AppointmentProvider>
       </MotionConfig>
-    </BrowserRouter>);
-
+    </BrowserRouter>
+  );
 }

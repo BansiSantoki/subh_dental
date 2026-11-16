@@ -1,9 +1,26 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { CheckCircle2Icon } from 'lucide-react';
+import {
+  CheckCircle2Icon,
+  MessageCircleIcon,
+  SearchIcon,
+  FileTextIcon,
+  SparklesIcon,
+  HeartHandshakeIcon,
+  SmileIcon
+} from 'lucide-react';
 import { Reveal } from '../shared/Reveal';
 import { SectionHeading } from '../shared/SectionHeading';
 import { journeySteps } from '../../data/homeSections';
+
+const stepIcons = [
+  MessageCircleIcon,
+  SearchIcon,
+  FileTextIcon,
+  SparklesIcon,
+  HeartHandshakeIcon,
+  SmileIcon
+];
 
 export function SmileJourney() {
   return (
@@ -45,37 +62,42 @@ export function SmileJourney() {
 
           {/* 6-Step Visual Grid (3 columns on desktop, 2 on tablet, 1 on mobile) */}
           <div className="mt-14 sm:mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {journeySteps.map((item, index) => (
-              <motion.div
-                key={item.step}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: '0px 0px -10% 0px' }}
-                transition={{ duration: 0.45, delay: 0.08 * index }}
-                className="group relative flex flex-col justify-between rounded-2xl border border-white/15 bg-white/5 p-6 sm:p-7 backdrop-blur-sm transition-all duration-300 hover:border-[#087FAE] hover:bg-white/10"
-              >
-                <div>
-                  <div className="flex items-center justify-between">
-                    <span className="font-serif text-3xl sm:text-4xl font-extrabold text-[#7EC4E5] opacity-80 group-hover:opacity-100 transition-opacity">
-                      {item.step}
-                    </span>
-                    <span className="h-2 w-2 rounded-full bg-[#087FAE]" />
+            {journeySteps.map((item, index) => {
+              const StepIcon = stepIcons[index % stepIcons.length];
+              return (
+                <motion.div
+                  key={item.step}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: '0px 0px -10% 0px' }}
+                  transition={{ duration: 0.45, delay: 0.08 * index }}
+                  className="group relative flex flex-col justify-between rounded-2xl border border-white/15 bg-white/5 p-6 sm:p-7 backdrop-blur-sm transition-all duration-300 hover:border-[#087FAE] hover:bg-white/10"
+                >
+                  <div>
+                    <div className="flex items-center justify-between">
+                      <span className="font-serif text-3xl sm:text-4xl font-extrabold text-[#7EC4E5] opacity-80 group-hover:opacity-100 transition-opacity">
+                        {item.step}
+                      </span>
+                      <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-[#7EC4E5] transition-colors group-hover:bg-[#087FAE] group-hover:text-white">
+                        <StepIcon className="h-5 w-5" aria-hidden="true" />
+                      </div>
+                    </div>
+
+                    <h3 className="mt-4 font-serif text-lg sm:text-xl font-bold leading-snug text-white">
+                      {item.title}
+                    </h3>
+
+                    <p className="mt-2.5 text-sm leading-relaxed text-[#DCEFF8]/80">
+                      {item.text}
+                    </p>
                   </div>
 
-                  <h3 className="mt-4 font-serif text-lg sm:text-xl font-bold leading-snug text-white">
-                    {item.title}
-                  </h3>
-
-                  <p className="mt-2.5 text-sm leading-relaxed text-[#DCEFF8]/80">
-                    {item.text}
-                  </p>
-                </div>
-
-                <div className="mt-6 pt-4 border-t border-white/10 text-xs font-medium text-[#7EC4E5]/90">
-                  Step {index + 1} of 6
-                </div>
-              </motion.div>
-            ))}
+                  <div className="mt-6 pt-4 border-t border-white/10 text-xs font-medium text-[#7EC4E5]/90">
+                    Step {index + 1} of 6
+                  </div>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </div>

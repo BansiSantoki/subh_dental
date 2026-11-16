@@ -69,7 +69,7 @@ export function TreatmentPage() {
               size="lg"
               srContext={service.name}
             >
-              WhatsApp Enquiry
+              To Know More
             </WhatsAppLink>
           </>
         }
@@ -211,24 +211,24 @@ export function TreatmentPage() {
       <section aria-labelledby="faq-title" className="bg-white py-16 md:py-24 border-t border-[#E2EAF0]">
         <div className="mx-auto grid max-w-[1440px] gap-12 px-4 sm:px-6 md:px-8 lg:grid-cols-12 lg:gap-16 lg:px-12">
           <Reveal className="lg:col-span-4">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#087FAE]">Common Queries</span>
+            <span className="text-xs font-semibold text-[#087FAE] bg-[#EAF4FA] px-3 py-1 rounded-full">Common Queries</span>
             <h2
               id="faq-title"
-              className="mt-2 font-serif text-3xl sm:text-4xl font-bold text-[#123B59] leading-tight"
+              className="mt-3 font-serif text-2xl sm:text-3xl font-bold text-[#123B59] leading-tight"
             >
               Frequently Asked Questions
             </h2>
-            <p className="mt-4 text-sm text-[#34465A]/80 leading-relaxed">
+            <p className="mt-3 text-sm text-[#34465A]/80 leading-relaxed">
               Have a specific clinical question not covered here? Reach our clinic team directly.
             </p>
             <WhatsAppLink
               message={treatmentMessage(service.name)}
               variant="whatsappOutline"
               size="md"
-              className="mt-6"
+              className="mt-5"
               srContext={service.name}
             >
-              Ask on WhatsApp
+              To Know More on WhatsApp
             </WhatsAppLink>
           </Reveal>
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Quote, MessageSquareQuote, CheckCircle, Calendar, ArrowRight, Heart } from 'lucide-react';
+import { Quote, MessageSquareQuote, CheckCircle, Calendar, ArrowRight, Heart, Star } from 'lucide-react';
 import { SEOHead } from '../components/shared/SEOHead';
 import { Breadcrumbs } from '../components/shared/Breadcrumbs';
 import { siteConfig } from '../data/siteConfig';
@@ -11,7 +11,10 @@ export function TestimonialsPage() {
   const { openAppointment } = useAppointment();
   const [selectedFilter, setSelectedFilter] = useState<string>('All');
 
-  const categories = ['All', 'Preventive Care', 'Smile Consultation', 'Restorative Care'];
+  const categories = [
+    'All',
+    ...(Array.from(new Set(testimonials.map((t) => t.treatment).filter(Boolean))) as string[])
+  ];
 
   const filteredTestimonials =
     selectedFilter === 'All'
@@ -70,7 +73,14 @@ export function TestimonialsPage() {
                 className="flex flex-col justify-between rounded-3xl border border-[#E2EAF0] bg-white p-7 sm:p-8 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:border-[#087FAE]/30 hover:shadow-md"
               >
                 <div>
-                  <Quote className="h-8 w-8 text-[#DCEFF8] mb-4" />
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="flex text-amber-400 gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-4 w-4 fill-amber-400" />
+                      ))}
+                    </div>
+                    <Quote className="h-7 w-7 text-[#DCEFF8]" />
+                  </div>
                   <p className="font-serif text-base sm:text-lg leading-relaxed text-[#123B59]">
                     “{t.quote}”
                   </p>
