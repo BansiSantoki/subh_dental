@@ -29,7 +29,7 @@ export function TeamSection() {
             <div className="overflow-hidden rounded-[28px] border-4 border-white bg-white shadow-[0_20px_50px_-15px_rgba(8,127,174,0.18)]">
               <ParallaxImage
                 src={featured.portrait}
-                alt="Reception and practice setting of Dr. Naik's Shubh Smile Multispeciality Dental Clinic in Nashik"
+                alt="Dr. Naik, Lead Dental Surgeon at Dr. Naik's Shubh Smile Multispeciality Dental Clinic in Nashik"
                 className="aspect-[4/3] sm:aspect-[1/1] w-full"
                 objectPosition="center"
               />

@@ -200,3 +200,54 @@ export const dentures: Service = {
   ],
   related: ['dental-implants', 'crowns-and-bridges', 'general-dentistry']
 };
+
+export const toothExtraction: Service = {
+  slug: 'tooth-extraction',
+  name: 'Wisdom Tooth & Gentle Extractions',
+  category: 'restorative',
+  short: 'Painless, gentle tooth removal and wisdom tooth extractions with comfortable local anesthesia and rapid healing.',
+  image: images.toothExtraction,
+  imageAlt: 'Anatomical educational illustration of gentle tooth extraction procedure with surgical dental instruments',
+  seoTitle: 'Painless Tooth & Wisdom Tooth Extraction in Nashik | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
+  metaDescription:
+    'Gentle tooth removal and wisdom tooth extractions in Nashik. Painless techniques, careful bone preservation, and personalized post-extraction recovery support.',
+  h1: 'Gentle Tooth and Wisdom Tooth Extraction in Nashik',
+  intro: [
+    'While our foremost philosophy is always natural tooth preservation, an extraction may occasionally be necessary when a tooth is compromised beyond repair by severe trauma, deep decay beneath the bone, or impaction.',
+    'At Shubh Smile, extractions are performed with utmost gentleness under effective local anesthesia, ensuring you remain completely comfortable and relaxed throughout.'
+  ],
+  reasons: [
+    'Impacted, painful, or misaligned wisdom teeth causing gum infections',
+    'Severe tooth decay or fractures extending deep below the gum line',
+    'Advanced periodontal disease with significant tooth mobility',
+    'Orthodontic clearance to create necessary space for aligner or braces treatment',
+    'Emergency relief for acute dental trauma or irreversible root infections'
+  ],
+  benefits: [
+    'Immediate relief from acute, throbbing toothaches and infection pressure',
+    'Prevents damage or crowding to neighboring healthy teeth and jawbone',
+    'Minimally invasive extraction techniques that preserve surrounding alveolar bone',
+    'Comprehensive aftercare guidance and prompt follow-up assistance for rapid healing'
+  ],
+  process: [
+    { title: 'Diagnostic Radiograph', text: 'Digital X-rays evaluate root curvature, bone levels, and proximity to anatomical nerves.' },
+    { title: 'Complete Local Anesthesia', text: 'Targeted numbing ensures the treatment area is entirely pain-free before procedure begins.' },
+    { title: 'Gentle Elevation', text: 'Careful precision instruments gently loosen and remove the tooth with minimal tissue pressure.' },
+    { title: 'Hemostasis & Post-Care', text: 'A sterile gauze compress is placed, and clear instructions for comfortable recovery are provided.' }
+  ],
+  suitability:
+    'Evaluated carefully through clinical examination and digital radiographs. Medical history and medications are thoroughly reviewed prior to procedure.',
+  faqs: [
+    {
+      question: 'Will I feel pain during a tooth extraction?',
+      answer:
+        'No. Effective local anesthesia completely numbs the tooth and surrounding gums. You may feel slight pressure, but no sharp discomfort or pain.'
+    },
+    {
+      question: 'How long does recovery take after an extraction?',
+      answer:
+        'Most patients resume normal light activities within 24 to 48 hours. The extraction site heals substantially within 1 to 2 weeks with our gentle post-care protocol.'
+    }
+  ],
+  related: ['root-canal-treatment', 'dental-implants', 'general-dentistry']
+};

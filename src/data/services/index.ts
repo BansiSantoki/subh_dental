@@ -1,6 +1,6 @@
 import { generalDentistry, teethCleaning, rootCanal, pediatricDentistry } from './preventiveCare';
 import { cosmeticDentistry, teethWhitening, dentalVeneers, smileMakeover } from './cosmetic';
-import { crownsAndBridges, dentalImplants, dentures, clearAligners } from './restorative';
+import { crownsAndBridges, dentalImplants, dentures, clearAligners, toothExtraction } from './restorative';
 import type { Service, ServiceCategory } from '../../types/content';
 
 /** All treatments, in display order. Add or reorder services here. */
@@ -16,6 +16,7 @@ dentalImplants,
 clearAligners,
 pediatricDentistry,
 dentures,
+toothExtraction,
 smileMakeover];
 
 

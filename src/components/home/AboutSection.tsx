@@ -18,10 +18,11 @@ export function AboutSection() {
             <div className="relative mx-auto max-w-lg lg:max-w-none">
               <div className="overflow-hidden rounded-[28px] border border-[#E2EAF0] bg-white shadow-[0_20px_50px_-20px_rgba(8,127,174,0.18)]">
                 <ParallaxImage
-                  src={images.dentistExamination}
-                  alt="Dentist performing gentle clinical dental examination with professional dental lighting at Dr. Naik's Shubh Smile Dental Clinic"
+                  src={images.clinicRoom}
+                  alt="Modern, sterile dental operatory clinic room with blue dental chair at Dr. Naik's Shubh Smile Dental Clinic in Nashik"
                   className="aspect-[4/3] w-full"
-                  strength={15}
+                  strength={12}
+                  objectPosition="center 40%"
                   width={1200}
                   height={900}
                 />

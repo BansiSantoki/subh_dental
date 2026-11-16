@@ -170,7 +170,7 @@ export function HeroSection() {
               <div className="relative aspect-[4/3] sm:aspect-[14/11] lg:aspect-[5/4] overflow-hidden rounded-[32px] border-4 border-white bg-slate-100 shadow-[0_25px_60px_-15px_rgba(8,127,174,0.22)]">
                 <img
                   src={images.heroDental}
-                  alt="Modern, high-tech dental operatory suite with ergonomic patient dental chair at Dr. Naik's Shubh Smile Multispeciality Dental Clinic"
+                  alt="Welcoming reception lounge and clinical setting at Dr. Naik's Shubh Smile Multispeciality Dental Clinic in Nashik"
                   className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
                   loading="eager"
                   width={1400}

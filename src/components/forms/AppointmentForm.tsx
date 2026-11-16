@@ -32,9 +32,9 @@ export function AppointmentForm({ initialTreatment = '' }: { initialTreatment?: 
     errors[key as keyof typeof errors] ? `${p}-${key}-error` : hint ? `${p}-${key}-hint` : undefined;
 
   return (
-    <form noValidate onSubmit={handleSubmit} className="flex flex-1 flex-col min-h-0 min-w-0">
+    <form noValidate onSubmit={handleSubmit} className="flex flex-1 flex-col min-h-0 min-w-0 h-full">
       {/* Scrollable Form Fields */}
-      <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain px-5 py-4 sm:px-7 sm:py-5 space-y-3.5 modal-scrollbar">
+      <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain px-5 py-3.5 sm:px-7 sm:py-4 space-y-3 modal-scrollbar">
         {/* Full Name */}
         <Field id={`${p}-name`} label="Patient full name" error={errors.name}>
           <input
@@ -135,14 +135,14 @@ export function AppointmentForm({ initialTreatment = '' }: { initialTreatment?: 
       </div>
 
       {/* Fixed/Sticky Footer: Always Visible and Clickable */}
-      <div className="shrink-0 border-t border-[#E2EAF0] bg-[#F8FBFC] px-5 py-3.5 sm:px-7 sm:py-4">
+      <div className="shrink-0 border-t border-[#E2EAF0] bg-[#F8FBFC] px-5 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:px-7 sm:py-3.5 z-10">
         <button
           type="submit"
           disabled={status === 'preparing'}
           className={buttonClass(
             'primary',
             'lg',
-            'w-full shadow-sm font-semibold flex items-center justify-center gap-2 h-11 sm:h-12 text-sm sm:text-base'
+            'w-full shadow-sm font-semibold flex items-center justify-center gap-2 h-11 sm:h-11.5 text-sm sm:text-base cursor-pointer'
           )}
         >
           {status === 'preparing' ? (

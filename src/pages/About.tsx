@@ -180,22 +180,22 @@ export function About() {
               <div className="grid grid-cols-2 gap-3.5">
                 <img
                   src={images.reception}
-                  alt="Reception lounge at Dr. Naik's Shubh Smile Multispeciality Dental Clinic"
+                  alt="Reception lounge at Dr. Naik's Shubh Smile Multispeciality Dental Clinic in Nashik"
                   className="h-44 w-full rounded-2xl object-cover shadow-xs border border-[#E2EAF0]"
                 />
                 <img
-                  src={images.treatmentRoom}
-                  alt="Modern treatment room at Dr. Naik's Shubh Smile Multispeciality Dental Clinic"
+                  src={images.clinicRoom}
+                  alt="Modern dental clinic operatory room with blue chair at Dr. Naik's Shubh Smile Dental Clinic"
                   className="h-44 w-full rounded-2xl object-cover shadow-xs border border-[#E2EAF0]"
                 />
                 <img
                   src={images.dentalTools}
-                  alt="Sterilized clinical instruments at Dr. Naik's Shubh Smile Multispeciality Dental Clinic"
+                  alt="Precision dental examination with sterile probe and mouth mirror"
                   className="h-44 w-full rounded-2xl object-cover shadow-xs border border-[#E2EAF0]"
                 />
                 <img
                   src={images.dentistAtWork}
-                  alt="Doctor examining patient at Dr. Naik's Shubh Smile Multispeciality Dental Clinic"
+                  alt="Indian dentist treating patient at Dr. Naik's Shubh Smile Multispeciality Dental Clinic"
                   className="h-44 w-full rounded-2xl object-cover shadow-xs border border-[#E2EAF0]"
                 />
               </div>

@@ -57,11 +57,10 @@ export function BlogListing() {
                 type="button"
                 aria-pressed={category === c}
                 onClick={() => setCategory(c)}
-                className={`h-10 shrink-0 rounded-full px-5 text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer ${
-                  category === c
+                className={`h-10 shrink-0 rounded-full px-5 text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer ${category === c
                     ? 'border-[#087FAE] bg-[#087FAE] text-white shadow-sm'
                     : 'border border-[#E2EAF0] bg-[#F2F8FC] text-[#123B59] hover:border-[#087FAE] hover:text-[#087FAE]'
-                }`}
+                  }`}
               >
                 {c}
               </button>

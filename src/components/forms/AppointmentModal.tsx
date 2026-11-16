@@ -78,7 +78,7 @@ export function AppointmentModal() {
             tabIndex={-1}
           />
 
-          {/* Modal Container: Flex layout with constrained height and zero overflow clipping */}
+          {/* Modal Container: Explicitly constrained height with zero overflow clipping */}
           <motion.div
             ref={dialogRef}
             role="dialog"
@@ -88,13 +88,13 @@ export function AppointmentModal() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 12, scale: 0.98 }}
             transition={{ duration: 0.25, ease }}
-            className="relative flex flex-col md:flex-row w-full h-[100dvh] sm:h-auto max-h-[100dvh] sm:max-h-[calc(100dvh-2rem)] md:max-h-[min(680px,calc(100dvh-2.5rem))] max-w-4xl overflow-hidden rounded-none sm:rounded-[24px] md:rounded-[28px] bg-white shadow-2xl border-0 sm:border border-[#E2EAF0]"
+            className="relative flex flex-col md:flex-row w-full h-[100dvh] sm:h-[min(650px,calc(100dvh-2rem))] max-h-[100dvh] sm:max-h-[min(650px,calc(100dvh-2rem))] max-w-4xl overflow-hidden rounded-none sm:rounded-[24px] md:rounded-[28px] bg-white shadow-2xl border-0 sm:border border-[#E2EAF0]"
           >
             {/* Left Side: Photo & Brand (Desktop Only) */}
             <div className="relative hidden md:flex md:w-[38%] lg:w-[40%] shrink-0 flex-col justify-end overflow-hidden bg-[#123B59]">
               <img
-                src={images.teethCleaning}
-                alt="Clinical dentistry at Dr. Naik's Shubh Smile Dental Clinic"
+                src={images.reception}
+                alt="Reception and clinical practice of Dr. Naik's Shubh Smile Multispeciality Dental Clinic in Nashik"
                 className="absolute inset-0 h-full w-full object-cover opacity-65"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#123B59] via-[#123B59]/45 to-transparent" />
@@ -113,7 +113,7 @@ export function AppointmentModal() {
             </div>
 
             {/* Right Side: Form with Fixed Header, Scrollable Fields, and Fixed Footer */}
-            <div className="flex flex-1 flex-col min-h-0 min-w-0 bg-white">
+            <div className="flex flex-1 flex-col min-h-0 min-w-0 bg-white h-full">
               {/* Fixed Header */}
               <div className="shrink-0 flex items-start justify-between gap-4 px-5 pt-4 pb-3 sm:px-7 sm:pt-5 sm:pb-3.5 border-b border-[#E2EAF0] bg-white z-10">
                 <div>

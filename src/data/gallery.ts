@@ -13,58 +13,58 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: 'g2',
-    src: images.treatmentRoom,
-    alt: 'Modern, sterile dental operatory room with ergonomic dental chair and overhead light',
-    caption: 'Advanced Treatment Operatory',
+    src: '/assets/images/indian-dental-operatory-clinic.jpg',
+    alt: 'Clean, modern dental operatory room with blue dental chair and sterilization equipment at Shubh Smile Nashik',
+    caption: 'Dental Operatory Suite',
     category: 'Treatment Operatory',
     aspect: 'portrait'
   },
   {
     id: 'g3',
-    src: images.dentalTools,
-    alt: 'Hospital-grade autoclaved and sterilized dental instruments prepared on surgical tray',
-    caption: 'Sterilized Clinical Instruments',
+    src: '/assets/images/dental-examination-probe.jpg',
+    alt: 'Close-up examination of teeth with precision dental mirror and probe in sterile gloves',
+    caption: 'Precision Dental Examination',
     category: 'Equipment',
     aspect: 'square'
   },
   {
     id: 'g4',
     src: images.receptionNeon,
-    alt: 'Welcoming consultation and patient waiting area at Shubh Smile Clinic',
+    alt: 'Welcoming consultation and patient waiting area at Shubh Smile Clinic with neon logo',
     caption: 'Patient Waiting Lounge',
     category: 'Clinic & Lounge',
     aspect: 'portrait'
   },
   {
     id: 'g5',
-    src: images.consultation,
-    alt: 'Dentist conducting detailed patient consultation and reviewing dental records',
-    caption: 'Patient Consultation Area',
+    src: '/assets/images/indian-dentist-patient-treatment.jpg',
+    alt: 'Indian dentist gently treating patient in dental chair with clinical illumination at Shubh Smile',
+    caption: 'Indian Dentist Patient Care',
     category: 'Consultation & Team',
-    aspect: 'landscape'
+    aspect: 'portrait'
   },
   {
     id: 'g6',
-    src: images.heroDental,
-    alt: 'Spacious dental treatment suite with modern diagnostic and treatment technology',
-    caption: 'Clinical Operatory Suite',
-    category: 'Treatment Operatory',
+    src: '/assets/images/dentist-operatory-procedure.jpg',
+    alt: 'Dentist performing clinical procedure in operatory chair with dental unit and digital monitor',
+    caption: 'Clinical Procedure in Chair',
+    category: 'Consultation & Team',
     aspect: 'portrait'
   },
   {
     id: 'g7',
-    src: images.implantModel,
-    alt: 'Precision dental implant education model showing titanium root and custom crown',
-    caption: 'Dental Implant Model',
+    src: '/assets/images/dental-treatment-collage.jpg',
+    alt: 'Clinical collage displaying braces, crowns, implants, and restorative dental procedures',
+    caption: 'Multispeciality Treatments',
     category: 'Equipment',
     aspect: 'square'
   },
   {
     id: 'g8',
-    src: images.aligners,
-    alt: 'Transparent orthodontic clear aligner trays in protective travel case',
-    caption: 'Clear Orthodontic Aligners',
-    category: 'Smile Results',
+    src: '/assets/images/tooth-extraction-procedure.jpg',
+    alt: 'Anatomical educational illustration of gentle tooth extraction procedure with surgical forceps',
+    caption: 'Tooth Extraction & Oral Surgery',
+    category: 'Treatment Operatory',
     aspect: 'square'
   },
   {

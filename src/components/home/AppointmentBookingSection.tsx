@@ -80,8 +80,8 @@ export function AppointmentBookingSection() {
             <div className="relative h-full min-h-[320px] lg:col-span-5 bg-slate-100">
               <img
                 src={images.dentistAtWork}
-                alt="Dentist providing gentle patient care at Dr. Naik's Shubh Smile Multispeciality Dental Clinic"
-                className="h-full w-full object-cover"
+                alt="Indian dentist providing gentle patient care at Dr. Naik's Shubh Smile Multispeciality Dental Clinic"
+                className="h-full w-full object-cover object-top"
                 loading="lazy"
                 width={800}
                 height={700}

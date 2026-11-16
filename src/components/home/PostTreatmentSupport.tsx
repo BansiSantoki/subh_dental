@@ -18,9 +18,9 @@ export function PostTreatmentSupport() {
             <div className="overflow-hidden rounded-[28px] border-4 border-white bg-white shadow-[0_20px_50px_-20px_rgba(8,127,174,0.18)]">
               <ParallaxImage
                 src={images.treatmentRoom}
-                alt="Modern, sterile dental operatory at Dr. Naik's Shubh Smile Multispeciality Dental Clinic"
+                alt="Dentist performing patient treatment in modern operatory chair at Dr. Naik's Shubh Smile Multispeciality Dental Clinic"
                 className="aspect-[4/3] sm:aspect-[4/5] w-full"
-                objectPosition="center 20%"
+                objectPosition="center 30%"
               />
               <div className="p-5 border-t border-[#E2EAF0] bg-white">
                 <p className="font-serif text-lg font-bold text-[#123B59]">

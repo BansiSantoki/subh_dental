@@ -44,7 +44,7 @@ export function TeamPage() {
             <div className="overflow-hidden rounded-2xl border border-[#E2EAF0] bg-[#F2F8FC] relative">
               <img
                 src={leadDoctor.portrait}
-                alt="Clinic practice setting of Dr. Naik's Shubh Smile Multispeciality Dental Clinic in Nashik"
+                alt="Dr. Naik, Lead Dental Surgeon at Dr. Naik's Shubh Smile Multispeciality Dental Clinic in Nashik"
                 className="h-full min-h-[300px] sm:min-h-[360px] w-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#123B59]/70 via-transparent to-transparent" />

@@ -88,7 +88,7 @@ export function WhyChooseUs() {
                 <div className="flex flex-col sm:flex-row items-center gap-5">
                   <img
                     src={images.dentalTools}
-                    alt="Sterile dental instruments on surgical tray"
+                    alt="Close-up clinical dental examination of teeth with sterile probe and mirror"
                     className="h-28 w-full sm:w-36 rounded-xl object-cover shrink-0"
                     loading="lazy"
                   />

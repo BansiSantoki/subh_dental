@@ -1,70 +1,66 @@
 /**
- * Central curated image library for Dr. Naik's Shubh Smile Multispeciality Dental Clinic.
- * Strictly uses realistic, verified clinical and dental photography.
- * Zero AI-generated faces, zero 3D tooth cartoons, zero generic handshake/hands-holding stock photos.
+ * Central curated image library for Dr. Naik's Shubh Smile Multispeciality Dental Clinic, Nashik.
+ * Uses 100% genuine clinic photography and authentic Indian dental care imagery provided by the clinic.
+ * Zero AI-generated faces, zero cartoon 3D teeth, zero foreign Caucasian stock models.
  */
 export const images = {
-  // Hero: Real modern bright dental operatory suite
-  heroDental:
-    'https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=1400&q=80',
+  // Hero: Real reception lounge of Dr. Naik's Shubh Smile Multispeciality Dental Clinic in Nashik
+  heroDental: '/shubh-reception-color.jpg',
   // Backward compatibility alias
-  heroTooth:
-    'https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=1400&q=80',
+  heroTooth: '/shubh-reception-color.jpg',
 
   // Genuine clinic photography: Reception lounge at Shubh Smile Nashik
   reception: '/shubh-reception-color.jpg',
   receptionNeon: '/shubh-reception-neon.jpg',
 
-  // Genuine clinic examination
-  dentistExamination: '/dentist-examination.jpg',
+  // Image 1: Authentic dental clinic operatory room (blue chair, counter, autoclave sterilizer)
+  clinicRoom: '/assets/images/indian-dental-operatory-clinic.jpg',
+  dentistExamination: '/assets/images/indian-dental-operatory-clinic.jpg',
 
-  // Operatory & treatment room
-  treatmentRoom:
-    'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1400&q=80',
+  // Image 2: Indian female dentist treating a patient in dental chair
+  dentistAtWork: '/assets/images/indian-dentist-patient-treatment.jpg',
+  indianDentistTreating: '/assets/images/indian-dentist-patient-treatment.jpg',
+  kids: '/assets/images/indian-dentist-patient-treatment.jpg',
 
-  // Dental consultations
-  consultation:
-    'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80',
+  // Image 3: Dentist treating patient in dental chair with operatory monitor
+  treatmentRoom: '/assets/images/dentist-operatory-procedure.jpg',
+  dentistProcedure: '/assets/images/dentist-operatory-procedure.jpg',
+  consultation: '/assets/images/dentist-operatory-procedure.jpg',
+  consultationReal: '/assets/images/dentist-operatory-procedure.jpg',
 
-  // Professional dentist examining patient with loupes/mask
-  dentistAtWork:
-    'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1200&q=80',
+  // Image 4: Multispeciality dental treatments collage (braces, crowns, implants, surgery)
+  dentalCollage: '/assets/images/dental-treatment-collage.jpg',
+  consultationPlan: '/assets/images/dental-treatment-collage.jpg',
+  denturesSenior: '/assets/images/dental-treatment-collage.jpg',
+
+  // Image 5: Close-up dental examination with mouth mirror and probe in sterile gloves
+  dentalTools: '/assets/images/dental-examination-probe.jpg',
+  dentalExaminationProbe: '/assets/images/dental-examination-probe.jpg',
+  teethCleaning: '/assets/images/dental-examination-probe.jpg',
+  cosmeticSmile: '/assets/images/dental-examination-probe.jpg',
+
+  // Image 6: Anatomical educational illustration of gentle tooth extraction procedure
+  toothExtraction: '/assets/images/tooth-extraction-procedure.jpg',
 
   // Root canal & digital imaging
   dentalRadiograph:
     'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=1200&q=80',
 
-  // Professional ultrasonic dental cleaning
-  teethCleaning:
-    'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1200&q=80',
-
-  // Sterilized medical-grade dental instruments
-  dentalTools:
-    'https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1200&q=80',
-
   // Precision anatomical dental implant model
-  implantModel:
-    'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80',
+  implantModel: '/assets/images/dental-treatment-collage.jpg',
 
   // Restorative crowns and bridge preparation models
-  crownsRestorative:
-    'https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=1200&q=80',
+  crownsRestorative: '/assets/images/dental-treatment-collage.jpg',
 
   // Clear aligners & orthodontics
   aligners:
     'https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1200&q=80',
 
-  // Realistic natural adult smile for teeth whitening
-  whiteningSmile:
-    'https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=1200&q=80',
+  // Natural Indian smile for aesthetic results
+  whiteningSmile: '/assets/images/dental-examination-probe.jpg',
 
-  // Natural confident smile assessment for cosmetic dentistry
-  smileCloseup:
-    'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80',
-
-  // Aesthetic smile consultation
-  cosmeticSmile:
-    'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80',
+  // Confident smile assessment
+  smileCloseup: '/assets/images/dental-examination-probe.jpg',
 
   // Clinical tooth shade matching guide for veneers
   shadeGuide:
@@ -72,29 +68,17 @@ export const images = {
 
   // Smile makeover planning
   veneers:
-    'https://images.unsplash.com/photo-1521590832167-7e1e4c62bad8?auto=format&fit=crop&w=1200&q=80',
-
-  // Full mouth rehabilitation & senior dentures
-  denturesSenior:
-    'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1200&q=80',
-
-  // Gentle pediatric dental care
-  kids:
-    'https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1200&q=80',
+    'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80',
 
   // Scenic Nashik landscape for Dental Tourism
   nashikVineyard:
     'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80',
 
   // Clinic interior detail
-  interiorDetail: '/shubh-reception-color.jpg',
+  interiorDetail: '/shubh-reception-neon.jpg',
 
-  // Genuine clinic consultation photography
-  consultationReal: '/consultation-real.jpg',
-  consultationPlan: '/consultation-plan.jpg',
-
-  // Clinic doctor representative clinical atmosphere (authentic reception)
-  doctorFeatured: '/shubh-reception-color.jpg',
-  doctorTwo: '/shubh-reception-neon.jpg',
-  doctorThree: '/dentist-examination.jpg'
+  // Authentic clinical team portraits
+  doctorFeatured: '/assets/images/dentist-operatory-procedure.jpg',
+  doctorTwo: '/assets/images/dentist-operatory-procedure.jpg',
+  doctorThree: '/assets/images/indian-dental-operatory-clinic.jpg'
 } as const;

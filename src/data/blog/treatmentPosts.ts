@@ -48,8 +48,8 @@ export const implantsGuide: BlogPost = {
     type: 'gallery',
     layout: 'side-by-side',
     images: [
-    { src: images.consultation, alt: 'Dentist explaining a treatment plan', caption: 'Assessment and planning come first.' },
-    { src: images.treatmentRoom, alt: 'Treatment room', caption: 'Placement is carried out under local anaesthetic.' }]
+    { src: images.dentalCollage, alt: 'Overview of multispeciality dental treatments', caption: 'Assessment and specialized treatment planning.' },
+    { src: images.treatmentRoom, alt: 'Clinical dental procedure in operatory chair', caption: 'Placement is carried out under comfortable local anaesthetic.' }]
 
   },
   {
@@ -229,5 +229,60 @@ export const whiteningQuestions: BlogPost = {
     type: 'callout',
     text: 'General educational content. Please consult your dentist before starting any whitening treatment.'
   }]
+};
 
+export const toothExtractionGuide: BlogPost = {
+  slug: 'guide-to-gentle-tooth-extractions',
+  title: 'A Patient Guide to Gentle Tooth Extractions',
+  category: 'Treatments',
+  excerpt: 'When is a tooth extraction necessary, how is it performed comfortably, and what helps recovery go smoothly?',
+  metaDescription: 'Everything you need to know about gentle tooth removal, wisdom tooth extractions, and healing at Dr. Naik\'s Shubh Smile Dental Clinic in Nashik.',
+  featuredImage: images.toothExtraction,
+  featuredImageAlt: 'Educational anatomical illustration of gentle tooth extraction procedure with surgical dental instruments',
+  publishedLabel: 'Reviewed by Dr. Naik',
+  author: 'Dr. Naik',
+  relatedService: 'tooth-extraction',
+  content: [
+    {
+      type: 'paragraph',
+      text: 'Hearing that a tooth needs to be extracted can feel daunting. At Dr. Naik\'s Shubh Smile Dental Clinic, saving your natural tooth is always our first priority. However, when a tooth cannot be preserved due to severe damage, infection, or impaction, an extraction is often the healthiest step forward.'
+    },
+    { type: 'heading', id: 'when-needed', text: 'When is an extraction necessary?' },
+    {
+      type: 'list',
+      items: [
+        'Wisdom teeth that are impacted, pushing against neighboring teeth, or repeatedly infected',
+        'Severe tooth fracture or deep decay extending below the bone level where a crown cannot hold',
+        'Advanced gum disease causing severe loosening of the tooth',
+        'Creating necessary space for orthodontic clear aligners or braces in crowded arches'
+      ]
+    },
+    {
+      type: 'image',
+      src: images.toothExtraction,
+      alt: 'Anatomical educational illustration of gentle tooth extraction procedure',
+      caption: 'Targeted dental instruments are used to loosen the tooth gently with minimal bone disturbance.',
+      layout: 'inset'
+    },
+    { type: 'heading', id: 'comfort-first', text: 'Is the procedure painful?' },
+    {
+      type: 'paragraph',
+      text: 'No. Modern local anesthesia completely numbs the tooth, surrounding gum tissue, and nerves. You will feel pressure as the tooth is gently loosened, but no sharp sensations or pain.'
+    },
+    { type: 'heading', id: 'post-care', text: 'Key recovery guidelines' },
+    {
+      type: 'list',
+      ordered: true,
+      items: [
+        'Keep firm, gentle bite pressure on the sterile gauze pack for 45 minutes.',
+        'Avoid vigorous spitting, drinking through a straw, or smoking for the first 48 hours to protect the healing clot.',
+        'Stick to cool, soft foods such as curd, dalia, ice cream, and smoothies on the first day.',
+        'Take all prescribed antibiotics and pain relief medicines exactly as directed by your dentist.'
+      ]
+    },
+    {
+      type: 'callout',
+      text: 'Educational dental guide only. An individual clinical examination with digital radiographs is necessary to assess whether an extraction is indicated.'
+    }
+  ]
 };
