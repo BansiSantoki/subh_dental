@@ -1,4 +1,5 @@
 import React from 'react';
+import { PlaneIcon, MapPinIcon, CalendarCheckIcon, CompassIcon } from 'lucide-react';
 import { ParallaxImage } from '../shared/ParallaxImage';
 import { Reveal } from '../shared/Reveal';
 import { WhatsAppLink } from '../shared/WhatsAppLink';
@@ -12,86 +13,106 @@ export function DentalTourismSection() {
   const { openAppointment } = useAppointment();
 
   return (
-    <section id="visiting-nashik" aria-labelledby="tourism-title" className="bg-ivory py-24 md:py-36">
-      <div className="mx-auto max-w-[1440px] px-5 md:px-8 lg:px-12">
+    <section id="visiting-nashik" aria-labelledby="tourism-title" className="bg-white py-20 md:py-28 lg:py-32">
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
+        {/* Scenic Nashik Landscape Banner */}
         <Reveal>
-          <ParallaxImage
-            src={images.nashikVineyard}
-            alt="Vineyards near Nashik at golden hour with the Western Ghats in the distance"
-            className="aspect-[4/3] rounded-[32px] sm:aspect-[16/8] lg:aspect-[21/8]"
-            strength={50} />
-          
+          <div className="overflow-hidden rounded-[32px] border border-[#E2EAF0] shadow-[0_20px_50px_-20px_rgba(8,127,174,0.18)]">
+            <ParallaxImage
+              src={images.nashikVineyard}
+              alt="Beautiful scenic vineyards and Western Ghats hills in Nashik, Maharashtra"
+              className="aspect-[16/9] sm:aspect-[21/9] w-full"
+              strength={35}
+            />
+          </div>
         </Reveal>
 
-        <div className="relative -mt-16 grid gap-12 sm:-mt-24 lg:grid-cols-12 lg:gap-16">
+        {/* Content Box Overlapping */}
+        <div className="relative -mt-12 sm:-mt-20 grid gap-10 lg:grid-cols-12 lg:gap-14">
+          {/* Left Column: Heading, Info, CTAs */}
           <Reveal className="lg:col-span-6">
-            <div className="rounded-[28px] bg-ivory p-7 pt-9 sm:mx-6 sm:p-10 lg:mx-0 lg:ml-10 lg:p-12">
-              <p className="flex items-center gap-3 text-[11.5px] font-semibold uppercase tracking-[0.24em] text-forest">
-                <span className="h-px w-8 bg-champagne" aria-hidden="true" />
-                Visiting Nashik
-              </p>
+            <div className="rounded-[28px] border border-[#E2EAF0] bg-white p-7 sm:p-10 lg:p-12 shadow-xl shadow-slate-900/5">
+              <span className="inline-flex items-center gap-2 rounded-full bg-[#DCEFF8] px-3.5 py-1 text-xs font-semibold text-[#087FAE]">
+                <CompassIcon className="h-3.5 w-3.5" />
+                <span>Visiting Nashik</span>
+              </span>
+
               <h2
                 id="tourism-title"
-                className="mt-5 text-balance font-serif text-[40px] font-medium leading-[1.02] tracking-[-0.015em] text-charcoal sm:text-[52px]">
-                
+                className="mt-5 font-serif text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#123B59] leading-tight"
+              >
                 Thoughtful Dental Care for Your Visit to Nashik.
               </h2>
-              <p className="mt-6 text-pretty text-[16.5px] leading-[1.75] text-charcoal/70">
-                Planning a visit to Nashik and exploring dental treatment options? Contact our team to discuss your
-                concerns, arrange an initial consultation, and understand the next steps before making travel plans.
+
+              <p className="mt-5 text-base sm:text-lg leading-relaxed text-[#34465A]">
+                Planning a trip to Nashik and exploring dental treatments? Contact our clinic team in advance
+                to discuss your dental goals, schedule an unhurried consultation, and receive a clear
+                treatment timeline before making travel commitments.
               </p>
-              <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-                <button type="button" onClick={() => openAppointment('a consultation during my visit to Nashik')} className={buttonClass('primary', 'lg')}>
-                  Send a Consultation Inquiry
+
+              <div className="mt-8 flex flex-wrap items-center gap-3.5">
+                <button
+                  type="button"
+                  onClick={() => openAppointment('a consultation during my visit to Nashik')}
+                  className={buttonClass('primary', 'lg', 'shadow-md')}
+                >
+                  <CalendarCheckIcon className="h-5 w-5" />
+                  <span>Plan a Consultation</span>
                 </button>
-                <WhatsAppLink message={siteConfig.tourismWhatsAppMessage} variant="whatsappOutline" size="lg">
+
+                <WhatsAppLink
+                  message={siteConfig.tourismWhatsAppMessage}
+                  variant="whatsappOutline"
+                  size="lg"
+                >
                   Inquire on WhatsApp
                 </WhatsAppLink>
               </div>
-              <p className="mt-5 text-[13px] leading-relaxed text-muted">
-                Treatment timelines can only be discussed after a clinical assessment.
+
+              <p className="mt-4 text-xs leading-relaxed text-[#34465A]/70">
+                Accurate clinical timelines and options can only be confirmed after an in-person assessment.
               </p>
             </div>
           </Reveal>
 
-          <div className="lg:col-span-6 lg:pt-36">
-            <ol className="space-y-0">
-              {tourismSteps.map((s, i) =>
-              <Reveal key={s.title} delay={0.05 * i}>
-                  <li className="grid grid-cols-[48px_1fr] gap-4 border-t border-charcoal/15 py-6">
-                    <span className="font-serif text-[30px] leading-none text-champagne" aria-hidden="true">
-                      {i + 1}
+          {/* Right Column: 4-Step Process & Travel Advice */}
+          <div className="lg:col-span-6 lg:pt-16">
+            <div className="space-y-4">
+              {tourismSteps.map((s, i) => (
+                <Reveal key={s.title} delay={0.06 * i}>
+                  <div className="flex gap-4 rounded-2xl border border-[#E2EAF0] bg-[#F2F8FC] p-5 transition-colors duration-200 hover:border-[#087FAE]/30">
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#087FAE] text-white font-serif font-bold text-sm shadow-sm">
+                      0{i + 1}
                     </span>
                     <div>
-                      <h3 className="font-serif text-[24px] font-medium leading-tight text-charcoal">{s.title}</h3>
-                      <p className="mt-1.5 text-[15px] leading-relaxed text-charcoal/70">{s.text}</p>
+                      <h3 className="font-serif text-lg font-bold text-[#123B59]">{s.title}</h3>
+                      <p className="mt-1 text-sm leading-relaxed text-[#34465A]/85">{s.text}</p>
                     </div>
-                  </li>
+                  </div>
                 </Reveal>
-              )}
-            </ol>
+              ))}
+            </div>
 
-            <Reveal>
-              <div className="mt-8 rounded-[24px] border border-dashed border-charcoal/20 bg-white p-6 sm:p-8">
-                <div className="flex flex-wrap items-center justify-between gap-3">
-                  <h3 className="font-serif text-[24px] font-medium text-charcoal">Travel planning</h3>
-                  <span className="rounded-full bg-champagne-light px-3 py-1 text-[11.5px] font-semibold uppercase tracking-[0.14em] text-charcoal/70">
-                    To be verified
-                  </span>
-                </div>
-                <dl className="mt-5 space-y-4">
-                  {travelPlaceholders.map((t) =>
-                  <div key={t.title}>
-                      <dt className="text-[14px] font-semibold text-charcoal">{t.title}</dt>
-                      <dd className="mt-1 text-[14px] leading-relaxed text-charcoal/60">{t.text}</dd>
+            {/* Travel Guidelines Card */}
+            <Reveal delay={0.2} className="mt-6">
+              <div className="rounded-2xl border border-[#E2EAF0] bg-white p-6 shadow-sm">
+                <h4 className="font-serif text-lg font-bold text-[#123B59] flex items-center gap-2">
+                  <MapPinIcon className="h-4 w-4 text-[#087FAE]" />
+                  <span>Travel & Stay Planning Advice</span>
+                </h4>
+                <div className="mt-4 space-y-3">
+                  {travelPlaceholders.map((t) => (
+                    <div key={t.title} className="text-sm">
+                      <p className="font-semibold text-[#123B59]">{t.title}</p>
+                      <p className="text-xs sm:text-sm text-[#34465A]/80 mt-0.5 leading-relaxed">{t.text}</p>
                     </div>
-                  )}
-                </dl>
+                  ))}
+                </div>
               </div>
             </Reveal>
           </div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }

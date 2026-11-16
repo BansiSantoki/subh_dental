@@ -9,33 +9,34 @@ export function NotFound() {
   return (
     <>
       <SEOHead
-        title={`Page not found | ${siteConfig.name}`}
+        title={`Page Not Found | ${siteConfig.name}`}
         description="The page you are looking for could not be found."
         path="/404"
-        noindex />
-      
-      <section className="flex min-h-[80vh] items-center bg-ivory px-5 pb-20 pt-[120px]">
-        <div className="mx-auto max-w-2xl text-center">
+        noindex
+      />
+
+      <section className="flex min-h-[80vh] items-center bg-[#F2F8FC] px-4 pb-20 pt-36">
+        <div className="mx-auto max-w-xl text-center">
           <div className="flex justify-center">
             <LogoMark size={56} />
           </div>
-          <p className="mt-8 font-serif text-[120px] font-medium leading-none text-forest sm:text-[160px]">404</p>
-          <h1 className="mt-4 font-serif text-[38px] font-medium leading-tight text-charcoal sm:text-[48px]">
-            This page seems to have wandered off.
+          <p className="mt-6 font-serif text-8xl sm:text-9xl font-extrabold text-[#087FAE]">404</p>
+          <h1 className="mt-4 font-serif text-3xl sm:text-4xl font-bold leading-tight text-[#123B59]">
+            This page could not be found.
           </h1>
-          <p className="mx-auto mt-5 max-w-md text-[16px] leading-relaxed text-charcoal/70">
-            The link may be outdated or the page may have moved. Let’s get you back to somewhere useful.
+          <p className="mx-auto mt-4 max-w-md text-sm sm:text-base leading-relaxed text-[#34465A]">
+            The link may be outdated or the page may have moved. Let’s guide you back to our dental clinic website.
           </p>
-          <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
-            <Link to="/" className={buttonClass('primary', 'lg')}>
-              Back to home
+          <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+            <Link to="/" className={buttonClass('primary', 'lg', 'shadow-md')}>
+              Return to Homepage
             </Link>
             <Link to="/services" className={buttonClass('secondary', 'lg')}>
-              Explore treatments
+              View All Treatments
             </Link>
           </div>
         </div>
       </section>
-    </>);
-
+    </>
+  );
 }

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { ChevronDownIcon } from 'lucide-react';
 
 interface TableOfContentsProps {
-  items: {id: string;text: string;}[];
+  items: { id: string; text: string }[];
 }
 
 export function TableOfContents({ items }: TableOfContentsProps) {
@@ -23,36 +23,43 @@ export function TableOfContents({ items }: TableOfContentsProps) {
     return () => observer.disconnect();
   }, [items]);
 
-  const list =
-  <ol className="space-y-1 border-l border-charcoal/10">
-      {items.map((item) =>
-    <li key={item.id}>
+  const list = (
+    <ol className="space-y-1 border-l border-[#E2EAF0]">
+      {items.map((item) => (
+        <li key={item.id}>
           <a
-        href={`#${item.id}`}
-        className={`-ml-px block border-l py-1.5 pl-4 text-[14px] leading-snug transition-colors duration-200 ${
-        active === item.id ? 'border-forest font-semibold text-forest' : 'border-transparent text-charcoal/60 hover:text-charcoal'}`
-        }>
-        
+            href={`#${item.id}`}
+            className={`-ml-px block border-l-2 py-1.5 pl-3.5 text-xs sm:text-sm leading-snug transition-colors duration-200 ${
+              active === item.id
+                ? 'border-[#087FAE] font-bold text-[#087FAE]'
+                : 'border-transparent text-[#34465A]/70 hover:text-[#123B59]'
+            }`}
+          >
             {item.text}
           </a>
         </li>
-    )}
-    </ol>;
-
+      ))}
+    </ol>
+  );
 
   return (
     <>
-      <details className="group mb-10 rounded-[18px] border border-charcoal/10 bg-white p-5 lg:hidden">
-        <summary className="flex cursor-pointer list-none items-center justify-between text-[14px] font-semibold text-charcoal">
-          In this article
-          <ChevronDownIcon className="h-4 w-4 transition-transform duration-200 group-open:rotate-180" aria-hidden="true" />
+      <details className="group mb-8 rounded-2xl border border-[#E2EAF0] bg-white p-4 lg:hidden">
+        <summary className="flex cursor-pointer list-none items-center justify-between text-xs sm:text-sm font-bold text-[#123B59]">
+          <span>Table of Contents</span>
+          <ChevronDownIcon
+            className="h-4 w-4 transition-transform duration-200 group-open:rotate-180 text-[#087FAE]"
+            aria-hidden="true"
+          />
         </summary>
-        <div className="mt-4">{list}</div>
+        <div className="mt-3.5 pt-3 border-t border-[#E2EAF0]">{list}</div>
       </details>
       <nav aria-label="Table of contents" className="sticky top-28 hidden lg:block">
-        <p className="mb-4 text-[11.5px] font-semibold uppercase tracking-[0.2em] text-muted">In this article</p>
+        <p className="mb-3 text-xs font-bold uppercase tracking-wider text-[#087FAE]">
+          In this article
+        </p>
         {list}
       </nav>
-    </>);
-
+    </>
+  );
 }

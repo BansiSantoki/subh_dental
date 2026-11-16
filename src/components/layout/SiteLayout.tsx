@@ -9,12 +9,12 @@ import { AppointmentModal } from '../forms/AppointmentModal';
 
 export function SiteLayout() {
   return (
-    <div className="min-h-screen w-full bg-ivory">
+    <div className="min-h-screen w-full bg-white text-[#34465A]">
       <a
         href="#main"
-        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[70] focus:rounded-full focus:bg-forest focus:px-5 focus:py-3 focus:text-ivory">
-        
-        Skip to content
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[70] focus:rounded-full focus:bg-[#123B59] focus:px-5 focus:py-3 focus:text-white"
+      >
+        Skip to main content
       </a>
       <ScrollManager />
       <Header />
@@ -26,6 +26,6 @@ export function SiteLayout() {
       <Footer />
       <FloatingWhatsAppButton />
       <AppointmentModal />
-    </div>);
-
+    </div>
+  );
 }

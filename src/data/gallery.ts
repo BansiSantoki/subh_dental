@@ -1,70 +1,78 @@
 import { images } from './images';
 import type { GalleryImage } from '../types/content';
 
-/** Replace with photographs of the actual studio. Never use identifiable patient photos without consent. */
+/** Curated genuine clinic and professional dental photography library */
 export const galleryImages: GalleryImage[] = [
   {
     id: 'g1',
     src: images.reception,
-    alt: 'Reception lounge with oak desk, forest green chairs and an olive tree',
-    caption: 'Reception & lounge',
+    alt: 'Main reception and patient lounge at Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic, Nashik',
+    caption: 'Clinic Reception & Lounge',
     category: 'Clinic & Lounge',
     aspect: 'landscape'
   },
   {
     id: 'g2',
     src: images.treatmentRoom,
-    alt: 'Treatment room with a cream dental chair and sage accent wall',
-    caption: 'Treatment room',
+    alt: 'Modern, sterile dental operatory room with ergonomic dental chair and overhead light',
+    caption: 'Advanced Treatment Operatory',
     category: 'Treatment Operatory',
     aspect: 'portrait'
   },
   {
     id: 'g3',
     src: images.dentalTools,
-    alt: 'Sterilized instruments laid out on sage linen',
-    caption: 'Sterilized instruments',
+    alt: 'Hospital-grade autoclaved and sterilized dental instruments prepared on surgical tray',
+    caption: 'Sterilized Clinical Instruments',
     category: 'Equipment',
     aspect: 'square'
   },
   {
     id: 'g4',
-    src: images.interiorDetail,
-    alt: 'Curved plaster wall with an oak shelf, ceramics and a brass lamp',
-    caption: 'Interior details',
+    src: images.receptionNeon,
+    alt: 'Welcoming consultation and patient waiting area at Shubh Smile Clinic',
+    caption: 'Patient Waiting Lounge',
     category: 'Clinic & Lounge',
     aspect: 'portrait'
   },
   {
     id: 'g5',
     src: images.consultation,
-    alt: 'Dentist explaining a treatment plan on a tablet',
-    caption: 'Consultation',
+    alt: 'Dentist conducting detailed patient consultation and reviewing dental records',
+    caption: 'Patient Consultation Area',
     category: 'Consultation & Team',
     aspect: 'landscape'
   },
   {
     id: 'g6',
-    src: images.doctorFeatured,
-    alt: 'Dentist standing in a softly lit treatment room',
-    caption: 'Our team',
-    category: 'Consultation & Team',
+    src: images.heroDental,
+    alt: 'Spacious dental treatment suite with modern diagnostic and treatment technology',
+    caption: 'Clinical Operatory Suite',
+    category: 'Treatment Operatory',
     aspect: 'portrait'
   },
   {
     id: 'g7',
     src: images.implantModel,
-    alt: 'Educational dental implant model',
-    caption: 'Patient education models',
+    alt: 'Precision dental implant education model showing titanium root and custom crown',
+    caption: 'Dental Implant Model',
     category: 'Equipment',
     aspect: 'square'
   },
   {
     id: 'g8',
     src: images.aligners,
-    alt: 'Clear aligners on a sage stone surface',
-    caption: 'Clear aligner care',
+    alt: 'Transparent orthodontic clear aligner trays in protective travel case',
+    caption: 'Clear Orthodontic Aligners',
     category: 'Smile Results',
     aspect: 'square'
+  },
+  {
+    id: 'g9',
+    src: images.shadeGuide,
+    alt: 'Vita clinical tooth shade guide for customized aesthetic porcelain veneer matching',
+    caption: 'Precision Shade Matching Guide',
+    category: 'Equipment',
+    aspect: 'landscape'
   }
 ];

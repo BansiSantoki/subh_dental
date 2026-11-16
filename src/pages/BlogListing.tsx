@@ -7,9 +7,9 @@ import { blogPosts } from '../data/blog';
 import { breadcrumbSchema, webPageSchema } from '../utils/structuredData';
 import { siteConfig } from '../data/siteConfig';
 
-const title = `Dental Health Blog | Simple Answers for a Healthier Smile | ${siteConfig.name}`;
+const title = `Dental Health Blog & Oral Care Guides | ${siteConfig.name}`;
 const description =
-  `Clear, friendly dental education from ${siteConfig.name} in Nashik — check-ups, cleaning, implants, root canals, whitening and more.`;
+  `Clear, informative dental health articles from ${siteConfig.name} in Nashik — preventive habits, teeth cleaning, dental implants, root canal care, and whitening advice.`;
 
 export function BlogListing() {
   const categories = useMemo(() => ['All', ...Array.from(new Set(blogPosts.map((p) => p.category)))], []);
@@ -27,67 +27,80 @@ export function BlogListing() {
           webPageSchema(title, description, '/blog'),
           breadcrumbSchema([
             { name: 'Home', path: '/' },
-            { name: 'Blog', path: '/blog' }]
-          )]
-        } />
+            { name: 'Blog', path: '/blog' }
+          ])
+        ]}
+      />
 
       <PageHero
         crumbs={[{ label: 'Home', href: '/' }, { label: 'Blog' }]}
-        eyebrow="Dental education"
+        eyebrow="Dental Health Education"
         title={
           <>
-            Simple Answers for a <em className="font-normal italic text-forest">Healthier Smile.</em>
+            Simple Answers for a <span className="text-[#087FAE]">Healthier Smile.</span>
           </>
         }
-        intro="Friendly, practical articles to help you understand your teeth, your options and what to expect. General information only — always follow your dentist’s personal advice." />
+        intro="Practical, easy-to-understand dental articles to help you care for your teeth, understand treatment options, and make confident oral health choices."
+      />
 
-
-      <section aria-label="Articles" className="bg-white py-20 md:py-28">
-        <div className="mx-auto max-w-[1440px] px-5 md:px-8 lg:px-12">
-          <div role="group" aria-label="Filter by category" className="no-scrollbar -mx-5 flex gap-2 overflow-x-auto px-5 sm:mx-0 sm:flex-wrap sm:px-0">
-            {categories.map((c) =>
+      <section aria-label="Blog Articles" className="bg-white py-16 md:py-24">
+        <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
+          {/* Category Filter */}
+          <div
+            role="group"
+            aria-label="Filter by category"
+            className="no-scrollbar flex gap-2 overflow-x-auto pb-4"
+          >
+            {categories.map((c) => (
               <button
                 key={c}
                 type="button"
                 aria-pressed={category === c}
                 onClick={() => setCategory(c)}
-                className={`h-10 shrink-0 rounded-full border px-5 text-[13.5px] font-semibold transition-colors duration-200 ${category === c ? 'border-forest bg-forest text-ivory' : 'border-charcoal/15 text-charcoal/75 hover:border-charcoal/30'}`
-                }>
-
+                className={`h-10 shrink-0 rounded-full px-5 text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer ${
+                  category === c
+                    ? 'border-[#087FAE] bg-[#087FAE] text-white shadow-sm'
+                    : 'border border-[#E2EAF0] bg-[#F2F8FC] text-[#123B59] hover:border-[#087FAE] hover:text-[#087FAE]'
+                }`}
+              >
                 {c}
               </button>
-            )}
+            ))}
           </div>
 
-          {!lead ?
-            <p className="py-24 text-center text-[16px] text-charcoal/60">No articles in this category yet.</p> :
-
-            <>
-              <Reveal key={lead.slug} className="mt-14">
-                <div className="grid gap-10 lg:grid-cols-12">
-                  <div className="lg:col-span-8">
+          {/* Featured First Article */}
+          {lead && (
+            <div className="mt-10">
+              <Reveal>
+                <div className="rounded-3xl border border-[#E2EAF0] bg-[#F2F8FC] p-6 sm:p-10 shadow-xs">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#087FAE]">
+                    Featured Editorial
+                  </span>
+                  <div className="mt-6">
                     <BlogCard post={lead} variant="large" />
-                  </div>
-                  <div className="flex flex-col gap-8 lg:col-span-4">
-                    {rest.slice(0, 2).map((p) =>
-                      <BlogCard key={p.slug} post={p} />
-                    )}
                   </div>
                 </div>
               </Reveal>
-              {rest.length > 2 &&
-                <div className="mt-20 grid gap-x-8 gap-y-14 border-t border-charcoal/10 pt-16 sm:grid-cols-2 lg:grid-cols-3">
-                  {rest.slice(2).map((p, i) =>
-                    <Reveal key={p.slug} delay={0.05 * (i % 3)} className="h-full">
-                      <BlogCard post={p} />
-                    </Reveal>
-                  )}
-                </div>
-              }
-            </>
-          }
+            </div>
+          )}
+
+          {/* Remaining Articles Grid */}
+          {rest.length > 0 && (
+            <div className="mt-12 sm:mt-16">
+              <h2 className="font-serif text-2xl font-bold text-[#123B59] mb-8">
+                More Articles & Oral Hygiene Guides
+              </h2>
+              <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                {rest.map((post, i) => (
+                  <Reveal key={post.slug} delay={0.05 * (i % 3)}>
+                    <BlogCard post={post} />
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </section>
-    </>);
-
+    </>
+  );
 }

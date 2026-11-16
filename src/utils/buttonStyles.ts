@@ -2,16 +2,21 @@ export type ButtonVariant = 'primary' | 'secondary' | 'light' | 'outlineLight' |
 export type ButtonSize = 'sm' | 'md' | 'lg';
 
 const base =
-'group/btn inline-flex items-center justify-center gap-2.5 rounded-full font-semibold tracking-[0.01em] whitespace-nowrap select-none transition-[background-color,color,border-color,transform,box-shadow] duration-200 ease-silk active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2 focus-visible:ring-offset-ivory disabled:pointer-events-none disabled:opacity-60';
+  'group/btn inline-flex items-center justify-center gap-2.5 rounded-full font-semibold tracking-[0.01em] whitespace-nowrap select-none transition-[background-color,color,border-color,transform,box-shadow] duration-200 ease-silk active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white disabled:pointer-events-none disabled:opacity-60 cursor-pointer';
 
 const variants: Record<ButtonVariant, string> = {
   primary:
-  'bg-[linear-gradient(135deg,#173F3A_0%,#245D58_100%)] text-ivory shadow-[0_16px_32px_-18px_rgba(23,63,58,0.82)] hover:bg-[#0E2E2A] hover:shadow-[0_18px_36px_-18px_rgba(23,63,58,0.88)]',
-  secondary: 'border border-[#173F3A]/15 bg-white/70 text-charcoal hover:border-brandBlue/30 hover:bg-[#F4F8F8] hover:text-forest',
-  light: 'bg-[#F1F4F2] text-forest hover:bg-white',
-  outlineLight: 'border border-ivory/35 text-ivory hover:bg-ivory/10 hover:border-ivory/60 focus-visible:ring-ivory focus-visible:ring-offset-forest',
-  whatsapp: 'bg-whatsapp text-[#073B2A] hover:bg-[#1fc05c]',
-  whatsappOutline: 'border border-charcoal/15 bg-white text-charcoal hover:border-[#1fa855] hover:text-[#0d6b37]'
+    'bg-[#087FAE] text-white shadow-[0_12px_24px_-10px_rgba(8,127,174,0.5)] hover:bg-[#076D96] hover:shadow-[0_16px_30px_-10px_rgba(8,127,174,0.65)]',
+  secondary:
+    'border border-[#E2EAF0] bg-white text-[#123B59] hover:border-[#087FAE] hover:bg-[#F2F8FC] hover:text-[#087FAE] shadow-sm',
+  light:
+    'bg-[#F2F8FC] text-[#123B59] hover:bg-[#DCEFF8] hover:text-[#087FAE]',
+  outlineLight:
+    'border border-white/40 text-white hover:bg-white/10 hover:border-white focus-visible:ring-white focus-visible:ring-offset-[#123B59]',
+  whatsapp:
+    'bg-[#25D366] text-white shadow-sm hover:bg-[#20ba5a]',
+  whatsappOutline:
+    'border border-[#25D366]/40 bg-white text-[#123B59] hover:border-[#25D366] hover:text-[#128C7E] hover:bg-[#F2F8FC]'
 };
 
 const sizes: Record<ButtonSize, string> = {

@@ -1,45 +1,73 @@
+/** @type {import('tailwindcss').Config} */
 export default {
   content: [
-  './index.html',
-  './src/**/*.{js,ts,jsx,tsx}'
-],
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}'
+  ],
   theme: {
     extend: {
       colors: {
-        ivory: '#FFFFFF',
-        stone: '#EAE3D8',
-        sand: '#DCC8A7',
-        brandBlue: '#2E6E88',
-        brandLime: '#BFD96B',
-        forest: {
-          DEFAULT: '#173F3A',
-          deep: '#0F2C28',
-          soft: '#2A5A53',
-        },
+        // Official Blue & White Palette for Dr. Naik's Shubh Smile
         primary: {
-          DEFAULT: '#173F3A',
-          50: '#F6F8F4',
-          100: '#DCE7DF',
-          600: '#173F3A',
-          700: '#0F2C28',
-          dark: '#0F2C28',
-          soft: '#2A5A53',
+          DEFAULT: '#087FAE',
+          50: '#F2F8FC',
+          100: '#DCEFF8',
+          200: '#B8E0F2',
+          300: '#7EC4E5',
+          400: '#3BA3D2',
+          500: '#087FAE',
+          600: '#076D96',
+          700: '#123B59',
+          800: '#0E2E47',
+          900: '#091D2C',
+          dark: '#123B59',
+          soft: '#087FAE',
         },
-        charcoal: '#252B29',
+        navy: {
+          DEFAULT: '#123B59',
+          deep: '#0A2033',
+          dark: '#0D273D',
+          light: '#1A4D73',
+          border: '#235780',
+        },
+        secondary: {
+          DEFAULT: '#DCEFF8',
+          light: '#F2F8FC',
+          dark: '#087FAE',
+        },
+        lightBlue: '#F2F8FC',
+        softGrey: '#F5F7FA',
+        bodyText: '#34465A',
+        borderColor: '#E2EAF0',
+        brandBlue: '#087FAE',
+        whatsapp: '#25D366',
+
+        // Backward compatibility mappings (prevents broken green styles while preserving theme integrity)
+        forest: {
+          DEFAULT: '#123B59',
+          deep: '#0A2033',
+          soft: '#087FAE',
+        },
         sage: {
-          DEFAULT: '#DCE7DF',
-          deep: '#C5D6CA',
+          DEFAULT: '#DCEFF8',
+          deep: '#B8E0F2',
         },
         champagne: {
-          DEFAULT: '#D6C3A3',
-          light: '#F1E7D8',
+          DEFAULT: '#087FAE',
+          light: '#F2F8FC',
         },
-        muted: '#646B66',
-        whatsapp: '#25D366',
+        charcoal: '#34465A',
+        stone: '#F2F8FC',
+        sand: '#DCEFF8',
+        ivory: '#FFFFFF',
+        brandLime: '#087FAE',
+        muted: '#64748B',
       },
       fontFamily: {
-        serif: ['Arial', 'Helvetica Neue', 'sans-serif'],
-        sans: ['Arial', 'Helvetica Neue', 'sans-serif'],
+        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+        sans: ['"Inter"', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif'],
+        heading: ['"Playfair Display"', 'Georgia', 'serif'],
+        body: ['"Inter"', 'sans-serif'],
       },
       transitionTimingFunction: {
         silk: 'cubic-bezier(0.23, 1, 0.32, 1)',

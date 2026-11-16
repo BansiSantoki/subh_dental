@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { ArrowRightIcon, PlayIcon } from 'lucide-react';
+import { ArrowRightIcon, PlayIcon, SparklesIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Reveal } from '../shared/Reveal';
 
@@ -76,50 +76,49 @@ export function ClinicVideoSection() {
     <section
       ref={sectionRef}
       aria-labelledby="clinic-tour-title"
-      className="relative overflow-hidden bg-white py-20 sm:py-24"
+      className="relative overflow-hidden bg-[#F2F8FC] py-20 sm:py-24 border-y border-[#E2EAF0]"
     >
-      <div className="pointer-events-none absolute -left-24 top-12 h-64 w-64 rounded-full bg-brandBlue/[0.06] blur-3xl" aria-hidden="true" />
-      <div className="pointer-events-none absolute -right-20 bottom-0 h-56 w-56 rounded-full bg-brandLime/[0.12] blur-3xl" aria-hidden="true" />
+      <div className="pointer-events-none absolute -left-24 top-12 h-64 w-64 rounded-full bg-[#087FAE]/10 blur-3xl" aria-hidden="true" />
+      <div className="pointer-events-none absolute -right-20 bottom-0 h-56 w-56 rounded-full bg-[#DCEFF8]/60 blur-3xl" aria-hidden="true" />
 
       <div className="relative mx-auto grid max-w-[1240px] items-center gap-12 px-5 md:px-8 lg:grid-cols-[1fr_0.82fr] lg:gap-16 lg:px-12">
         <Reveal>
           <div className="max-w-[550px]">
-            <p className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.24em] text-brandBlue">
-              <span className="h-px w-9 bg-brandLime" aria-hidden="true" />
-              A little look around
-            </p>
+            <span className="inline-flex items-center gap-2 rounded-full bg-white px-3.5 py-1 text-xs font-semibold text-[#087FAE] border border-[#087FAE]/20 shadow-2xs">
+              <SparklesIcon className="h-3.5 w-3.5" />
+              Real Clinic Tour
+            </span>
             <h2
               id="clinic-tour-title"
-              className="mt-6 font-serif text-[42px] font-medium leading-[1.05] tracking-[-0.02em] text-[#172a39] sm:text-[52px]"
+              className="mt-6 font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.08] text-[#123B59]"
             >
-              Take a Look Inside <span className="italic text-brandBlue">Shubh Smile</span>
+              Take a Look Inside <span className="text-[#087FAE]">Shubh Smile</span>
             </h2>
-            <p className="mt-6 max-w-[510px] text-pretty text-[16px] leading-[1.85] text-charcoal/70 sm:text-[17px]">
-              Get a glimpse of our clinic, our team, and the care we provide to make every smile healthier and brighter.
+            <p className="mt-5 text-base sm:text-lg leading-relaxed text-[#34465A]">
+              Get an authentic glimpse of our clinic operatory, dental technology, and welcoming atmosphere designed to keep you relaxed and comfortable.
             </p>
 
-            <div className="mt-8 flex items-center gap-3 text-sm font-medium text-[#172a39]">
-              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brandLime/35 text-brandBlue">
+            <div className="mt-8 flex items-center gap-3 text-sm font-semibold text-[#123B59]">
+              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#DCEFF8] text-[#087FAE]">
                 <PlayIcon className="h-4 w-4 fill-current" aria-hidden="true" />
               </span>
-              <span>Press play for a visit to our clinic</span>
+              <span>Watch our short 1-minute video walkthrough</span>
             </div>
 
             <Link
               to="/about"
-              className="group mt-8 inline-flex items-center gap-2 text-sm font-semibold text-brandBlue transition-colors hover:text-[#172a39]"
+              className="group mt-8 inline-flex items-center gap-2 text-sm font-semibold text-[#087FAE] hover:text-[#076D96] transition-colors"
             >
-              Get to know our clinic
+              <span>Learn more about our dental clinic</span>
               <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
             </Link>
           </div>
         </Reveal>
 
         <Reveal delay={0.08} className="w-full">
-          <div className="relative mx-auto w-full max-w-[360px]">
-            <div className="pointer-events-none absolute -inset-2 rounded-[34px] border border-brandLime/70" aria-hidden="true" />
-            <div className="relative overflow-hidden rounded-[28px] border border-white/80 bg-[#102534] p-2 shadow-[0_28px_70px_-30px_rgba(16,37,52,0.55)]">
-              <div className="relative aspect-[9/16] overflow-hidden rounded-[21px] bg-[#102534]">
+          <div className="relative mx-auto w-full max-w-[340px]">
+            <div className="relative overflow-hidden rounded-[28px] border-4 border-white bg-[#102534] p-1.5 shadow-[0_25px_60px_-20px_rgba(8,127,174,0.3)]">
+              <div className="relative aspect-[9/16] overflow-hidden rounded-[22px] bg-[#102534]">
                 <video
                   ref={videoRef}
                   src={videoLoaded ? videoSrc : undefined}
@@ -127,9 +126,9 @@ export function ClinicVideoSection() {
                   controls
                   playsInline
                   preload="metadata"
-                  title="A look inside Shubh Smile Dental Clinic"
+                  title="A look inside Dr. Naik's Shubh Smile Dental Clinic"
                   aria-label="Official Shubh Smile Dental Clinic tour video"
-                  className="absolute inset-0 h-full w-full object-contain"
+                  className="absolute inset-0 h-full w-full object-cover"
                   onClick={(event) => {
                     if (event.target === event.currentTarget) togglePlayback();
                   }}
@@ -149,14 +148,14 @@ export function ClinicVideoSection() {
                   <button
                     type="button"
                     onClick={togglePlayback}
-                    className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-3 rounded-full text-white transition-transform hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brandLime"
+                    className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-3 rounded-full text-white transition-transform hover:scale-105 cursor-pointer"
                     aria-label="Play the Shubh Smile Dental Clinic tour"
                   >
-                    <span className="flex h-[68px] w-[68px] items-center justify-center rounded-full border border-white/70 bg-brandBlue/90 shadow-[0_8px_30px_rgba(0,0,0,0.3)]">
-                      <PlayIcon className="ml-1 h-6 w-6 fill-current" aria-hidden="true" />
+                    <span className="flex h-16 w-16 items-center justify-center rounded-full border-2 border-white/80 bg-[#087FAE]/90 shadow-xl backdrop-blur-xs">
+                      <PlayIcon className="ml-1 h-6 w-6 fill-current text-white" aria-hidden="true" />
                     </span>
-                    <span className="rounded-full bg-[#102534]/75 px-3 py-1 text-[11px] font-semibold tracking-wide">
-                      Play clinic tour
+                    <span className="rounded-full bg-[#102534]/80 px-3.5 py-1 text-xs font-semibold tracking-wide text-white">
+                      Play Clinic Video
                     </span>
                   </button>
                 )}
@@ -165,10 +164,10 @@ export function ClinicVideoSection() {
           </div>
 
           {videoError && (
-            <p role="alert" className="mx-auto mt-4 max-w-[360px] text-center text-sm leading-relaxed text-charcoal/70">
-              This video could not be played here.{' '}
-              <a className="font-semibold text-brandBlue underline underline-offset-2" href={videoSrc} target="_blank" rel="noreferrer">
-                Open the clinic video
+            <p role="alert" className="mx-auto mt-4 max-w-[340px] text-center text-xs leading-relaxed text-[#34465A]/80">
+              Video preview unavailable.{' '}
+              <a className="font-semibold text-[#087FAE] underline" href={videoSrc} target="_blank" rel="noreferrer">
+                Open clinic video directly
               </a>
               .
             </p>

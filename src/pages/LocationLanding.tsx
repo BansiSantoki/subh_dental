@@ -15,12 +15,12 @@ import { siteConfig } from '../data/siteConfig';
 import type { LocationPage } from '../types/content';
 
 const kindLabel: Record<LocationPage['kind'], string> = {
-  clinic: 'Our studio',
-  'service-area': 'Service area — not a branch location',
-  treatment: 'Treatment in Nashik'
+  clinic: 'Our Clinic Location',
+  'service-area': 'Serving Patients From This Area',
+  treatment: 'Speciality Treatment in Nashik'
 };
 
-export function LocationLanding({ location }: {location: LocationPage;}) {
+export function LocationLanding({ location }: { location: LocationPage }) {
   const { openAppointment } = useAppointment();
   const path = `/${location.slug}`;
   const treatments = getServicesBySlugs(location.treatments);
@@ -34,44 +34,52 @@ export function LocationLanding({ location }: {location: LocationPage;}) {
         path={path}
         image={location.image}
         jsonLd={[
-        ...(location.kind === 'clinic' ? [dentistSchema()] : []),
-        webPageSchema(location.seoTitle, location.metaDescription, path),
-        faqSchema(location.faqs),
-        breadcrumbSchema([
-        { name: 'Home', path: '/' },
-        { name: location.h1, path }]
-        )]
-        } />
-      
+          ...(location.kind === 'clinic' ? [dentistSchema()] : []),
+          webPageSchema(location.seoTitle, location.metaDescription, path),
+          faqSchema(location.faqs),
+          breadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: location.h1, path }
+          ])
+        ]}
+      />
+
       <PageHero
-        crumbs={[{ label: 'Home', href: '/' }, { label: location.areaName === 'Nashik' ? location.h1 : `Near ${location.areaName}` }]}
+        crumbs={[
+          { label: 'Home', href: '/' },
+          { label: location.areaName === 'Nashik' ? location.h1 : `Near ${location.areaName}` }
+        ]}
         eyebrow={location.eyebrow}
         title={location.h1}
         intro={<p>{location.intro[0]}</p>}
         image={location.image}
         imageAlt={location.imageAlt}
         actions={
-        <>
-            <button type="button" onClick={() => openAppointment()} className={buttonClass('primary', 'lg')}>
+          <>
+            <button
+              type="button"
+              onClick={() => openAppointment()}
+              className={buttonClass('primary', 'lg', 'shadow-md')}
+            >
               Book a Consultation
             </button>
             <WhatsAppLink message={waMessage} variant="whatsappOutline" size="lg">
               Chat on WhatsApp
             </WhatsAppLink>
           </>
-        } />
-      
+        }
+      />
 
-      <section aria-labelledby="local-title" className="bg-white py-24 md:py-32">
-        <div className="mx-auto grid max-w-[1440px] gap-12 px-5 md:px-8 lg:grid-cols-12 lg:gap-16 lg:px-12">
+      <section aria-labelledby="local-title" className="bg-white py-16 md:py-24">
+        <div className="mx-auto grid max-w-[1440px] gap-12 px-4 sm:px-6 md:px-8 lg:grid-cols-12 lg:gap-16 lg:px-12">
           <div className="lg:col-span-5">
             <Reveal>
-              <div className="rounded-[24px] border border-champagne bg-champagne-light/50 p-6">
-                <p className="flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.18em] text-forest">
+              <div className="rounded-3xl border border-[#087FAE]/25 bg-[#F2F8FC] p-6 sm:p-8">
+                <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#087FAE]">
                   <MapPinIcon className="h-4 w-4" aria-hidden="true" />
-                  {kindLabel[location.kind]}
+                  <span>{kindLabel[location.kind]}</span>
                 </p>
-                <p className="mt-3 text-[15px] leading-relaxed text-charcoal/80">{location.areaNote}</p>
+                <p className="mt-3 text-sm leading-relaxed text-[#34465A]">{location.areaNote}</p>
               </div>
             </Reveal>
           </div>
@@ -80,57 +88,63 @@ export function LocationLanding({ location }: {location: LocationPage;}) {
               <h2 id="local-title" className="sr-only">
                 About dental care for {location.areaName}
               </h2>
-              {location.intro.slice(1).map((p) =>
-              <p key={p} className="text-pretty font-serif text-[26px] leading-[1.45] text-charcoal/85 sm:text-[30px]">
+              {location.intro.slice(1).map((p) => (
+                <p key={p} className="font-serif text-xl sm:text-2xl leading-relaxed text-[#123B59] mb-4">
                   {p}
                 </p>
-              )}
+              ))}
             </Reveal>
-            <dl className="mt-12 border-t border-charcoal/10">
-              {location.highlights.map((h, i) =>
-              <Reveal key={h.title} delay={0.05 * i}>
-                  <div className="grid gap-2 border-b border-charcoal/10 py-6 sm:grid-cols-[220px_1fr] sm:gap-8">
-                    <dt className="font-serif text-[23px] font-medium leading-tight text-charcoal">{h.title}</dt>
-                    <dd className="text-[15.5px] leading-relaxed text-charcoal/70">{h.text}</dd>
+            <dl className="mt-8 border-t border-[#E2EAF0]">
+              {location.highlights.map((h, i) => (
+                <Reveal key={h.title} delay={0.05 * i}>
+                  <div className="grid gap-2 border-b border-[#E2EAF0] py-5 sm:grid-cols-[200px_1fr] sm:gap-6">
+                    <dt className="font-serif text-lg font-bold text-[#123B59]">{h.title}</dt>
+                    <dd className="text-sm leading-relaxed text-[#34465A]/85">{h.text}</dd>
                   </div>
                 </Reveal>
-              )}
+              ))}
             </dl>
           </div>
         </div>
       </section>
 
-      <section aria-labelledby="local-treatments" className="bg-ivory py-24 md:py-32">
-        <div className="mx-auto max-w-[1440px] px-5 md:px-8 lg:px-12">
-          <Reveal>
-            <h2 id="local-treatments" className="font-serif text-[40px] font-medium leading-[1.02] text-charcoal sm:text-[52px]">
-              Treatments to explore
-            </h2>
-          </Reveal>
-          <div className="mt-12 grid gap-5 md:grid-cols-2">
-            {treatments.map((s, i) =>
-            <Reveal key={s.slug} delay={0.04 * i}>
-                <ServiceCard service={s} variant="compact" />
-              </Reveal>
-            )}
+      {treatments.length > 0 && (
+        <section aria-labelledby="local-treatments" className="bg-[#F2F8FC] py-16 md:py-24 border-t border-[#E2EAF0]">
+          <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
+            <Reveal>
+              <span className="text-xs font-bold uppercase tracking-wider text-[#087FAE]">Available Treatments</span>
+              <h2 id="local-treatments" className="mt-1 font-serif text-2xl sm:text-3xl font-bold text-[#123B59]">
+                Recommended Treatments to Explore
+              </h2>
+            </Reveal>
+            <div className="mt-8 grid gap-5 md:grid-cols-2">
+              {treatments.map((s, i) => (
+                <Reveal key={s.slug} delay={0.04 * i}>
+                  <ServiceCard service={s} variant="compact" />
+                </Reveal>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
-      <section aria-labelledby="local-faq" className="bg-ivory pb-24 md:pb-32">
-        <div className="mx-auto grid max-w-[1440px] gap-12 px-5 md:px-8 lg:grid-cols-12 lg:gap-16 lg:px-12">
-          <Reveal className="lg:col-span-4">
-            <h2 id="local-faq" className="font-serif text-[40px] font-medium leading-[1.02] text-charcoal sm:text-[50px]">
-              Common questions
-            </h2>
-          </Reveal>
-          <Reveal delay={0.06} className="lg:col-span-8">
-            <FAQList faqs={location.faqs} />
-          </Reveal>
-        </div>
-      </section>
+      {location.faqs && location.faqs.length > 0 && (
+        <section aria-labelledby="local-faq" className="bg-white py-16 md:py-24 border-t border-[#E2EAF0]">
+          <div className="mx-auto grid max-w-[1440px] gap-12 px-4 sm:px-6 md:px-8 lg:grid-cols-12 lg:gap-16 lg:px-12">
+            <Reveal className="lg:col-span-4">
+              <span className="text-xs font-bold uppercase tracking-wider text-[#087FAE]">Local FAQs</span>
+              <h2 id="local-faq" className="mt-1 font-serif text-2xl sm:text-3xl font-bold text-[#123B59]">
+                Common Questions
+              </h2>
+            </Reveal>
+            <Reveal delay={0.06} className="lg:col-span-8">
+              <FAQList faqs={location.faqs} />
+            </Reveal>
+          </div>
+        </section>
+      )}
 
       <ContactSection />
-    </>);
-
+    </>
+  );
 }

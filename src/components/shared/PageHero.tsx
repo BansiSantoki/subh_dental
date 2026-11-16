@@ -15,59 +15,75 @@ interface PageHeroProps {
 
 const ease = [0.23, 1, 0.32, 1] as const;
 
-/** Editorial hero used by inner pages (treatments, locations, blog listing). */
-export function PageHero({ crumbs, eyebrow, title, intro, image, imageAlt = '', actions, children }: PageHeroProps) {
+export function PageHero({
+  crumbs,
+  eyebrow,
+  title,
+  intro,
+  image,
+  imageAlt = '',
+  actions,
+  children
+}: PageHeroProps) {
   return (
-    <section className="relative overflow-hidden bg-ivory pt-[100px] md:pt-[124px]">
-      <div className="grain pointer-events-none absolute inset-0" aria-hidden="true" />
-      <div
-        className={`relative mx-auto grid max-w-[1440px] gap-12 px-5 pb-20 md:px-8 lg:px-12 lg:pb-28 ${
-        image ? 'lg:grid-cols-12 lg:items-center lg:gap-16' : ''}`
-        }>
-        
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease }}
-          className={image ? 'lg:col-span-6' : 'max-w-4xl'}>
-          
-          <Breadcrumbs items={crumbs} />
-          {eyebrow &&
-          <p className="mt-10 flex items-center gap-3 text-[11.5px] font-semibold uppercase tracking-[0.24em] text-forest">
-              <span className="h-px w-8 bg-champagne" aria-hidden="true" />
-              {eyebrow}
-            </p>
-          }
-          <h1
-            className={`text-balance font-serif text-[46px] font-medium leading-[0.98] tracking-[-0.02em] text-charcoal sm:text-[64px] lg:text-[76px] ${
-            eyebrow ? 'mt-5' : 'mt-10'}`
-            }>
-            
-            {title}
-          </h1>
-          {intro && <div className="mt-7 max-w-xl text-pretty text-[17px] leading-[1.75] text-charcoal/70">{intro}</div>}
-          {actions && <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap">{actions}</div>}
-          {children}
-        </motion.div>
-        {image &&
-        <motion.div
-          initial={{ opacity: 0, scale: 0.97 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease, delay: 0.1 }}
-          className="relative lg:col-span-6">
-          
-            <div className="absolute inset-0 translate-x-4 translate-y-4 rounded-[32px] bg-sage" aria-hidden="true" />
-            <img
-            src={image}
-            alt={imageAlt}
-            width={1000}
-            height={800}
-            decoding="async"
-            className="relative aspect-[5/4] w-full rounded-[32px] object-cover shadow-[0_50px_90px_-50px_rgba(23,63,58,0.55)]" />
-          
-          </motion.div>
-        }
-      </div>
-    </section>);
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#F2F8FC] via-white to-white pt-28 pb-16 md:pt-36 md:pb-20 lg:pb-24 border-b border-[#E2EAF0]">
+      <div className="relative mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
+        <div
+          className={`grid gap-10 ${
+            image ? 'lg:grid-cols-12 lg:items-center lg:gap-14' : 'max-w-4xl'
+          }`}
+        >
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease }}
+            className={image ? 'lg:col-span-7' : ''}
+          >
+            <Breadcrumbs items={crumbs} />
 
+            {eyebrow && (
+              <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-[#087FAE]/20 bg-white px-3.5 py-1 text-xs font-semibold text-[#087FAE] shadow-2xs">
+                <span>{eyebrow}</span>
+              </div>
+            )}
+
+            <h1 className="mt-4 font-serif text-3xl sm:text-5xl lg:text-[54px] font-bold leading-[1.08] tracking-[-0.015em] text-[#123B59]">
+              {title}
+            </h1>
+
+            {intro && (
+              <div className="mt-5 max-w-2xl text-base sm:text-lg leading-relaxed text-[#34465A]">
+                {intro}
+              </div>
+            )}
+
+            {actions && (
+              <div className="mt-8 flex flex-wrap items-center gap-3.5">{actions}</div>
+            )}
+
+            {children}
+          </motion.div>
+
+          {image && (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.96 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, ease, delay: 0.1 }}
+              className="relative lg:col-span-5"
+            >
+              <div className="overflow-hidden rounded-[28px] border-4 border-white bg-slate-100 shadow-[0_20px_50px_-15px_rgba(8,127,174,0.2)]">
+                <img
+                  src={image}
+                  alt={imageAlt}
+                  width={800}
+                  height={600}
+                  className="aspect-[4/3] w-full object-cover"
+                />
+              </div>
+            </motion.div>
+          )}
+        </div>
+      </div>
+    </section>
+  );
 }

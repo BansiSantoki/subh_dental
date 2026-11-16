@@ -11,7 +11,6 @@ interface InquiryReadyProps {
   onEdit: () => void;
 }
 
-/** Shown after validation. Honest copy: nothing has been sent or booked yet. */
 export function InquiryReady({ name, message, waUrl, onEdit }: InquiryReadyProps) {
   const headingRef = useRef<HTMLHeadingElement>(null);
   useEffect(() => headingRef.current?.focus(), []);
@@ -23,33 +22,51 @@ export function InquiryReady({ name, message, waUrl, onEdit }: InquiryReadyProps
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, ease: [0.23, 1, 0.32, 1] }}
       role="status"
-      aria-live="polite">
-      
-      <span className="flex h-12 w-12 items-center justify-center rounded-full bg-sage text-forest">
-        <CheckIcon className="h-5 w-5" aria-hidden="true" />
+      aria-live="polite"
+      className="p-2"
+    >
+      <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#DCEFF8] text-[#087FAE] shadow-xs">
+        <CheckIcon className="h-6 w-6" aria-hidden="true" />
       </span>
-      <h3 ref={headingRef} tabIndex={-1} className="mt-5 font-serif text-[32px] font-medium leading-tight text-charcoal focus:outline-none">
+
+      <h3
+        ref={headingRef}
+        tabIndex={-1}
+        className="mt-5 font-serif text-2xl sm:text-3xl font-bold leading-tight text-[#123B59] focus:outline-none"
+      >
         Thank you, {firstName}. Your inquiry is ready.
       </h3>
-      <p className="mt-3 text-[15px] leading-relaxed text-charcoal/70">
-        Nothing has been sent or booked yet. Tap below to send these details to our team on WhatsApp — they will
-        reply with available options. Sending an inquiry does not confirm an appointment.
+
+      <p className="mt-2.5 text-sm sm:text-base leading-relaxed text-[#34465A]">
+        Nothing has been charged or confirmed yet. Tap below to send these details directly to our clinic
+        team on WhatsApp — we will review available slots and reply promptly.
       </p>
-      <div className="mt-6 rounded-[16px] border border-charcoal/10 bg-ivory p-5">
-        <p className="text-[11.5px] font-semibold uppercase tracking-[0.18em] text-muted">Message preview</p>
-        <p className="mt-3 whitespace-pre-line text-[14px] leading-relaxed text-charcoal/80">{message}</p>
+
+      <div className="mt-5 rounded-2xl border border-[#E2EAF0] bg-[#F2F8FC] p-4 sm:p-5">
+        <p className="text-[11px] font-bold uppercase tracking-wider text-[#087FAE]">
+          Inquiry Message Preview
+        </p>
+        <p className="mt-2.5 whitespace-pre-line text-xs sm:text-sm leading-relaxed text-[#123B59] font-mono bg-white p-3.5 rounded-xl border border-[#E2EAF0]">
+          {message}
+        </p>
       </div>
+
       <div className="mt-6 flex flex-wrap gap-3">
-        <a href={waUrl} target="_blank" rel="noopener noreferrer" className={buttonClass('whatsapp', 'lg')}>
+        <a
+          href={waUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={buttonClass('whatsapp', 'lg', 'shadow-md')}
+        >
           <WhatsAppIcon className="h-5 w-5" />
-          Send on WhatsApp
-          <span className="sr-only">(opens WhatsApp in a new tab)</span>
+          <span>Send on WhatsApp</span>
         </a>
+
         <button type="button" onClick={onEdit} className={buttonClass('secondary', 'lg')}>
           <PencilLineIcon className="h-4 w-4" aria-hidden="true" />
-          Edit details
+          <span>Edit Details</span>
         </button>
       </div>
-    </motion.div>);
-
+    </motion.div>
+  );
 }

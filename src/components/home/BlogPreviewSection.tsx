@@ -12,30 +12,39 @@ export function BlogPreviewSection() {
   const side = rest.slice(0, 3);
 
   return (
-    <section id="blog" aria-labelledby="blog-title" className="bg-white py-24 md:py-36">
-      <div className="mx-auto max-w-[1440px] px-5 md:px-8 lg:px-12">
+    <section id="blog" aria-labelledby="blog-title" className="bg-white py-20 md:py-28 lg:py-32">
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-          <SectionHeading id="blog-title" eyebrow="Dental education" title="Simple Answers for a Healthier Smile." />
-          <Reveal delay={0.1} className="shrink-0">
+          <SectionHeading
+            id="blog-title"
+            eyebrow="Dental Health Blog"
+            title="Simple Answers for a Healthier Smile."
+            intro="Helpful clinical insights and home oral hygiene guidance from Dr. Naik's Shubh Smile Dental Clinic in Nashik."
+          />
+          <Reveal delay={0.08} className="shrink-0">
             <Link to="/blog" className={buttonClass('secondary', 'md')}>
-              All articles <ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
+              <span>View All Articles</span>
+              <ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
             </Link>
           </Reveal>
         </div>
 
-        <div className="mt-14 grid gap-12 lg:grid-cols-12 lg:gap-14">
+        <div className="mt-12 sm:mt-14 grid gap-10 lg:grid-cols-12 lg:gap-12">
+          {/* Featured Large Article */}
           <Reveal className="lg:col-span-7">
             <BlogCard post={lead} variant="large" />
           </Reveal>
-          <div className="flex flex-col gap-8 divide-y divide-charcoal/10 lg:col-span-5">
-            {side.map((post, i) =>
-            <Reveal key={post.slug} delay={0.06 * i} className={i > 0 ? 'pt-8' : ''}>
+
+          {/* Side Articles */}
+          <div className="flex flex-col gap-6 divide-y divide-[#E2EAF0] lg:col-span-5">
+            {side.map((post, i) => (
+              <Reveal key={post.slug} delay={0.06 * i} className={i > 0 ? 'pt-6' : ''}>
                 <BlogCard post={post} variant="row" />
               </Reveal>
-            )}
+            ))}
           </div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }

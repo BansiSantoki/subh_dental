@@ -20,33 +20,37 @@ export function ServicesSection() {
   const onKeyDown = (e: React.KeyboardEvent, index: number) => {
     if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
     e.preventDefault();
-    const next = (index + (e.key === 'ArrowRight' ? 1 : -1) + serviceCategories.length) % serviceCategories.length;
+    const next =
+      (index + (e.key === 'ArrowRight' ? 1 : -1) + serviceCategories.length) %
+      serviceCategories.length;
     setActive(serviceCategories[next].id);
     tabRefs.current[next]?.focus();
   };
 
   return (
-    <section id="services" aria-labelledby="services-title" className="bg-white py-20 md:py-28">
-      <div className="mx-auto max-w-[1440px] px-5 md:px-8 lg:px-12">
-        <div className="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
+    <section id="services" aria-labelledby="services-title" className="bg-white py-20 md:py-28 lg:py-32">
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
+        <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <SectionHeading
             id="services-title"
-            eyebrow="Treatments"
+            eyebrow="Our Dental Services"
             title="Comprehensive Dental Care, Thoughtfully Delivered."
-            intro="Explore dental treatment options designed around your needs, comfort, and smile goals." />
-          
-          <Reveal delay={0.1} className="shrink-0">
+            intro="Explore dental treatments designed around your health, comfort, and smile goals. Each service is explained transparently with no unnecessary procedures."
+          />
+
+          {/* Category Tabs */}
+          <Reveal delay={0.08} className="shrink-0">
             <div
               role="tablist"
               aria-label="Treatment categories"
-              className="no-scrollbar -mx-5 flex gap-2 overflow-x-auto px-5 pb-1 sm:mx-0 sm:px-0">
-              
+              className="no-scrollbar flex gap-2 overflow-x-auto pb-1"
+            >
               {serviceCategories.map((c, i) => {
                 const selected = c.id === active;
                 return (
                   <button
                     key={c.id}
-                    ref={(el) => tabRefs.current[i] = el}
+                    ref={(el) => (tabRefs.current[i] = el)}
                     role="tab"
                     id={`tab-${c.id}`}
                     aria-selected={selected}
@@ -54,59 +58,64 @@ export function ServicesSection() {
                     tabIndex={selected ? 0 : -1}
                     onClick={() => setActive(c.id)}
                     onKeyDown={(e) => onKeyDown(e, i)}
-                    className={`relative h-11 shrink-0 rounded-full px-5 text-[13.5px] font-semibold transition-colors duration-200 ${
-                    selected ? 'text-white' : 'border border-brandBlue/10 bg-[#f5f9fb] text-[#294354] hover:bg-brandBlue/5 hover:text-brandBlue'}`
-                    }>
-                    
-                    {selected &&
-                    <motion.span
-                      layoutId="service-tab"
-                      className="absolute inset-0 rounded-full bg-brandBlue"
-                      transition={{ duration: 0.28, ease: [0.23, 1, 0.32, 1] }} />
-
-                    }
-                    <span className="relative">{c.label}</span>
-                  </button>);
-
+                    className={`relative h-11 shrink-0 rounded-full px-5 text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer ${
+                      selected
+                        ? 'text-white'
+                        : 'border border-[#E2EAF0] bg-[#F2F8FC] text-[#123B59] hover:bg-[#DCEFF8] hover:text-[#087FAE]'
+                    }`}
+                  >
+                    {selected && (
+                      <motion.span
+                        layoutId="service-tab-pill"
+                        className="absolute inset-0 rounded-full bg-[#087FAE] shadow-sm"
+                        transition={{ duration: 0.25, ease: [0.23, 1, 0.32, 1] }}
+                      />
+                    )}
+                    <span className="relative z-10">{c.label}</span>
+                  </button>
+                );
               })}
             </div>
           </Reveal>
         </div>
 
-        <div id={`panel-${active}`} role="tabpanel" aria-labelledby={`tab-${active}`} className="mt-14">
-          <p className="mb-8 max-w-2xl font-serif text-[21px] italic text-charcoal/65">{activeMeta?.description}</p>
+        {/* Tab Panel */}
+        <div id={`panel-${active}`} role="tabpanel" aria-labelledby={`tab-${active}`} className="mt-10 sm:mt-12">
+          <p className="mb-8 max-w-2xl text-sm sm:text-base text-[#34465A]/80 font-medium">
+            {activeMeta?.description}
+          </p>
+
           <AnimatePresence mode="wait">
             <motion.div
               key={active}
-              initial={{ opacity: 0, y: 14 }}
+              initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.25, ease: [0.23, 1, 0.32, 1] }}
-              className="grid gap-6 lg:grid-cols-12">
-              
-              {feature &&
-              <div className="lg:col-span-6">
+              className="grid gap-6 lg:grid-cols-12"
+            >
+              {feature && (
+                <div className="lg:col-span-6">
                   <ServiceCard service={feature} variant="feature" />
                 </div>
-              }
+              )}
               <div className="grid gap-4 lg:col-span-6">
-                {rest.map((s) =>
-                <ServiceCard key={s.slug} service={s} variant="compact" />
-                )}
+                {rest.map((s) => (
+                  <ServiceCard key={s.slug} service={s} variant="compact" />
+                ))}
               </div>
             </motion.div>
           </AnimatePresence>
-        </div>
 
-        <div className="mt-14 flex flex-col items-start gap-4 border-t border-charcoal/10 pt-10 sm:flex-row sm:items-center sm:justify-between">
-          <p className="max-w-lg text-[15px] leading-relaxed text-charcoal/70">
-            Twelve treatment areas, each explained in plain language with honest answers to common questions.
-          </p>
-          <Link to="/services" className={buttonClass('secondary', 'md')}>
-            View all treatments <ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
-          </Link>
+          {/* View All Services Link */}
+          <div className="mt-12 text-center">
+            <Link to="/services" className={buttonClass('secondary', 'lg', 'shadow-sm')}>
+              <span>View All 12 Dental Treatments</span>
+              <ArrowRightIcon className="h-4 w-4" />
+            </Link>
+          </div>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 }

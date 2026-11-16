@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { XIcon } from 'lucide-react';
+import { XIcon, SparklesIcon } from 'lucide-react';
 import { AppointmentForm } from './AppointmentForm';
 import { useAppointment } from '../../contexts/AppointmentContext';
 import { images } from '../../data/images';
@@ -50,64 +50,81 @@ export function AppointmentModal() {
 
   return (
     <AnimatePresence>
-      {isOpen &&
-      <motion.div
-        className="fixed inset-0 z-[60] flex items-end justify-center sm:items-center sm:p-6"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.2, ease }}>
-        
+      {isOpen && (
+        <motion.div
+          className="fixed inset-0 z-[60] flex items-end justify-center sm:items-center sm:p-6"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.2, ease }}
+        >
+          {/* Backdrop */}
           <button
-          type="button"
-          aria-label="Close appointment form"
-          onClick={closeAppointment}
-          className="absolute inset-0 cursor-default bg-forest-deep/50 backdrop-blur-[3px]"
-          tabIndex={-1} />
-        
+            type="button"
+            aria-label="Close appointment form"
+            onClick={closeAppointment}
+            className="absolute inset-0 cursor-default bg-[#0A2033]/60 backdrop-blur-sm"
+            tabIndex={-1}
+          />
+
           <motion.div
-          ref={dialogRef}
-          role="dialog"
-          aria-modal="true"
-          aria-labelledby="appointment-title"
-          initial={{ opacity: 0, y: 24, scale: 0.98 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          exit={{ opacity: 0, y: 16, scale: 0.98 }}
-          transition={{ duration: 0.28, ease }}
-          className="relative grid max-h-[92vh] w-full max-w-4xl overflow-hidden rounded-t-[28px] bg-ivory shadow-[0_40px_120px_-40px_rgba(15,44,40,0.6)] sm:rounded-[28px] md:grid-cols-[0.8fr_1.2fr]">
-          
-            <div className="relative hidden md:block">
-              <img src={images.treatmentRoom} alt="" className="absolute inset-0 h-full w-full object-cover" />
-              <div className="absolute inset-0 bg-forest-deep/40" />
-              <div className="absolute inset-x-0 bottom-0 p-8 text-ivory">
-                <p className="font-serif text-[30px] leading-[1.1]">{siteConfig.tagline}</p>
-                <p className="mt-3 text-[13px] text-ivory/80">{siteConfig.locationLabel}</p>
+            ref={dialogRef}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="appointment-title"
+            initial={{ opacity: 0, y: 24, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 16, scale: 0.98 }}
+            transition={{ duration: 0.28, ease }}
+            className="relative grid max-h-[94vh] w-full max-w-4xl overflow-hidden rounded-t-[28px] bg-white shadow-2xl sm:rounded-[28px] md:grid-cols-[0.8fr_1.2fr] border border-[#E2EAF0]"
+          >
+            {/* Left Side: Photo & Brand */}
+            <div className="relative hidden md:block bg-[#123B59]">
+              <img
+                src={images.treatmentRoom}
+                alt="Operatory at Dr. Naik's Shubh Smile Dental Clinic"
+                className="absolute inset-0 h-full w-full object-cover opacity-60"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#123B59] via-[#123B59]/40 to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 p-8 text-white">
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-white/20 px-3 py-1 text-xs font-semibold text-[#DCEFF8] backdrop-blur-xs mb-3">
+                  <SparklesIcon className="h-3.5 w-3.5" />
+                  {siteConfig.shortName}
+                </span>
+                <p className="font-serif text-2xl font-bold leading-snug">{siteConfig.tagline}</p>
+                <p className="mt-3 text-xs text-[#DCEFF8]/90 leading-relaxed">{siteConfig.locationLabel}</p>
               </div>
             </div>
-            <div className="overflow-y-auto p-6 sm:p-9">
-              <div className="mb-7 flex items-start justify-between gap-4">
+
+            {/* Right Side: Form */}
+            <div className="overflow-y-auto p-6 sm:p-8">
+              <div className="mb-6 flex items-start justify-between gap-4">
                 <div>
-                  <h2 id="appointment-title" className="font-serif text-[34px] font-medium leading-tight text-charcoal">
+                  <h2
+                    id="appointment-title"
+                    className="font-serif text-2xl sm:text-3xl font-bold text-[#123B59]"
+                  >
                     Book an Appointment
                   </h2>
-                  <p className="mt-2 max-w-sm text-[14.5px] leading-relaxed text-charcoal/65">
-                    Share a few details and we’ll prepare a WhatsApp message for our team.
+                  <p className="mt-1 text-xs sm:text-sm text-[#34465A]/80">
+                    Fill in your details below and we will prepare your WhatsApp consultation request.
                   </p>
                 </div>
                 <button
-                type="button"
-                onClick={closeAppointment}
-                aria-label="Close"
-                className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-charcoal/15 text-charcoal transition-colors duration-200 hover:bg-white">
-                
+                  type="button"
+                  onClick={closeAppointment}
+                  aria-label="Close"
+                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#E2EAF0] text-[#123B59] hover:bg-[#F2F8FC] hover:text-[#087FAE] transition-colors cursor-pointer"
+                >
                   <XIcon className="h-4 w-4" />
                 </button>
               </div>
-              <AppointmentForm key={treatment} initialTreatment={treatment} />
+
+              <AppointmentForm initialTreatment={treatment} />
             </div>
           </motion.div>
         </motion.div>
-      }
-    </AnimatePresence>);
-
+      )}
+    </AnimatePresence>
+  );
 }

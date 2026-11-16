@@ -5,217 +5,199 @@ export const cosmeticDentistry: Service = {
   slug: 'cosmetic-dentistry',
   name: 'Cosmetic Dentistry',
   category: 'cosmetic',
-  short: 'Treatment options for people interested in improving the appearance of their smile.',
-  image: images.whiteningSmile,
-  imageAlt: 'Relaxed man laughing with a natural, healthy smile',
-  seoTitle: 'Cosmetic Dentistry in Nashik | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
+  short: 'Customized aesthetic treatments designed to enhance tooth shape, shade, alignment, and facial balance.',
+  image: images.cosmeticSmile,
+  imageAlt: 'Dentist conducting facial and smile aesthetic assessment with patient in dental operatory',
+  seoTitle: 'Cosmetic Dentistry & Smile Enhancement in Nashik | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
   metaDescription:
-  'Explore cosmetic dentistry options in Nashik — whitening, veneers, bonding and more — with honest, personalized advice at Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic.',
+    'Explore personalized cosmetic dentistry in Nashik. Professional smile assessments, composite bonding, aesthetic recontouring, and custom smile design.',
   h1: 'Cosmetic Dentistry in Nashik',
   intro: [
-  'Cosmetic dentistry focuses on how your smile looks — its colour, shape, alignment and balance. For some people that means a subtle refresh; for others, addressing something that has bothered them for years.',
-  'Good cosmetic care always starts with healthy teeth and gums, and with listening carefully to what you would actually like to change.'],
-
+    'Cosmetic dentistry focuses on elevating the aesthetic harmony of your teeth, gums, and overall smile. Whether you desire subtle refinements or a full smile transformation, our approach begins with healthy teeth and honest clinical communication.',
+    'We work closely with you to design results that appear natural, complement your unique facial proportions, and preserve maximum natural enamel.'
+  ],
   reasons: [
-  'Discoloured or stained teeth',
-  'Chipped, worn or uneven edges',
-  'Small gaps between teeth',
-  'Teeth that look too short or irregular in shape',
-  'Wanting to feel more confident when smiling in photos'],
-
+    'Discolored, deeply stained, or dull teeth',
+    'Chipped, cracked, or worn incisal edges',
+    'Visible gaps or minor spacing between front teeth',
+    'Irregularly shaped or unevenly proportioned teeth',
+    'Desire for a brighter, more confident smile in professional and personal life'
+  ],
   benefits: [
-  'Options ranging from conservative to more involved',
-  'Treatment planned around your facial features and preferences',
-  'May help you feel more comfortable with your smile',
-  'A clear discussion of what is realistic for your teeth'],
-
+    'Customized treatment plan designed specifically for your facial contours',
+    'Conservative, minimally invasive techniques prioritizing natural tooth structure',
+    'Noticeable enhancement in everyday confidence and photo-ready smiles',
+    'Clear upfront guidance on realistic results and longevity'
+  ],
   process: [
-  { title: 'Listening', text: 'We start by understanding what you like about your smile and what you would like to change.' },
-  { title: 'Health check', text: 'Your teeth and gums are assessed, as any underlying concerns usually come first.' },
-  { title: 'Options', text: 'Suitable treatments are explained with their benefits, limitations and costs.' },
-  { title: 'Your decision', text: 'You choose what feels right, at your own pace, with no pressure to proceed.' }],
-
+    { title: 'Aesthetic Consultation', text: 'We listen to what you wish to enhance and examine your tooth shade, shape, and bite harmony.' },
+    { title: 'Digital Smile Evaluation', text: 'We map out realistic enhancements using clinical photographs and shade guides.' },
+    { title: 'Treatment Selection', text: 'Choose between conservative bonding, contouring, or combined cosmetic options.' },
+    { title: 'Artistic Execution', text: 'Careful chairside application with high-precision cosmetic materials for a natural finish.' }
+  ],
   suitability:
-  'What can be achieved depends on your teeth, gums, bite and expectations. Your dentist will explain realistic options after an examination.',
+    'Cosmetic enhancements require healthy gums and stable teeth as a foundation. Any active decay or gum issues are addressed first.',
   faqs: [
-  {
-    question: 'Is cosmetic dentistry only about appearance?',
-    answer:
-    'Its main focus is appearance, but some treatments — such as repairing chipped teeth — may also improve function. Your dentist will explain both aspects.'
-  },
-  {
-    question: 'Will my smile look natural?',
-    answer:
-    'A natural-looking result is usually the goal. Your dentist will discuss shade, shape and proportion with you during planning.'
-  },
-  {
-    question: 'Can I combine more than one treatment?',
-    answer:
-    'Yes, some people combine treatments such as whitening and bonding. A smile makeover consultation can help you understand possible combinations.'
-  }],
-
+    {
+      question: 'Will cosmetic dental work look artificial or too white?',
+      answer:
+        'Not at all. We carefully select shades and translucent gradations that match your natural enamel and harmonize with your skin tone.'
+    },
+    {
+      question: 'How long do cosmetic restorations last?',
+      answer:
+        'With routine oral hygiene and regular dental check-ups, modern composite bonding and aesthetic porcelain last many years.'
+    }
+  ],
   related: ['teeth-whitening', 'dental-veneers', 'smile-makeover']
 };
 
 export const teethWhitening: Service = {
   slug: 'teeth-whitening',
-  name: 'Teeth Whitening',
+  name: 'Professional Teeth Whitening',
   category: 'cosmetic',
-  short: 'Information about suitable professional whitening options, supervised by your dentist.',
-  image: images.smileCloseup,
-  imageAlt: 'Close-up of a natural, healthy smile in soft warm light',
+  short: 'Safe, clinic-supervised teeth whitening treatments to lift stubborn coffee, tea, and aging stains.',
+  image: images.whiteningSmile,
+  imageAlt: 'Individual smiling naturally with bright, clean, healthy teeth after whitening treatment',
   seoTitle: 'Professional Teeth Whitening in Nashik | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
   metaDescription:
-  'Learn about professional teeth whitening options in Nashik, who may be suitable and what to expect. Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic.',
+    'Safe, long-lasting professional teeth whitening in Nashik. In-office chairside bleaching and custom take-home kits for a visibly brighter smile.',
   h1: 'Professional Teeth Whitening in Nashik',
   intro: [
-  'Over time, tea, coffee, certain foods and natural ageing can make teeth look darker or more yellow. Professional whitening uses dentist-supervised products to lighten the natural shade of your teeth.',
-  'Before whitening, your dentist checks that your teeth and gums are healthy and talks you through what kind of change is realistic for you.'],
-
+    'Daily exposure to tea, coffee, spices, smoking, and natural aging gradually darkens enamel. Professional dental whitening safely lifts deep pigment stains while preserving enamel integrity.',
+    'Under expert clinical supervision, whitening formulas are carefully monitored to protect your gums and minimize transient sensitivity.'
+  ],
   reasons: [
-  'Teeth that have gradually darkened over time',
-  'Staining from tea, coffee or other foods',
-  'Preparing for a wedding or special occasion',
-  'Wanting a brighter look without changing tooth shape'],
-
+    'Extrinsic stains from tea, coffee, wine, or tobacco use',
+    'Yellowing or darkening caused by natural enamel aging',
+    'Special upcoming events such as weddings, reunions, or photo shoots',
+    'Desire for a fresher, brighter smile appearance'
+  ],
   benefits: [
-  'A brighter-looking smile, with results that vary between people',
-  'Professional supervision and guidance on sensitivity',
-  'A shade goal discussed and agreed with you',
-  'A non-invasive option that does not reshape teeth'],
-
+    'Safe clinical whitening agents that protect delicate tooth enamel',
+    'Targeted gum barriers to prevent irritation and sensitivity',
+    'Visibly brighter shade results achieved in a controlled, predictable manner',
+    'Professional advice on preserving your results with simple habits'
+  ],
   process: [
-  { title: 'Assessment', text: 'Your dentist checks for decay, gum issues or restorations that may affect whitening.' },
-  { title: 'Shade record', text: 'Your current shade is noted so changes can be compared over time.' },
-  { title: 'Whitening', text: 'In-clinic or dentist-supervised home whitening is carried out, depending on what suits you.' },
-  { title: 'Maintenance advice', text: 'You receive tips to help maintain your result and manage any sensitivity.' }],
-
+    { title: 'Pre-Whitening Exam', text: 'We check enamel health, existing restorations, and baseline shade with a clinical shade guide.' },
+    { title: 'Gum & Soft-Tissue Protection', text: 'Protective isolation barrier is applied to keep gums completely shielded.' },
+    { title: 'Whitening Gel Activation', text: 'Professional-grade whitening gel is applied and monitored in measured intervals.' },
+    { title: 'Shade Reveal & Guidance', text: 'We measure your new shade and provide helpful aftercare tips to maintain your brightness.' }
+  ],
   suitability:
-  'Whitening does not change the colour of crowns, veneers or fillings, and results vary. Your dentist will confirm whether it is appropriate for you.',
+    'Whitening works effectively on natural enamel. Existing crowns, veneers, or fillings do not lighten and may need shade matching later.',
   faqs: [
-  {
-    question: 'Is whitening permanent?',
-    answer:
-    'No. Results fade gradually depending on diet and habits. Your dentist can advise on maintenance and touch-up options.'
-  },
-  {
-    question: 'Will whitening make my teeth sensitive?',
-    answer:
-    'Some people experience temporary sensitivity. Your dentist will explain how to reduce it and what to do if it occurs.'
-  },
-  {
-    question: 'Can I use over-the-counter whitening products?',
-    answer:
-    'It is best to speak with your dentist first. Professional supervision helps ensure products are used safely and appropriately for your teeth.'
-  }],
-
-  related: ['cosmetic-dentistry', 'teeth-cleaning', 'dental-veneers']
+    {
+      question: 'Is professional whitening safe for tooth enamel?',
+      answer:
+        'Yes. Clinically approved dental bleaching gels do not erode or thin enamel when administered by a trained dentist.'
+    },
+    {
+      question: 'How long do whitening results typically last?',
+      answer:
+        'Results generally last between one and two years, depending on your dietary habits like tea, coffee, and tobacco consumption.'
+    }
+  ],
+  related: ['teeth-cleaning', 'cosmetic-dentistry', 'dental-veneers']
 };
 
 export const dentalVeneers: Service = {
   slug: 'dental-veneers',
-  name: 'Dental Veneers',
+  name: 'Porcelain & Composite Veneers',
   category: 'cosmetic',
-  short: 'Information about veneers, suitability, and personalized treatment planning.',
-  image: images.veneers,
-  imageAlt: 'Thin porcelain veneer shells arranged in an arc on an ivory surface',
-  seoTitle: 'Dental Veneers in Nashik | Porcelain & Composite | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
+  short: 'Ultra-thin, custom shells bonded to the front of teeth to correct deep discoloration, chips, or gaps.',
+  image: images.shadeGuide,
+  imageAlt: 'Dentist using precision Vita clinical dental tooth shade guide for customized porcelain veneer matching',
+  seoTitle: 'Dental Veneers in Nashik | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
   metaDescription:
-  'Understand dental veneers — porcelain and composite options, suitability and the planning process — at Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic, Nashik.',
+    'Custom porcelain and composite veneers in Nashik. Transform chipped, uneven, or deeply stained teeth with handcrafted aesthetic shells.',
   h1: 'Dental Veneers in Nashik',
   intro: [
-  'Veneers are thin, custom-made layers bonded to the front surfaces of teeth. They can change the colour, shape or proportion of teeth that are chipped, worn, discoloured or uneven.',
-  'Because veneers are a significant decision — and porcelain veneers usually involve reshaping some natural enamel — careful planning and an honest conversation come first.'],
-
+    'Dental veneers are custom-crafted, ultra-thin shells designed to cover the front surface of teeth. They represent an exquisite solution for masking deep intrinsic stains, closing stubborn gaps, and restoring chipped or worn teeth.',
+    'Our clinic offers both direct composite veneers and handcrafted laboratory porcelain veneers, each designed to replicate the subtle translucency of natural enamel.'
+  ],
   reasons: [
-  'Teeth that remain discoloured after whitening',
-  'Chipped, worn or slightly uneven front teeth',
-  'Small gaps you would like to close',
-  'Teeth that look too small or irregular'],
-
+    'Deep intrinsic tooth discoloration that does not respond to whitening',
+    'Chipped, broken, or unevenly worn tooth edges',
+    'Noticeable gaps or diastema between front teeth',
+    'Mild crowding or minor misalignment where orthodontics is not preferred'
+  ],
   benefits: [
-  'Can change colour and shape at the same time',
-  'Designed to suit your face and smile line',
-  'Porcelain is stain-resistant compared with natural enamel',
-  'A preview stage helps you visualise the plan'],
-
+    'Dramatically improves smile aesthetics with minimal tooth preparation',
+    'Porcelain materials are highly stain-resistant and durable',
+    'Engineered to match your surrounding natural teeth flawlessly',
+    'Long-lasting solution that provides immediate cosmetic confidence'
+  ],
   process: [
-  { title: 'Consultation', text: 'We discuss your goals and check that your teeth and gums are healthy enough for veneers.' },
-  { title: 'Planning & preview', text: 'Photographs and models may be used to plan the shape, length and shade with you.' },
-  { title: 'Preparation', text: 'Where needed, a thin layer of enamel is reshaped and impressions or scans are taken.' },
-  { title: 'Placement', text: 'Your veneers are checked for fit and appearance, then bonded into place.' }],
-
+    { title: 'Consultation & Mock-up', text: 'We discuss your aesthetic goals and evaluate facial proportions and dental alignment.' },
+    { title: 'Gentle Enamel Preparation', text: 'A conservative layer of enamel is prepared to accommodate the veneer shell.' },
+    { title: 'Custom Impression / Scanning', text: 'Precise records are sent to dental ceramists for custom fabrication.' },
+    { title: 'Bonding & Polishing', text: 'The custom veneers are bonded with medical-grade resin and polished to a lifelike luster.' }
+  ],
   suitability:
-  'Veneers are not suitable for everyone — for example, where there is active decay, gum disease or heavy teeth grinding. An examination is essential.',
+    'Veneers are ideal for patients with healthy gums, adequate enamel thickness, and a balanced bite without severe teeth grinding.',
   faqs: [
-  {
-    question: 'Are veneers reversible?',
-    answer:
-    'Porcelain veneers usually involve removing some enamel, so they are generally considered irreversible. Composite veneers may need less preparation. Your dentist will explain the difference.'
-  },
-  {
-    question: 'How long do veneers last?',
-    answer:
-    'With good care they can last many years, but they may eventually need repair or replacement. Longevity depends on the material, your bite and your habits.'
-  },
-  {
-    question: 'Porcelain or composite — which is better?',
-    answer:
-    'Each has advantages. Porcelain tends to be more stain-resistant; composite is often more conservative and easier to repair. The right choice depends on your teeth and goals.'
-  }],
-
+    {
+      question: 'How long do porcelain veneers last?',
+      answer:
+        'Porcelain veneers typically last 10 to 15 years or longer when supported by daily oral hygiene and routine dental reviews.'
+    },
+    {
+      question: 'Is the veneer procedure reversible?',
+      answer:
+        'Because a tiny amount of outer enamel is usually reshaped for a seamless fit, the procedure is considered a permanent restoration.'
+    }
+  ],
   related: ['cosmetic-dentistry', 'smile-makeover', 'teeth-whitening']
 };
 
 export const smileMakeover: Service = {
   slug: 'smile-makeover',
-  name: 'Smile Makeover Consultation',
+  name: 'Comprehensive Smile Makeover',
   category: 'cosmetic',
-  short: 'A personalized discussion of possible treatments for your smile goals.',
-  image: images.shadeGuide,
-  imageAlt: 'Dentist holding a porcelain shade guide during a smile consultation',
-  seoTitle: 'Smile Makeover Consultation in Nashik | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
+  short: 'A multi-treatment aesthetic plan combining whitening, veneers, alignment, and contouring for a harmonious smile.',
+  image: images.veneers,
+  imageAlt: 'Dentist presenting smile makeover aesthetic options and dental contouring models to patient',
+  seoTitle: 'Full Smile Makeover in Nashik | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
   metaDescription:
-  'A personalized smile makeover consultation in Nashik to explore possible treatment combinations, timelines and costs. Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic.',
-  h1: 'Smile Makeover Consultation in Nashik',
+    'Comprehensive smile makeover treatments in Nashik. Combine whitening, veneers, crowns, and aligners for a healthy, balanced, radiant smile.',
+  h1: 'Comprehensive Smile Makeover in Nashik',
   intro: [
-  'A smile makeover isn’t a single treatment — it is a thoughtful plan that may combine several options, such as whitening, alignment, bonding, veneers or restorations, to help you move toward the smile you have in mind.',
-  'The consultation is a conversation. You share what you would like, your dentist explains what is possible, and together you decide what — if anything — feels right.'],
-
+    'A smile makeover is a thoughtful combination of cosmetic and restorative procedures tailored to address multiple concerns simultaneously. From tooth alignment and gumline symmetry to color harmony and bite balance, every detail is considered.',
+    'Dr. Naik takes a holistic approach, ensuring that your transformed smile not only looks stunning but also functions comfortably and endures for years to come.'
+  ],
   reasons: [
-  'Several things about your smile you would like to change',
-  'Unsure which treatment is right for you',
-  'Wanting to understand costs and timelines before committing',
-  'Planning ahead for a life event'],
-
+    'Multiple aesthetic concerns such as chips, misalignment, and discoloration',
+    'Worn-down, shortened teeth from aging or night grinding',
+    'Asymmetrical smile line or irregular tooth proportions',
+    'Rebuilding oral confidence with a comprehensive, organized treatment plan'
+  ],
   benefits: [
-  'A complete picture of your options in one conversation',
-  'Treatments sequenced in a sensible order',
-  'Phased plans that can fit your budget and schedule',
-  'Clear expectations before any treatment begins'],
-
+    'Harmonized transformation addressing both aesthetics and dental function',
+    'Phased treatment schedule that fits your timeline and financial planning',
+    'Preserves oral health foundations before aesthetic enhancements',
+    'Natural, balanced outcome designed specifically for your face'
+  ],
   process: [
-  { title: 'Your goals', text: 'We talk about what you like, what you would change and how you want your smile to feel.' },
-  { title: 'Assessment', text: 'Your dentist examines your teeth, gums and bite, and may take photographs for planning.' },
-  { title: 'Proposal', text: 'You receive suitable options, possible phases, timelines and an outline of costs.' },
-  { title: 'Your pace', text: 'Take time to consider. There is no obligation to proceed with any treatment.' }],
-
+    { title: 'Comprehensive Smile Assessment', text: 'Detailed photo analysis, bite examination, and discussion of your ideal smile.' },
+    { title: 'Unified Treatment Blueprint', text: 'We create a phased plan combining required services like whitening, veneers, or crowns.' },
+    { title: 'Health Stabilization', text: 'Addressing any foundational cavities or gum needs before starting cosmetic stages.' },
+    { title: 'Aesthetic Realization', text: 'Completing cosmetic restorations with regular reviews to ensure comfort and symmetry.' }
+  ],
   suitability:
-  'A makeover plan is always individual. Recommendations depend on your oral health, anatomy and expectations, confirmed through examination.',
+    'Suitable for anyone looking for comprehensive aesthetic enhancement. Each plan is customized to individual clinical parameters.',
   faqs: [
-  {
-    question: 'Do I have to commit to treatment after the consultation?',
-    answer: 'No. The consultation is for understanding your options. You are welcome to take time to think it over.'
-  },
-  {
-    question: 'Can treatment be done in stages?',
-    answer: 'Often, yes. Many plans are phased so you can spread treatment over time. Your dentist will suggest a sensible order.'
-  },
-  {
-    question: 'Will I see what my smile might look like?',
-    answer:
-    'Depending on the treatment, your dentist may use photographs, models or a trial preview to help you visualise the plan.'
-  }],
-
-  related: ['cosmetic-dentistry', 'dental-veneers', 'clear-aligners']
+    {
+      question: 'How many visits does a smile makeover require?',
+      answer:
+        'Depending on the procedures included, a smile makeover typically requires between 2 to 4 visits over a few weeks.'
+    },
+    {
+      question: 'Can I preview my new smile before treatment?',
+      answer:
+        'Yes. We use diagnostic mock-ups and digital smile previews so you can visualize the expected results before commencing irreversible work.'
+    }
+  ],
+  related: ['dental-veneers', 'clear-aligners', 'teeth-whitening']
 };

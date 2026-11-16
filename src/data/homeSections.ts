@@ -1,90 +1,133 @@
 export const principles = [
-{ title: 'Care', text: 'Unhurried appointments where every question is welcome and your concerns are heard first.' },
-{ title: 'Clarity', text: 'Options, steps and costs explained in plain language before anything begins.' },
-{ title: 'Comfort', text: 'A calm, considered space designed to help you feel at ease from the moment you arrive.' }];
-
+  {
+    title: 'Care',
+    text: 'Unhurried appointments where every question is welcomed and your personal concerns are heard first.'
+  },
+  {
+    title: 'Clarity',
+    text: 'Options, procedures, expected timelines, and treatment fees explained in plain language before any work begins.'
+  },
+  {
+    title: 'Comfort',
+    text: 'A clean, calm, and soothing clinic environment designed to make you feel at complete ease from the moment you step in.'
+  }
+];
 
 export const whyChooseUs = [
-{
-  title: 'Personalized Treatment Planning',
-  text: 'Your dental needs and goals are unique. We take time to understand them before discussing suitable treatment options.'
-},
-{
-  title: 'A Comfort-First Experience',
-  text: 'We aim to make every visit feel welcoming, calm, and thoughtfully organized.'
-},
-{
-  title: 'Modern Dental Techniques',
-  text: 'Explore appropriate dental treatment options supported by modern techniques and careful clinical planning.'
-},
-{
-  title: 'Clear Communication',
-  text: 'We explain recommended treatments, expected steps, and available options in language that is easy to understand.'
-},
-{
-  title: 'Hygiene and Safety',
-  text: 'Careful hygiene practices and appropriate sterilization protocols are essential parts of responsible dental care.'
-},
-{
-  title: 'Continued Guidance',
-  text: 'Your care does not end when your appointment is over. We provide relevant aftercare guidance and follow-up instructions.'
-}];
+  {
+    title: 'Personalized Treatment Planning',
+    text: 'Your dental anatomy, concerns, and goals are unique. We take time to thoroughly evaluate your oral health before discussing suitable, customized treatment plans.'
+  },
+  {
+    title: 'A Comfort-First Experience',
+    text: 'From gentle chairside manners to anxiety-free procedures, our priority is ensuring every visit feels calm, supportive, and reassuring.'
+  },
+  {
+    title: 'Modern Dental Techniques',
+    text: 'We utilize advanced digital imaging, ultrasonic equipment, and precise clinical protocols to deliver accurate and comfortable results.'
+  },
+  {
+    title: 'Clear & Transparent Communication',
+    text: 'We discuss findings, explain every available option honestly, and never recommend unnecessary procedures.'
+  },
+  {
+    title: 'Strict Hospital-Grade Hygiene',
+    text: 'Multi-stage autoclave sterilization, vacuum-sealed pouches, and rigorous infection-control protocols protect you at all times.'
+  },
+  {
+    title: 'Dedicated Post-Treatment Support',
+    text: 'Your dental care continues after leaving the chair. We provide written aftercare guidance and prompt follow-up availability on WhatsApp.'
+  }
+];
 
-
+// Complete 6-Step Visual Journey as required by Master Prompt
 export const journeySteps = [
-{ title: 'Start a Conversation', text: 'Tell us what brings you in and what you would like help with.' },
-{ title: 'Meet Your Dentist', text: 'Discuss your concerns and receive an appropriate dental assessment.' },
-{
-  title: 'Explore Your Options',
-  text: 'Understand suitable treatment choices, expected steps, and costs before proceeding.'
-},
-{
-  title: 'Continue With Confidence',
-  text: 'Follow your personalized care plan and receive relevant aftercare guidance.'
-}];
-
+  {
+    step: '01',
+    title: 'Initial Consultation & Welcome',
+    text: 'Connect with our team via WhatsApp, phone, or online inquiry to discuss your dental concerns and schedule an appointment.'
+  },
+  {
+    step: '02',
+    title: 'Comprehensive Examination',
+    text: 'Meet your dentist in a relaxed setting for a detailed clinical assessment, digital imaging, and gum health review.'
+  },
+  {
+    step: '03',
+    title: 'Transparent Treatment Planning',
+    text: 'We walk you through findings in plain language, explaining realistic options, procedure steps, and timelines with zero pressure.'
+  },
+  {
+    step: '04',
+    title: 'Gentle, Precision Treatment',
+    text: 'Experience calm, comfortable care using modern techniques, sterile instrumentation, and attentive chairside consideration.'
+  },
+  {
+    step: '05',
+    title: 'Review & Immediate Aftercare',
+    text: 'We inspect results together, provide personalized recovery instructions, and ensure you feel comfortable before heading home.'
+  },
+  {
+    step: '06',
+    title: 'Long-Term Smile Support',
+    text: 'Stay supported with check-in guidance, scheduled follow-up visits, and proactive preventive care to preserve your smile.'
+  }
+];
 
 export const aftercareItems = [
-{
-  title: 'Aftercare Instructions',
-  text: 'Receive relevant instructions for caring for your teeth and gums after your procedure.'
-},
-{
-  title: 'Recovery Guidance',
-  text: 'Understand the expected recovery process and any activity or food precautions recommended by your dentist.'
-},
-{
-  title: 'Follow-Up Appointments',
-  text: 'Stay informed about follow-up visits when they are recommended for your treatment.'
-},
-{ title: 'Ongoing Oral Hygiene', text: 'Build everyday habits that support your oral health.' }];
-
+  {
+    title: 'Personalized Recovery Guidance',
+    text: 'Receive clear, practical instructions on oral care, dietary precautions, and gentle cleaning following your treatment.'
+  },
+  {
+    title: 'Post-Procedure Activity Advice',
+    text: 'Understand physical activity, brushing technique adjustments, and chewing recommendations specific to your procedure.'
+  },
+  {
+    title: 'Scheduled Follow-Up Visits',
+    text: 'We monitor your healing and long-term restoration success through planned, stress-free clinical review appointments.'
+  },
+  {
+    title: 'Everyday Preventive Oral Hygiene',
+    text: 'Learn everyday brushing, flossing, and hygiene techniques recommended by our clinicians to protect your dental health.'
+  }
+];
 
 export const aftercareUrgent = {
-  title: 'When to Contact Us',
-  text: 'If you notice severe swelling, persistent pain, fever, or bleeding after treatment, contact the clinic without delay. For urgent medical concerns, please seek immediate attention from a medical professional or local emergency care.'
+  title: 'Urgent Aftercare Assistance',
+  text: 'If you experience unexpected severe swelling, persistent bleeding, high fever, or intense discomfort after treatment, reach our clinic immediately on WhatsApp or phone. For urgent emergency situations outside operating hours, please visit the nearest hospital emergency care.'
 };
 
 export const tourismSteps = [
-{ title: 'Share Your Inquiry', text: 'Tell us about your dental concerns and your approximate travel window.' },
-{ title: 'Discuss Your Dental Needs', text: 'Our team will help you understand what an initial consultation would involve.' },
-{ title: 'Plan a Consultation', text: 'Arrange a suitable time to visit the studio for an examination.' },
-{
-  title: 'Review Your Treatment Options',
-  text: 'After your assessment, your dentist explains suitable options, timelines and costs.'
-}];
+  {
+    title: 'Connect & Share Your Dental Goals',
+    text: 'Contact us via WhatsApp or phone with your dental requirements, previous reports, and anticipated dates for visiting Nashik.'
+  },
+  {
+    title: 'Pre-Visit Consultation Overview',
+    text: 'Our team discusses what an initial clinical evaluation will involve so you can plan your visit comfortably.'
+  },
+  {
+    title: 'In-Clinic Comprehensive Assessment',
+    text: 'Visit our Nashik clinic for in-person digital diagnostic checks and a detailed face-to-face consultation.'
+  },
+  {
+    title: 'Tailored Treatment & Recovery Schedule',
+    text: 'Review procedure steps, required appointment visits, and aftercare timelines designed to fit smoothly into your itinerary.'
+  }
+];
 
 export const travelPlaceholders = [
   {
-    title: 'Traveling to Nashik',
-    text: 'Patients visiting from outside the city usually plan their trip around a first consultation and any follow-up treatment discussed by the dentist.'
+    title: 'Visiting Nashik, Maharashtra',
+    text: 'Nashik is well connected by road and rail from Mumbai and Pune. Plan your first consultation early in your trip so any needed care and review can proceed comfortably.'
   },
   {
-    title: 'Comfortable visit planning',
-    text: 'We recommend allowing enough time for your consultation, treatment discussion, and any aftercare instructions before heading back out.'
+    title: 'Appointment Scheduling For Outstation Patients',
+    text: 'We recommend coordinating your dates in advance so clinical appointments and recovery check-ins can be planned seamlessly.'
   },
   {
-    title: 'Planning your stay',
-    text: 'The ideal length of stay varies by treatment plan, so we encourage discussing your timeline with the clinic after an assessment.'
+    title: 'Comfortable Recovery Time',
+    text: 'Allow adequate time for consultation, treatment delivery, and post-procedure rest before departing.'
   }
 ];

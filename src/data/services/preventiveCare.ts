@@ -6,218 +6,206 @@ export const generalDentistry: Service = {
   name: 'General Dentistry',
   category: 'everyday',
   short: 'Routine dental examinations, preventive guidance, and care for common dental concerns.',
-  image: images.consultation,
-  imageAlt: 'Dentist calmly explaining a check-up to a patient in a bright clinic room',
+  image: images.dentistAtWork,
+  imageAlt: 'Professional dentist carefully examining patient during a comprehensive dental check-up',
   seoTitle: 'General Dentistry & Dental Check-ups in Nashik | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
   metaDescription:
-  'Routine dental examinations, preventive guidance and care for common dental concerns at Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic in Nashik, Maharashtra.',
+    'Routine dental examinations, preventive guidance, digital dental check-ups, and gentle oral care at Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic in Nashik, Maharashtra.',
   h1: 'General Dentistry in Nashik',
   intro: [
-  'General dentistry is the everyday foundation of a healthy mouth. A routine visit gives your dentist the chance to examine your teeth and gums, notice small changes early, and talk with you about habits that support long-term oral health.',
-  'Whether you have a specific concern or simply haven’t seen a dentist in a while, a general consultation is a calm, low-pressure place to start.'],
-
+    'General dentistry is the foundation of long-term oral health. A routine visit allows your dentist to examine teeth and gums thoroughly, spot subtle changes early, and recommend proactive habits.',
+    'Whether you have a specific dental query, slight sensitivity, or simply have not visited a dentist in a while, a general consultation at Shubh Smile is a calm, pressure-free first step.'
+  ],
   reasons: [
-  'It has been a while since your last dental check-up',
-  'You have noticed sensitivity, discomfort, or bleeding gums',
-  'You want a clear picture of your current oral health',
-  'You would like guidance on brushing, flossing, or diet',
-  'An older filling or dental work feels different than before'],
-
+    'It has been more than six months since your last dental examination',
+    'You have noticed tooth sensitivity, bleeding gums, or persistent discomfort',
+    'You want an honest, comprehensive evaluation of your oral health',
+    'You need professional guidance on daily brushing, flossing, and oral care habits',
+    'An existing restoration, filling, or crown feels loose or uneven'
+  ],
   benefits: [
-  'Changes in teeth and gums may be noticed at an earlier stage',
-  'A clearer understanding of your oral health and any recommended next steps',
-  'Preventive advice tailored to your daily routine',
-  'A dental record that helps guide future visits'],
-
+    'Early detection of minor cavities and gum inflammation before they become severe',
+    'Clear, understandable diagnosis with no unnecessary treatment pressure',
+    'Tailored oral hygiene advice suited to your lifestyle and dental needs',
+    'Accurate clinical dental records to monitor your oral health over time'
+  ],
   process: [
-  { title: 'Conversation', text: 'We ask about your medical history, any concerns, and what you would like from the visit.' },
-  { title: 'Examination', text: 'Your dentist examines your teeth, gums and bite. X-rays are suggested only when clinically useful.' },
-  { title: 'Discussion', text: 'Findings are explained in plain language, with any recommended treatment and its options outlined.' },
-  { title: 'Prevention plan', text: 'You leave with practical guidance and, if needed, a suggested timeline for follow-up care.' }],
-
+    { title: 'Personal Conversation', text: 'We discuss your dental history, any current sensitivities, and what you would like to achieve.' },
+    { title: 'Comprehensive Exam', text: 'Your dentist carefully inspects teeth, gums, enamel, and bite. Diagnostic X-rays are taken only when clinically required.' },
+    { title: 'Transparent Explanation', text: 'We explain clinical findings clearly, presenting recommended care and alternatives with straightforward pricing.' },
+    { title: 'Personalized Prevention Plan', text: 'You receive clear home-care guidance and a sensible follow-up schedule to maintain your healthy smile.' }
+  ],
   suitability:
-  'The frequency of check-ups and any treatment recommended depend on your individual examination and oral health history.',
+    'Regular check-up intervals vary by individual risk factors and overall gum health. Your dentist will suggest a schedule that suits you.',
   faqs: [
-  {
-    question: 'How often should I have a dental check-up?',
-    answer:
-    'Many people are advised to visit about every six months, but the right interval depends on your oral health. Your dentist will suggest a schedule after examining you.'
-  },
-  {
-    question: 'Will I need X-rays at every visit?',
-    answer:
-    'Not necessarily. X-rays are recommended only when they help your dentist assess something that can’t be seen during a visual examination.'
-  },
-  {
-    question: 'Can my family visit on the same day?',
-    answer: 'Please mention it when you get in touch and the team will try to arrange visits that work for your family.'
-  }],
-
+    {
+      question: 'How often should I schedule a dental check-up?',
+      answer:
+        'Most people benefit from a check-up every six months. If you have specific conditions such as diabetes or a history of gum trouble, your dentist may suggest more frequent reviews.'
+    },
+    {
+      question: 'Will I need dental X-rays at every visit?',
+      answer:
+        'No. Digital X-rays are recommended only when necessary to inspect root structures, hidden cavities between teeth, or bone levels.'
+    },
+    {
+      question: 'Can family members be examined on the same day?',
+      answer:
+        'Yes. Let our reception team know in advance, and we will happily coordinate appointments together for your family.'
+    }
+  ],
   related: ['teeth-cleaning', 'pediatric-dentistry', 'root-canal-treatment']
 };
 
 export const teethCleaning: Service = {
   slug: 'teeth-cleaning',
-  name: 'Dental Cleaning and Preventive Care',
+  name: 'Dental Cleaning & Scaling',
   category: 'everyday',
-  short: 'Professional cleaning and personalized oral hygiene guidance for healthier gums.',
-  image: images.dentalTools,
-  imageAlt: 'Sterilized dental cleaning instruments arranged on a sage linen cloth',
-  seoTitle: 'Professional Teeth Cleaning in Nashik | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
+  short: 'Professional ultrasonic scaling and polishing to remove plaque, tartar, and surface stains.',
+  image: images.teethCleaning,
+  imageAlt: 'Dentist performing gentle professional ultrasonic dental cleaning and tartar removal',
+  seoTitle: 'Professional Teeth Cleaning & Scaling in Nashik | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
   metaDescription:
-  'Professional dental cleaning, scaling and polishing with personalized hygiene guidance at Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic, Nashik.',
+    'Gentle ultrasonic dental scaling, plaque removal, and polishing with personalized gum-care advice at Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic in Nashik.',
   h1: 'Professional Teeth Cleaning in Nashik',
   intro: [
-  'Even with careful brushing, plaque can harden into tartar in places a toothbrush can’t reach. A professional cleaning removes these deposits and gives your gums a fresh start.',
-  'It is also a valuable moment to review your home routine — the small adjustments that make everyday brushing and flossing more effective.'],
-
+    'Even with thorough daily brushing, bacterial plaque hardens over time into tartar along the gumline where toothbrushes cannot reach. Professional ultrasonic scaling gently removes these deposits to keep gums firm and healthy.',
+    'A cleaning visit also offers an ideal opportunity to review your daily hygiene routine and make small adjustments that prevent gum disease.'
+  ],
   reasons: [
-  'Gums that bleed when brushing or flossing',
-  'Visible tartar build-up along the gumline',
-  'Surface stains from tea, coffee or tobacco',
-  'Persistent bad breath',
-  'Maintaining oral health between check-ups'],
-
+    'Gums that bleed when brushing or flossing',
+    'Visible yellow or brown tartar build-up along the gumline',
+    'Surface stains from tea, coffee, or food habits',
+    'Persistent bad breath despite brushing',
+    'Routine 6-month preventive gum maintenance'
+  ],
   benefits: [
-  'Removal of plaque and tartar that brushing alone may miss',
-  'Support for healthier-feeling gums',
-  'A smoother, cleaner feel to your teeth',
-  'Personal guidance to make your routine more effective'],
-
+    'Effective removal of hardened tartar and bacterial biofilm',
+    'Prevention of gingivitis and long-term periodontal bone loss',
+    'Smoother tooth surfaces that resist future stain accumulation',
+    'Fresh breath and revitalized, healthy gums'
+  ],
   process: [
-  { title: 'Gum assessment', text: 'Your gums are checked so the cleaning can be adapted to their condition.' },
-  { title: 'Scaling', text: 'Gentle instruments remove tartar from tooth surfaces and along the gumline.' },
-  { title: 'Polishing', text: 'Teeth are polished to remove surface stains and leave a smooth finish.' },
-  { title: 'Home-care guidance', text: 'You receive practical tips on brushing technique, flossing and helpful products.' }],
-
+    { title: 'Gum Health Check', text: 'We examine your gums for pockets, bleeding, and sensitivity to tailor the scaling intensity.' },
+    { title: 'Gentle Ultrasonic Scaling', text: 'Fine, water-cooled ultrasonic tips gently dislodge calculus without harming enamel.' },
+    { title: 'Polishing', text: 'Teeth are gently polished with a prophylactic paste to remove surface stains and smooth the enamel.' },
+    { title: 'Home Care Recommendations', text: 'You receive personalized guidance on interdental brushes, flossing technique, and suitable toothpastes.' }
+  ],
   suitability:
-  'If your gums need more than a routine clean, your dentist will explain why and discuss the appropriate next steps.',
+    'Professional cleaning is recommended for all adults and teens. If deep gum inflammation is present, deep periodontal scaling may be advised.',
   faqs: [
-  {
-    question: 'Does a professional cleaning hurt?',
-    answer:
-    'Most people feel only mild pressure or vibration. If you have sensitive teeth or gums, let your dentist know so they can adjust their approach.'
-  },
-  {
-    question: 'Will cleaning make my teeth whiter?',
-    answer:
-    'Cleaning can remove surface stains, so teeth may look brighter, but it doesn’t change the natural shade of your teeth. Whitening is a separate treatment.'
-  },
-  {
-    question: 'How often should I have my teeth cleaned?',
-    answer: 'This varies from person to person. Your dentist will recommend a suitable interval based on your gum health.'
-  }],
-
+    {
+      question: 'Does teeth cleaning hurt or make teeth loose?',
+      answer:
+        'No. Professional ultrasonic scaling does not damage enamel or loosen teeth. If tartar was supporting inflamed gums, removing it allows the gums to heal firmly against the teeth.'
+    },
+    {
+      question: 'Will cleaning make my teeth sensitive?',
+      answer:
+        'Mild sensitivity can occur for a day or two after deep cleaning as previously covered tooth surfaces adjust, but this subsides quickly.'
+    }
+  ],
   related: ['general-dentistry', 'teeth-whitening', 'pediatric-dentistry']
 };
 
 export const rootCanal: Service = {
   slug: 'root-canal-treatment',
-  name: 'Root Canal Treatment',
+  name: 'Root Canal Treatment (RCT)',
   category: 'everyday',
-  short: 'Treatment intended to address problems affecting the dental pulp inside a tooth.',
-  image: images.doctorTwo,
-  imageAlt: 'Calm, friendly dentist ready to explain root canal treatment',
-  seoTitle: 'Root Canal Treatment in Nashik | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
+  short: 'Painless, modern endodontic therapy to eliminate infection and save your natural tooth.',
+  image: images.dentalRadiograph,
+  imageAlt: 'Dentist reviewing high-resolution digital radiograph showing tooth root canals on chairside display',
+  seoTitle: 'Painless Root Canal Treatment (RCT) in Nashik | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
   metaDescription:
-  'Understand root canal treatment — when it may be recommended, what the steps involve and how to prepare. Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic, Nashik.',
+    'Gentle, modern root canal treatment in Nashik. Eliminate toothache, treat deep infection, and save your natural tooth with single-visit RCT options.',
   h1: 'Root Canal Treatment in Nashik',
   intro: [
-  'Inside every tooth is a soft core called the pulp, which contains nerves and blood vessels. When the pulp becomes inflamed or infected — often due to deep decay, a crack or an injury — root canal treatment may be recommended to help save the natural tooth.',
-  'The idea of a root canal worries many people. Understanding what actually happens, step by step, often makes it feel far more manageable.'],
-
+    'When deep tooth decay, repeated procedures, or a crack reaches the inner pulp containing nerves and blood vessels, severe pain or infection can result. A root canal treatment removes this infected pulp, cleans and disinfects the canals, and seals them permanently.',
+    'With modern local anesthesia and rotary endodontics, root canal therapy is no more uncomfortable than having a routine filling placed.'
+  ],
   reasons: [
-  'Lingering sensitivity to hot or cold',
-  'Ongoing toothache or pain when biting',
-  'Swelling or tenderness in the gum near a tooth',
-  'A tooth that has darkened after an injury',
-  'Deep decay identified during an examination'],
-
+    'Persistent, throbbing tooth pain, especially when chewing or lying down',
+    'Prolonged sensitivity to hot or cold temperatures',
+    'Swelling or tenderness in the gum next to a painful tooth',
+    'A pimple-like bump on the gum discharging fluid',
+    'A deeply decayed or traumatized tooth'
+  ],
   benefits: [
-  'May allow you to keep your natural tooth',
-  'Aims to address the source of pain or infection',
-  'Helps restore normal biting and chewing',
-  'Often a more conservative option than extraction'],
-
+    'Rapid relief from intense dental toothache',
+    'Preserves your natural tooth root and bone structure',
+    'Prevents infection from spreading to adjacent teeth and jawbone',
+    'Restores full chewing efficiency when paired with a dental crown'
+  ],
   process: [
-  { title: 'Assessment', text: 'Your dentist examines the tooth and usually takes an X-ray to understand the problem.' },
-  { title: 'Cleaning the canals', text: 'Under local anaesthetic, the affected pulp is removed and the canals are carefully cleaned.' },
-  { title: 'Sealing', text: 'The canals are filled and sealed to help prevent further infection.' },
-  { title: 'Restoration', text: 'The tooth is restored with a filling or, often for back teeth, a crown for added strength.' }],
-
+    { title: 'Digital Diagnosis', text: 'High-clarity digital X-rays confirm the root anatomy and extent of pulp infection.' },
+    { title: 'Effective Anesthesia', text: 'The tooth is completely numbed to ensure a comfortable, painless experience throughout.' },
+    { title: 'Cleaning & Shaping', text: 'Rotary instruments thoroughly clean, disinfect, and shape the root canals.' },
+    { title: 'Hermetic Sealing & Crown', text: 'The canals are sealed with biocompatible gutta-percha. A crown is typically recommended to restore strength.' }
+  ],
   suitability:
-  'Not every painful tooth needs a root canal, and not every tooth can be saved. Your dentist will explain the options after examining it.',
+    'Root canal therapy is suitable for teeth with restorable crown structure. Your dentist evaluates the tooth to confirm long-term success.',
   faqs: [
-  {
-    question: 'Is root canal treatment painful?',
-    answer:
-    'The procedure is carried out under local anaesthetic, so most people feel pressure rather than pain. Some tenderness afterwards is common and your dentist will explain how to manage it.'
-  },
-  {
-    question: 'How many visits will it take?',
-    answer: 'It depends on the tooth and its condition. Some treatments are completed in one visit, while others need two or more.'
-  },
-  {
-    question: 'Will I need a crown afterwards?',
-    answer:
-    'Back teeth often benefit from a crown after root canal treatment because they handle strong biting forces. Your dentist will advise what suits your tooth.'
-  }],
-
-  related: ['dental-crowns', 'general-dentistry', 'dental-implants']
+    {
+      question: 'Is root canal treatment painful?',
+      answer:
+        'Modern RCT is virtually pain-free. Local anesthesia ensures total numbness during treatment, and post-procedure soreness is easily managed with mild medication.'
+    },
+    {
+      question: 'Do I always need a crown after a root canal?',
+      answer:
+        'Back teeth (molars and premolars) endure heavy chewing forces and become brittle after pulp removal. A dental crown is highly recommended to prevent fracture.'
+    }
+  ],
+  related: ['crowns-and-bridges', 'general-dentistry', 'dental-implants']
 };
 
 export const pediatricDentistry: Service = {
   slug: 'pediatric-dentistry',
-  name: 'Pediatric Dentistry',
+  name: 'Pediatric Dental Care',
   category: 'everyday',
-  short: 'Gentle, age-appropriate dental care that helps children feel safe and curious.',
+  short: 'Gentle, friendly dentistry for children and teens to build a lifetime of positive oral health.',
   image: images.kids,
-  imageAlt: 'Smiling child in a dental chair while a kind dentist shows a toothbrush',
-  seoTitle: 'Children’s Dentist in Nashik | Pediatric Dentistry at Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
+  imageAlt: 'Gentle dentist consulting warmly with child patient and parent in comfortable clinic room',
+  seoTitle: 'Pediatric Dentistry & Children Dental Care in Nashik | Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic',
   metaDescription:
-  'Gentle, age-appropriate dental care for children in Nashik, with guidance for parents on healthy habits. Dr. Naik\'s Shubh Smile Multispeciality Dental Clinic.',
-  h1: 'Gentle Dental Care for Children in Nashik',
+    'Child-friendly, compassionate dental care in Nashik. Preventive fluoride, sealants, cavity fillings, and gentle habits for children of all ages.',
+  h1: 'Pediatric Dental Care in Nashik',
   intro: [
-  'A child’s early experiences at the dentist can shape how they feel about dental care for years to come. Our aim is simple: visits that feel friendly, unhurried and even a little interesting.',
-  'We also support parents with practical advice on brushing, snacks and habits like thumb-sucking — the everyday things that make a real difference.'],
-
+    'Early dental experiences shape a child’s attitude toward oral health for life. At Dr. Naik’s Shubh Smile, we make visits enjoyable, interactive, and positive.',
+    'From preventive pit-and-fissure sealants to gentle primary tooth restorations, our priority is keeping little smiles cavity-free and teaching enjoyable brushing habits.'
+  ],
   reasons: [
-  'Your child’s first dental visit',
-  'Routine check-ups as baby and adult teeth develop',
-  'Concerns about cavities or discoloured teeth',
-  'Questions about thumb-sucking or teething',
-  'Guidance on brushing for young children'],
-
+    'Child’s first dental visit or routine school check-up',
+    'Tooth decay or cavities in milk teeth',
+    'Thumb sucking, tongue thrusting, or mouth breathing concerns',
+    'Preventive fluoride applications and dental sealants',
+    'Early monitoring of tooth eruption and alignment'
+  ],
   benefits: [
-  'Helps children become familiar and comfortable with dental visits',
-  'Early guidance for healthy habits at home',
-  'Development of teeth and jaws monitored over time',
-  'Practical, reassuring advice for parents'],
-
+    'Builds a positive, anxiety-free attitude toward dental visits',
+    'Protects baby teeth that preserve space for incoming permanent teeth',
+    'Minimizes future orthodontic complications with early intervention',
+    'Practical, fun guidance for parents and children on diet and brushing'
+  ],
   process: [
-  { title: 'A friendly welcome', text: 'We take a few minutes to say hello and let your child explore at their own pace.' },
-  { title: 'Gentle check-up', text: 'The dentist counts and checks teeth, often with your child sitting comfortably on your lap.' },
-  { title: 'Preventive care', text: 'Where appropriate, preventive options are explained to you before anything is done.' },
-  { title: 'Tips for home', text: 'You receive simple, age-appropriate guidance to support healthy teeth.' }],
-
+    { title: 'Friendly Introduction', text: 'We introduce dental instruments with playful, reassuring explanations so your child feels completely comfortable.' },
+    { title: 'Gentle Assessment', text: 'A thorough yet gentle check of tooth growth, enamel health, and bite development.' },
+    { title: 'Preventive Care', text: 'Professional cleaning, fluoride treatment, or sealant placement as indicated.' },
+    { title: 'Positive Reinforcement', text: 'Praise and home hygiene advice that leaves children proud of their smiles.' }
+  ],
   suitability:
-  'Care is always adapted to your child’s age, development and comfort. Your dentist will discuss any recommendations with you first.',
+    'Children should have their first dental visit around their first birthday or when their first tooth appears, followed by regular 6-month check-ups.',
   faqs: [
-  {
-    question: 'When should my child first see a dentist?',
-    answer:
-    'Many dental organisations suggest a first visit around the time the first tooth appears or by the first birthday. Your dentist can advise on what suits your child.'
-  },
-  {
-    question: 'Do baby teeth really matter?',
-    answer:
-    'Yes. Baby teeth help children chew and speak, and they hold space for adult teeth. Looking after them supports healthy development.'
-  },
-  {
-    question: 'How can I prepare my child for the visit?',
-    answer:
-    'Keep it positive and simple — reading a picture book about the dentist or playing “counting teeth” at home can help. Avoid words that might sound scary.'
-  }],
-
+    {
+      question: 'Why treat baby teeth if they fall out anyway?',
+      answer:
+        'Baby teeth are crucial for chewing, speech development, and holding space for adult teeth. Untreated decay can cause severe pain, infections, and damage developing permanent teeth.'
+    },
+    {
+      question: 'What are dental sealants?',
+      answer:
+        'Sealants are protective resin coatings brushed into deep grooves of molars to seal out food and bacteria, drastically reducing cavities.'
+    }
+  ],
   related: ['general-dentistry', 'teeth-cleaning', 'clear-aligners']
 };

@@ -10,44 +10,54 @@ html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
 }
+
 body {
-  background: #fff;
-  color: #252b29;
-  font-family: Arial, 'Helvetica Neue', sans-serif;
+  background: #FFFFFF;
+  color: #34465A;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
-#root,
-#root * {
-  font-family: Arial, Helvetica, sans-serif;
+
+h1, h2, h3, .font-serif, .font-heading {
+  font-family: 'Playfair Display', Georgia, serif;
 }
+
 [id] {
   scroll-margin-top: 96px;
 }
+
 :focus-visible {
-  outline: 2px solid #173f3a;
+  outline: 2px solid #087FAE;
   outline-offset: 3px;
 }
+
 ::selection {
-  background: #dce7df;
-  color: #173f3a;
+  background: #DCEFF8;
+  color: #123B59;
 }
+
 .text-balance {
   text-wrap: balance;
 }
+
 .text-pretty {
   text-wrap: pretty;
 }
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .no-scrollbar {
   scrollbar-width: none;
 }
+
 .grain {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.035 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

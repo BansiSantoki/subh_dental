@@ -1,11 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowUpRightIcon, MailIcon, MapPinIcon, PhoneIcon } from 'lucide-react';
+import {
+  ArrowUpRightIcon,
+  MailIcon,
+  MapPinIcon,
+  PhoneIcon,
+  CalendarCheckIcon,
+  ClockIcon
+} from 'lucide-react';
 import { Logo } from '../shared/Logo';
 import { WhatsAppLink } from '../shared/WhatsAppLink';
 import { mainNav, siteConfig } from '../../data/siteConfig';
 import { services } from '../../data/services';
-import { locations } from '../../data/locations';
 import { useAppointment } from '../../contexts/AppointmentContext';
 import { buttonClass } from '../../utils/buttonStyles';
 
@@ -14,157 +20,207 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative mt-8 overflow-hidden rounded-t-[36px] bg-forest text-ivory md:rounded-t-[64px]">
-      <div className="grain pointer-events-none absolute inset-0 opacity-60" aria-hidden="true" />
-      <div className="relative mx-auto max-w-[1440px] px-5 md:px-8 lg:px-12">
-        {/* Closing statement */}
-        <div className="grid gap-10 border-b border-ivory/10 py-16 md:py-24 lg:grid-cols-[1.4fr_1fr] lg:items-end">
-          <h2 className="text-balance font-serif text-[46px] font-medium leading-[0.98] tracking-[-0.015em] sm:text-[64px] lg:text-[84px]">
-            A more confident smile <em className="font-normal text-champagne">starts here.</em>
-          </h2>
-          <div className="flex flex-col gap-3 sm:flex-row lg:justify-end">
-            <button type="button" onClick={() => openAppointment()} className={buttonClass('light', 'lg')}>
-              Book an Appointment
-            </button>
-            <WhatsAppLink size="lg">Chat on WhatsApp</WhatsAppLink>
+    <footer className="relative mt-12 overflow-hidden bg-[#123B59] text-white">
+      {/* Top Banner CTA */}
+      <div className="border-b border-white/10 bg-[#0E2E47]/70 py-12 md:py-16">
+        <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12">
+          <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+            <div className="max-w-2xl">
+              <span className="text-xs font-bold uppercase tracking-widest text-[#7EC4E5]">
+                Start Your Smile Journey Today
+              </span>
+              <h2 className="mt-2 font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-white">
+                Exceptional Dental Care,{' '}
+                <span className="text-[#7EC4E5] italic">Tailored for You.</span>
+              </h2>
+              <p className="mt-3 text-sm sm:text-base text-[#DCEFF8]/80 leading-relaxed">
+                Connect with our team to schedule an appointment or ask any question on WhatsApp.
+              </p>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-3 shrink-0">
+              <button
+                type="button"
+                onClick={() => openAppointment()}
+                className={buttonClass('primary', 'lg', 'shadow-md')}
+              >
+                <CalendarCheckIcon className="h-5 w-5" />
+                <span>Book Appointment</span>
+              </button>
+              <WhatsAppLink size="lg">
+                Chat on WhatsApp
+              </WhatsAppLink>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div className="grid gap-12 py-14 md:grid-cols-2 lg:grid-cols-[1.3fr_0.8fr_1.1fr_1fr]">
-          <div>
+      {/* Main Footer Content */}
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12 py-14 lg:py-16">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-12 lg:gap-10">
+          {/* Col 1: Logo & Clinic Info (4 cols) */}
+          <div className="lg:col-span-4">
             <Logo tone="light" />
-            <p className="mt-6 max-w-xs text-[14.5px] leading-relaxed text-ivory/70">{siteConfig.message}</p>
-            <ul className="mt-7 flex flex-wrap gap-2" aria-label="Social media">
-              {siteConfig.social.map((s) =>
-              <li key={s.label}>
-                  <a
-                  href={s.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 rounded-full border border-ivory/20 px-4 py-2 text-[12.5px] text-ivory/80 transition-colors duration-200 hover:border-ivory/50 hover:text-ivory">
-                  
-                    {s.label}
-                    <ArrowUpRightIcon className="h-3 w-3" aria-hidden="true" />
-                  </a>
+            <p className="mt-5 text-sm sm:text-base font-semibold text-white">
+              {siteConfig.name}
+            </p>
+            <p className="mt-2 text-xs sm:text-sm text-[#DCEFF8]/80 leading-relaxed max-w-sm">
+              {siteConfig.tagline}
+            </p>
+
+            <div className="mt-6 space-y-2 text-xs text-[#DCEFF8]/70">
+              <p className="flex items-center gap-2">
+                <ClockIcon className="h-4 w-4 text-[#7EC4E5] shrink-0" />
+                <span>Mon – Sat: 9:30 AM – 8:30 PM | Sunday By Appointment</span>
+              </p>
+            </div>
+
+            {/* Social / Direct Links */}
+            <div className="mt-6 flex flex-wrap gap-2.5">
+              <a
+                href={siteConfig.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/5 px-4 py-1.5 text-xs font-semibold text-white hover:bg-white/15 hover:border-white/40 transition-colors"
+              >
+                <span>Instagram</span>
+                <ArrowUpRightIcon className="h-3 w-3" />
+              </a>
+              <a
+                href={siteConfig.googleMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/5 px-4 py-1.5 text-xs font-semibold text-white hover:bg-white/15 hover:border-white/40 transition-colors"
+              >
+                <span>Google Maps</span>
+                <ArrowUpRightIcon className="h-3 w-3" />
+              </a>
+            </div>
+          </div>
+
+          {/* Col 2: Navigation Links (2 cols) */}
+          <div className="lg:col-span-2">
+            <h3 className="text-xs font-bold uppercase tracking-wider text-[#7EC4E5]">
+              Quick Navigation
+            </h3>
+            <ul className="mt-4 space-y-2.5 text-xs sm:text-sm text-[#DCEFF8]/80">
+              {mainNav.map((item) => (
+                <li key={item.label}>
+                  <Link
+                    to={item.href}
+                    className="transition-colors hover:text-white hover:underline underline-offset-4"
+                  >
+                    {item.label}
+                  </Link>
                 </li>
-              )}
+              ))}
             </ul>
           </div>
 
-          <FooterColumn title="Explore">
-            {mainNav.map((item) =>
-            <li key={item.href}>
-                <Link to={item.href} className="footer-link text-ivory/75 transition-colors duration-200 hover:text-ivory">
-                  {item.label}
+          {/* Col 3: Services (3 cols) */}
+          <div className="lg:col-span-3">
+            <h3 className="text-xs font-bold uppercase tracking-wider text-[#7EC4E5]">
+              Dental Treatments
+            </h3>
+            <ul className="mt-4 space-y-2 text-xs sm:text-sm text-[#DCEFF8]/80">
+              {services.slice(0, 8).map((s) => (
+                <li key={s.slug}>
+                  <Link
+                    to={`/services/${s.slug}`}
+                    className="transition-colors hover:text-white hover:underline underline-offset-4 truncate block"
+                  >
+                    {s.name}
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <Link
+                  to="/services"
+                  className="font-semibold text-[#7EC4E5] hover:text-white text-xs inline-flex items-center gap-1 mt-1"
+                >
+                  <span>View All 12 Treatments &rarr;</span>
                 </Link>
               </li>
-            )}
-          </FooterColumn>
+            </ul>
+          </div>
 
-          <FooterColumn title="Treatments">
-            {services.map((s) =>
-            <li key={s.slug}>
-                <Link to={`/services/${s.slug}`} className="text-ivory/75 transition-colors duration-200 hover:text-ivory">
-                  {s.name}
-                </Link>
-              </li>
-            )}
-          </FooterColumn>
+          {/* Col 4: Contact Details (3 cols) */}
+          <div className="lg:col-span-3">
+            <h3 className="text-xs font-bold uppercase tracking-wider text-[#7EC4E5]">
+              Clinic Contact
+            </h3>
+            <address className="mt-4 space-y-3.5 not-italic text-xs sm:text-sm text-[#DCEFF8]/85">
+              <p className="flex items-start gap-2.5">
+                <MapPinIcon className="h-4 w-4 text-[#7EC4E5] shrink-0 mt-0.5" />
+                <span>{siteConfig.address}</span>
+              </p>
 
-          <div>
-            <h3 className="text-[11.5px] font-semibold uppercase tracking-[0.22em] text-champagne">Visit & Contact</h3>
-            <address className="mt-5 space-y-4 text-[14.5px] not-italic leading-relaxed text-ivory/75">
-              <p>{siteConfig.address}</p>
-              <p>
-                <a href={`tel:${siteConfig.phoneE164}`} className="inline-flex items-center gap-2 hover:text-ivory">
-                  <PhoneIcon className="h-4 w-4 text-champagne" aria-hidden="true" />
-                  {siteConfig.phoneDisplay}
+              <div className="space-y-1.5 pt-1">
+                <p>
+                  <a
+                    href={`tel:${siteConfig.phoneE164}`}
+                    className="flex items-center gap-2 hover:text-white font-semibold"
+                  >
+                    <PhoneIcon className="h-4 w-4 text-[#7EC4E5] shrink-0" />
+                    <span>{siteConfig.phoneDisplay}</span>
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href={`tel:${siteConfig.secondaryPhoneE164}`}
+                    className="flex items-center gap-2 hover:text-white font-semibold"
+                  >
+                    <PhoneIcon className="h-4 w-4 text-[#7EC4E5] shrink-0" />
+                    <span>{siteConfig.secondaryPhoneDisplay}</span>
+                  </a>
+                </p>
+              </div>
+
+              <p className="pt-1">
+                <a
+                  href={`mailto:${siteConfig.email}`}
+                  className="flex items-center gap-2 hover:text-white"
+                >
+                  <MailIcon className="h-4 w-4 text-[#7EC4E5] shrink-0" />
+                  <span>{siteConfig.email}</span>
                 </a>
               </p>
-              <p>
-                <a href={`tel:${siteConfig.secondaryPhoneE164}`} className="inline-flex items-center gap-2 hover:text-ivory">
-                  <PhoneIcon className="h-4 w-4 text-champagne" aria-hidden="true" />
-                  {siteConfig.secondaryPhoneDisplay}
-                </a>
-              </p>
-              <p>
-                <a href={`mailto:${siteConfig.email}`} className="inline-flex items-center gap-2 hover:text-ivory">
-                  <MailIcon className="h-4 w-4 text-champagne" aria-hidden="true" />
-                  {siteConfig.email}
-                </a>
-              </p>
-              <p>
-                <a href={siteConfig.googleMapsUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-ivory">
-                  <MapPinIcon className="h-4 w-4 text-champagne" aria-hidden="true" />
-                  Get Directions
-                </a>
-              </p>
-              <p>
-                <a href={siteConfig.instagramUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-ivory">
-                  <ArrowUpRightIcon className="h-4 w-4 text-champagne" aria-hidden="true" />
-                  Instagram: {siteConfig.instagramUsername}
+
+              <p className="pt-2">
+                <a
+                  href={siteConfig.googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-[#7EC4E5] hover:text-white font-semibold text-xs"
+                >
+                  <MapPinIcon className="h-3.5 w-3.5" />
+                  <span>Get Directions on Google Maps &rarr;</span>
                 </a>
               </p>
             </address>
-            {siteConfig.workingHours.length > 0 && (
-              <>
-                <h3 className="mt-8 text-[11.5px] font-semibold uppercase tracking-[0.22em] text-champagne">Working hours</h3>
-                <ul className="mt-4 space-y-1 text-[14.5px] text-ivory/75">
-                  {siteConfig.workingHours.map((h) =>
-                  <li key={h}>{h}</li>
-                  )}
-                </ul>
-              </>
-            )}
           </div>
         </div>
 
-        <div className="border-t border-ivory/10 py-8">
-          <p className="text-[11.5px] font-semibold uppercase tracking-[0.22em] text-champagne">Dental care in Nashik</p>
-          <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-[13.5px] text-ivory/65">
-            {locations.map((l) =>
-            <li key={l.slug}>
-                <Link to={`/${l.slug}`} className="transition-colors duration-200 hover:text-ivory">
-                  {l.kind === 'service-area' ? `Patients near ${l.areaName}` : l.h1.replace(', Thoughtfully Planned', '')}
-                </Link>
-              </li>
-            )}
-          </ul>
-        </div>
-
-        <div className="flex flex-col gap-4 border-t border-ivory/10 py-8 pb-[calc(2rem+env(safe-area-inset-bottom))] text-[13px] text-ivory/60 md:flex-row md:items-center md:justify-between">
+        {/* Bottom Copyright & Legal Links */}
+        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#DCEFF8]/60">
           <p>
             © {year} {siteConfig.name}. All rights reserved.
-            <span className="ml-2 font-serif text-[15px] italic text-ivory/75">{siteConfig.footerTagline}</span>
           </p>
-          <ul className="flex flex-wrap gap-x-6 gap-y-2">
-            <li>
-              <Link to="/privacy-policy" className="hover:text-ivory">
-                Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link to="/terms-of-use" className="hover:text-ivory">
-                Terms of Use
-              </Link>
-            </li>
-            <li>
-              <Link to="/sitemap" className="hover:text-ivory">
-                Sitemap
-              </Link>
-            </li>
-          </ul>
+          <div className="flex items-center gap-4">
+            <Link to="/privacy-policy" className="hover:text-white transition-colors">
+              Privacy Policy
+            </Link>
+            <span>·</span>
+            <Link to="/terms-of-use" className="hover:text-white transition-colors">
+              Terms of Use
+            </Link>
+            <span>·</span>
+            <Link to="/sitemap" className="hover:text-white transition-colors">
+              Sitemap
+            </Link>
+          </div>
         </div>
       </div>
-    </footer>);
-
-}
-
-function FooterColumn({ title, children }: {title: string;children: React.ReactNode;}) {
-  return (
-    <div>
-      <h3 className="text-[11.5px] font-semibold uppercase tracking-[0.22em] text-champagne">{title}</h3>
-      <ul className="mt-5 space-y-2.5 text-[14.5px]">{children}</ul>
-    </div>);
-
+    </footer>
+  );
 }

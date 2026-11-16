@@ -21,32 +21,39 @@ export function SectionHeading({
   className = ''
 }: SectionHeadingProps) {
   const center = align === 'center';
-  const titleColor = tone === 'dark' ? 'text-charcoal' : 'text-ivory';
-  const introColor = tone === 'dark' ? 'text-charcoal/70' : 'text-ivory/75';
-  const eyebrowColor = tone === 'dark' ? 'text-forest' : 'text-champagne';
+  const titleColor = tone === 'dark' ? 'text-[#123B59]' : 'text-white';
+  const introColor = tone === 'dark' ? 'text-[#34465A]' : 'text-[#DCEFF8]/90';
+  const eyebrowColor = tone === 'dark' ? 'text-[#087FAE]' : 'text-[#7EC4E5]';
+
   return (
     <Reveal className={`${center ? 'mx-auto text-center' : ''} max-w-3xl ${className}`}>
-      {eyebrow &&
-      <p
-        className={`mb-5 flex items-center gap-3 text-[11.5px] font-semibold uppercase tracking-[0.24em] ${eyebrowColor} ${
-        center ? 'justify-center' : ''}`
-        }>
-        
-          <span className="h-px w-8 bg-champagne" aria-hidden="true" />
-          {eyebrow}
+      {eyebrow && (
+        <p
+          className={`mb-4 flex items-center gap-2.5 text-xs font-bold uppercase tracking-[0.2em] ${eyebrowColor} ${
+            center ? 'justify-center' : ''
+          }`}
+        >
+          <span className="h-0.5 w-6 rounded-full bg-[#087FAE]" aria-hidden="true" />
+          <span>{eyebrow}</span>
         </p>
-      }
+      )}
+
       <h2
         id={id}
-        className={`text-balance font-serif text-[40px] font-medium leading-[1.02] tracking-[-0.015em] sm:text-[52px] lg:text-[62px] ${titleColor}`}>
-        
+        className={`font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-[-0.015em] ${titleColor}`}
+      >
         {title}
       </h2>
-      {intro &&
-      <p className={`mt-6 max-w-xl text-pretty text-[16.5px] leading-[1.75] ${introColor} ${center ? 'mx-auto' : ''}`}>
+
+      {intro && (
+        <p
+          className={`mt-4 max-w-2xl text-sm sm:text-base leading-relaxed ${introColor} ${
+            center ? 'mx-auto' : ''
+          }`}
+        >
           {intro}
         </p>
-      }
-    </Reveal>);
-
+      )}
+    </Reveal>
+  );
 }
